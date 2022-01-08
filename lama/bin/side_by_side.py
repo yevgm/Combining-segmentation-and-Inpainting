@@ -5,9 +5,9 @@ import random
 import cv2
 import numpy as np
 
-from saicinpainting.evaluation.data import PrecomputedInpaintingResultsDataset
-from saicinpainting.evaluation.utils import load_yaml
-from saicinpainting.training.visualizers.base import visualize_mask_and_images
+from lama.saicinpainting.evaluation.data import PrecomputedInpaintingResultsDataset
+from lama.saicinpainting.evaluation.utils import load_yaml
+from lama.saicinpainting.training.visualizers.base import visualize_mask_and_images
 
 
 def main(args):

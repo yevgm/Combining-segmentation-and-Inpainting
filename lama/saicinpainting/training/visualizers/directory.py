@@ -3,8 +3,8 @@ import os
 import cv2
 import numpy as np
 
-from saicinpainting.training.visualizers.base import BaseVisualizer, visualize_mask_and_images_batch
-from saicinpainting.utils import check_and_warn_input_range
+from lama.saicinpainting.training.visualizers.base import BaseVisualizer, visualize_mask_and_images_batch
+from lama.saicinpainting.utils import check_and_warn_input_range
 
 
 class DirectoryVisualizer(BaseVisualizer):

@@ -7,8 +7,8 @@ import tqdm
 from skimage import io
 from skimage.segmentation import mark_boundaries
 
-from saicinpainting.evaluation.data import InpaintingDataset
-from saicinpainting.evaluation.vis import save_item_for_vis
+from lama.saicinpainting.evaluation.data import InpaintingDataset
+from lama.saicinpainting.evaluation.vis import save_item_for_vis
 
 def save_mask_for_sidebyside(item, out_file):
     mask = item['mask']# > 0.5

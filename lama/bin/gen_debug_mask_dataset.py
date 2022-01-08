@@ -10,7 +10,7 @@ import tqdm
 import shutil
 
 
-from saicinpainting.evaluation.utils import load_yaml
+from lama.saicinpainting.evaluation.utils import load_yaml
 
 
 def generate_masks_for_img(infile, outmask_pattern, mask_size=200, step=0.5):

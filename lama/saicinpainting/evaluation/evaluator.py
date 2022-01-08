@@ -8,7 +8,7 @@ import torch.nn as nn
 import tqdm
 from torch.utils.data import DataLoader
 
-from saicinpainting.evaluation.utils import move_to_device
+from lama.saicinpainting.evaluation.utils import move_to_device
 
 LOGGER = logging.getLogger(__name__)
 

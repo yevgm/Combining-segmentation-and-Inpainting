@@ -6,8 +6,8 @@ import shutil
 import sys
 import traceback
 
-from saicinpainting.evaluation.data import load_image
-from saicinpainting.evaluation.utils import move_to_device
+from lama.saicinpainting.evaluation.data import load_image
+from lama.saicinpainting.evaluation.utils import move_to_device
 
 os.environ['OMP_NUM_THREADS'] = '1'
 os.environ['OPENBLAS_NUM_THREADS'] = '1'
@@ -24,9 +24,9 @@ import yaml
 from omegaconf import OmegaConf
 from torch.utils.data._utils.collate import default_collate
 
-from saicinpainting.training.data.datasets import make_default_val_dataset
-from saicinpainting.training.trainers import load_checkpoint
-from saicinpainting.utils import register_debug_signal_handlers
+from lama.saicinpainting.training.data.datasets import make_default_val_dataset
+from lama.saicinpainting.training.trainers import load_checkpoint
+from lama.saicinpainting.utils import register_debug_signal_handlers
 
 LOGGER = logging.getLogger(__name__)
 

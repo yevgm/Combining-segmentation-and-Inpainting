@@ -6,8 +6,8 @@ import numpy as np
 import tqdm
 from scipy.ndimage.morphology import distance_transform_edt
 
-from saicinpainting.evaluation.data import InpaintingDataset
-from saicinpainting.evaluation.vis import save_item_for_vis
+from lama.saicinpainting.evaluation.data import InpaintingDataset
+from lama.saicinpainting.evaluation.vis import save_item_for_vis
 
 
 def main(args):

@@ -14,10 +14,10 @@ from skimage.feature import canny
 from skimage.transform import rescale, resize
 from torch.utils.data import Dataset, IterableDataset, DataLoader, DistributedSampler, ConcatDataset
 
-from saicinpainting.evaluation.data import InpaintingDataset as InpaintingEvaluationDataset, \
+from lama.saicinpainting.evaluation.data import InpaintingDataset as InpaintingEvaluationDataset, \
     OurInpaintingDataset as OurInpaintingEvaluationDataset, ceil_modulo, InpaintingEvalOnlineDataset
-from saicinpainting.training.data.aug import IAAAffine2, IAAPerspective2
-from saicinpainting.training.data.masks import get_mask_generator
+from lama.saicinpainting.training.data.aug import IAAAffine2, IAAPerspective2
+from lama.saicinpainting.training.data.masks import get_mask_generator
 
 LOGGER = logging.getLogger(__name__)
 

@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from skimage import io
 from skimage.transform import resize
 
-from saicinpainting.evaluation.masks.mask import SegmentationMask
+from lama.saicinpainting.evaluation.masks.mask import SegmentationMask
 
 im = io.imread('imgs/ex4.jpg')
 im = resize(im, (512, 1024), anti_aliasing=True)

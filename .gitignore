@@ -133,7 +133,7 @@ dmypy.json
 # results
 lama/output/
 lama/LaMa_test_images/
-lama/big_lama/
-lama/big_lama.zip
+lama/big-lama/
+lama/big-lama.zip
 lama/lama-models.zip
 lama/lama-LaMa_test_images.zip
