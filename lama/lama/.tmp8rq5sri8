@@ -1,0 +1,3 @@
+eval "$(/home/george/anaconda3/bin/conda shell.posix hook)"
+conda activate  /home/george/PycharmProjects/Deep_Learning_Course/lama/lama
+/home/george/PycharmProjects/Deep_Learning_Course/lama/lama/bin/python -m pip install -U -r /home/george/PycharmProjects/Deep_Learning_Course/lama/condaenv.a9kakkve.requirements.txt

@@ -1,0 +1,997 @@
+{
+  "build": "py36h9f0ad1d_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.6,<3.7.0a0",
+    "python_abi 3.6.* *_cp36m"
+  ],
+  "extracted_package_dir": "/home/george/anaconda3/pkgs/antlr-python-runtime-4.8-py36h9f0ad1d_2",
+  "features": "",
+  "files": [
+    "lib/python3.6/site-packages/antlr4/BufferedTokenStream.py",
+    "lib/python3.6/site-packages/antlr4/CommonTokenFactory.py",
+    "lib/python3.6/site-packages/antlr4/CommonTokenStream.py",
+    "lib/python3.6/site-packages/antlr4/FileStream.py",
+    "lib/python3.6/site-packages/antlr4/InputStream.py",
+    "lib/python3.6/site-packages/antlr4/IntervalSet.py",
+    "lib/python3.6/site-packages/antlr4/LL1Analyzer.py",
+    "lib/python3.6/site-packages/antlr4/Lexer.py",
+    "lib/python3.6/site-packages/antlr4/ListTokenSource.py",
+    "lib/python3.6/site-packages/antlr4/Parser.py",
+    "lib/python3.6/site-packages/antlr4/ParserInterpreter.py",
+    "lib/python3.6/site-packages/antlr4/ParserRuleContext.py",
+    "lib/python3.6/site-packages/antlr4/PredictionContext.py",
+    "lib/python3.6/site-packages/antlr4/Recognizer.py",
+    "lib/python3.6/site-packages/antlr4/RuleContext.py",
+    "lib/python3.6/site-packages/antlr4/StdinStream.py",
+    "lib/python3.6/site-packages/antlr4/Token.py",
+    "lib/python3.6/site-packages/antlr4/TokenStreamRewriter.py",
+    "lib/python3.6/site-packages/antlr4/Utils.py",
+    "lib/python3.6/site-packages/antlr4/__init__.py",
+    "lib/python3.6/site-packages/antlr4/__pycache__/BufferedTokenStream.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/CommonTokenFactory.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/CommonTokenStream.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/FileStream.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/InputStream.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/IntervalSet.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/LL1Analyzer.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/Lexer.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/ListTokenSource.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/Parser.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/ParserInterpreter.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/ParserRuleContext.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/PredictionContext.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/Recognizer.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/RuleContext.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/StdinStream.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/Token.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/TokenStreamRewriter.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/Utils.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/atn/ATN.py",
+    "lib/python3.6/site-packages/antlr4/atn/ATNConfig.py",
+    "lib/python3.6/site-packages/antlr4/atn/ATNConfigSet.py",
+    "lib/python3.6/site-packages/antlr4/atn/ATNDeserializationOptions.py",
+    "lib/python3.6/site-packages/antlr4/atn/ATNDeserializer.py",
+    "lib/python3.6/site-packages/antlr4/atn/ATNSimulator.py",
+    "lib/python3.6/site-packages/antlr4/atn/ATNState.py",
+    "lib/python3.6/site-packages/antlr4/atn/ATNType.py",
+    "lib/python3.6/site-packages/antlr4/atn/LexerATNSimulator.py",
+    "lib/python3.6/site-packages/antlr4/atn/LexerAction.py",
+    "lib/python3.6/site-packages/antlr4/atn/LexerActionExecutor.py",
+    "lib/python3.6/site-packages/antlr4/atn/ParserATNSimulator.py",
+    "lib/python3.6/site-packages/antlr4/atn/PredictionMode.py",
+    "lib/python3.6/site-packages/antlr4/atn/SemanticContext.py",
+    "lib/python3.6/site-packages/antlr4/atn/Transition.py",
+    "lib/python3.6/site-packages/antlr4/atn/__init__.py",
+    "lib/python3.6/site-packages/antlr4/atn/__pycache__/ATN.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/atn/__pycache__/ATNConfig.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/atn/__pycache__/ATNConfigSet.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/atn/__pycache__/ATNDeserializationOptions.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/atn/__pycache__/ATNDeserializer.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/atn/__pycache__/ATNSimulator.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/atn/__pycache__/ATNState.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/atn/__pycache__/ATNType.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/atn/__pycache__/LexerATNSimulator.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/atn/__pycache__/LexerAction.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/atn/__pycache__/LexerActionExecutor.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/atn/__pycache__/ParserATNSimulator.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/atn/__pycache__/PredictionMode.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/atn/__pycache__/SemanticContext.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/atn/__pycache__/Transition.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/atn/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/dfa/DFA.py",
+    "lib/python3.6/site-packages/antlr4/dfa/DFASerializer.py",
+    "lib/python3.6/site-packages/antlr4/dfa/DFAState.py",
+    "lib/python3.6/site-packages/antlr4/dfa/__init__.py",
+    "lib/python3.6/site-packages/antlr4/dfa/__pycache__/DFA.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/dfa/__pycache__/DFASerializer.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/dfa/__pycache__/DFAState.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/dfa/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/error/DiagnosticErrorListener.py",
+    "lib/python3.6/site-packages/antlr4/error/ErrorListener.py",
+    "lib/python3.6/site-packages/antlr4/error/ErrorStrategy.py",
+    "lib/python3.6/site-packages/antlr4/error/Errors.py",
+    "lib/python3.6/site-packages/antlr4/error/__init__.py",
+    "lib/python3.6/site-packages/antlr4/error/__pycache__/DiagnosticErrorListener.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/error/__pycache__/ErrorListener.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/error/__pycache__/ErrorStrategy.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/error/__pycache__/Errors.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/error/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/tree/Chunk.py",
+    "lib/python3.6/site-packages/antlr4/tree/ParseTreeMatch.py",
+    "lib/python3.6/site-packages/antlr4/tree/ParseTreePattern.py",
+    "lib/python3.6/site-packages/antlr4/tree/ParseTreePatternMatcher.py",
+    "lib/python3.6/site-packages/antlr4/tree/RuleTagToken.py",
+    "lib/python3.6/site-packages/antlr4/tree/TokenTagToken.py",
+    "lib/python3.6/site-packages/antlr4/tree/Tree.py",
+    "lib/python3.6/site-packages/antlr4/tree/Trees.py",
+    "lib/python3.6/site-packages/antlr4/tree/__init__.py",
+    "lib/python3.6/site-packages/antlr4/tree/__pycache__/Chunk.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/tree/__pycache__/ParseTreeMatch.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/tree/__pycache__/ParseTreePattern.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/tree/__pycache__/ParseTreePatternMatcher.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/tree/__pycache__/RuleTagToken.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/tree/__pycache__/TokenTagToken.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/tree/__pycache__/Tree.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/tree/__pycache__/Trees.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/tree/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/xpath/XPath.py",
+    "lib/python3.6/site-packages/antlr4/xpath/__init__.py",
+    "lib/python3.6/site-packages/antlr4/xpath/__pycache__/XPath.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4/xpath/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/antlr4_python3_runtime-4.8.dist-info/INSTALLER",
+    "lib/python3.6/site-packages/antlr4_python3_runtime-4.8.dist-info/LICENSE.txt",
+    "lib/python3.6/site-packages/antlr4_python3_runtime-4.8.dist-info/METADATA",
+    "lib/python3.6/site-packages/antlr4_python3_runtime-4.8.dist-info/RECORD",
+    "lib/python3.6/site-packages/antlr4_python3_runtime-4.8.dist-info/REQUESTED",
+    "lib/python3.6/site-packages/antlr4_python3_runtime-4.8.dist-info/WHEEL",
+    "lib/python3.6/site-packages/antlr4_python3_runtime-4.8.dist-info/direct_url.json",
+    "lib/python3.6/site-packages/antlr4_python3_runtime-4.8.dist-info/top_level.txt"
+  ],
+  "fn": "antlr-python-runtime-4.8-py36h9f0ad1d_2.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/home/george/anaconda3/pkgs/antlr-python-runtime-4.8-py36h9f0ad1d_2",
+    "type": 1
+  },
+  "md5": "915030647cea1bffcc46d77ef3d6f2a1",
+  "name": "antlr-python-runtime",
+  "package_tarball_full_path": "/home/george/anaconda3/pkgs/antlr-python-runtime-4.8-py36h9f0ad1d_2.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/BufferedTokenStream.py",
+        "path_type": "hardlink",
+        "sha256": "7e3962d4d71f7bf32707e49523340ad0d9556827ad99178b2c7c484bd990b7e3",
+        "sha256_in_prefix": "7e3962d4d71f7bf32707e49523340ad0d9556827ad99178b2c7c484bd990b7e3",
+        "size_in_bytes": 10675
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/CommonTokenFactory.py",
+        "path_type": "hardlink",
+        "sha256": "97a658a4d2d2c984a9840e8b23bc9cb85f4610303c47a6c0efa81a7eb35465a7",
+        "sha256_in_prefix": "97a658a4d2d2c984a9840e8b23bc9cb85f4610303c47a6c0efa81a7eb35465a7",
+        "size_in_bytes": 2081
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/CommonTokenStream.py",
+        "path_type": "hardlink",
+        "sha256": "176e1324f2196847522af7e76225c65362efe974f7e2013c799da8cdc570dca2",
+        "sha256_in_prefix": "176e1324f2196847522af7e76225c65362efe974f7e2013c799da8cdc570dca2",
+        "size_in_bytes": 2744
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/FileStream.py",
+        "path_type": "hardlink",
+        "sha256": "dc8144fca5d085263f7611b8c1f1f66eb7f34a6af280c9c9177a9eee32920fc1",
+        "sha256_in_prefix": "dc8144fca5d085263f7611b8c1f1f66eb7f34a6af280c9c9177a9eee32920fc1",
+        "size_in_bytes": 1004
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/InputStream.py",
+        "path_type": "hardlink",
+        "sha256": "02bdb7871f60bfd6c4c9c40e18bf6f783cfb7472a4323357ca0df47d4a3c1bb6",
+        "sha256_in_prefix": "02bdb7871f60bfd6c4c9c40e18bf6f783cfb7472a4323357ca0df47d4a3c1bb6",
+        "size_in_bytes": 2788
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/IntervalSet.py",
+        "path_type": "hardlink",
+        "sha256": "49c6721c006118e7d604dd29cf978d480a8f594bc9d7439c7edce616b80bcb90",
+        "sha256_in_prefix": "49c6721c006118e7d604dd29cf978d480a8f594bc9d7439c7edce616b80bcb90",
+        "size_in_bytes": 8738
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/LL1Analyzer.py",
+        "path_type": "hardlink",
+        "sha256": "ac65bbcbb9195a071d361fc85bb1c48a58f16cfe9f063e5751e3f2121514a72e",
+        "sha256_in_prefix": "ac65bbcbb9195a071d361fc85bb1c48a58f16cfe9f063e5751e3f2121514a72e",
+        "size_in_bytes": 7772
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/Lexer.py",
+        "path_type": "hardlink",
+        "sha256": "68f4e94bf804ecd9a937c285501053c62f1ee154d2ea57018f7b26a3d5e25cbd",
+        "sha256_in_prefix": "68f4e94bf804ecd9a937c285501053c62f1ee154d2ea57018f7b26a3d5e25cbd",
+        "size_in_bytes": 11229
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/ListTokenSource.py",
+        "path_type": "hardlink",
+        "sha256": "de8271193affb830c05aa8ea2fc4741b76e71a42d54c5a87398badf5d6aff064",
+        "sha256_in_prefix": "de8271193affb830c05aa8ea2fc4741b76e71a42d54c5a87398badf5d6aff064",
+        "size_in_bytes": 5283
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/Parser.py",
+        "path_type": "hardlink",
+        "sha256": "e7dff4c36f9e70f512cd6bc4f31ad3ee42ed145fd64138cd26b61e8cfeaac12b",
+        "sha256_in_prefix": "e7dff4c36f9e70f512cd6bc4f31ad3ee42ed145fd64138cd26b61e8cfeaac12b",
+        "size_in_bytes": 22615
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/ParserInterpreter.py",
+        "path_type": "hardlink",
+        "sha256": "9b686fa352c1e732c44609686420da80b2c8f40066e3367612d48a01454c0973",
+        "sha256_in_prefix": "9b686fa352c1e732c44609686420da80b2c8f40066e3367612d48a01454c0973",
+        "size_in_bytes": 7014
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/ParserRuleContext.py",
+        "path_type": "hardlink",
+        "sha256": "bd3353134b9eb9b655c3364747c53e3291069ad2878e3996acb772b4895cc84f",
+        "sha256_in_prefix": "bd3353134b9eb9b655c3364747c53e3291069ad2878e3996acb772b4895cc84f",
+        "size_in_bytes": 6704
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/PredictionContext.py",
+        "path_type": "hardlink",
+        "sha256": "cf67925d094e2502a8351ada5e02bef779ff9bd48441a930a3c2b15e940197e0",
+        "sha256_in_prefix": "cf67925d094e2502a8351ada5e02bef779ff9bd48441a930a3c2b15e940197e0",
+        "size_in_bytes": 22964
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/Recognizer.py",
+        "path_type": "hardlink",
+        "sha256": "42994bbb7967299e9fbd785d18a46e21177bd7f14c80d15c5651d0d4a390ea84",
+        "sha256_in_prefix": "42994bbb7967299e9fbd785d18a46e21177bd7f14c80d15c5651d0d4a390ea84",
+        "size_in_bytes": 5806
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/RuleContext.py",
+        "path_type": "hardlink",
+        "sha256": "52ca0e628aea54c119b7509ef1c85105e6d29e11ff2820ddffb03f38519b02f1",
+        "sha256_in_prefix": "52ca0e628aea54c119b7509ef1c85105e6d29e11ff2820ddffb03f38519b02f1",
+        "size_in_bytes": 8054
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/StdinStream.py",
+        "path_type": "hardlink",
+        "sha256": "30c487e3337c4fa8bf9eefb7fd394dfb71389cf3386f92a02b8193ea7fc55100",
+        "sha256_in_prefix": "30c487e3337c4fa8bf9eefb7fd394dfb71389cf3386f92a02b8193ea7fc55100",
+        "size_in_bytes": 303
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/Token.py",
+        "path_type": "hardlink",
+        "sha256": "973fcb2b7b1391b572bbd61d9bdf2c29f9f26cca2efc886acc5417d877112392",
+        "sha256_in_prefix": "973fcb2b7b1391b572bbd61d9bdf2c29f9f26cca2efc886acc5417d877112392",
+        "size_in_bytes": 5103
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/TokenStreamRewriter.py",
+        "path_type": "hardlink",
+        "sha256": "2754ede2c0b6099cdf41bc7a5bc95c7345400e1b95cfa31de8c526fe511eff37",
+        "sha256_in_prefix": "2754ede2c0b6099cdf41bc7a5bc95c7345400e1b95cfa31de8c526fe511eff37",
+        "size_in_bytes": 10188
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/Utils.py",
+        "path_type": "hardlink",
+        "sha256": "3b283c0890912f54eb17f41207f2cb955756381e25a1570a3a014d4fe89c3bb7",
+        "sha256_in_prefix": "3b283c0890912f54eb17f41207f2cb955756381e25a1570a3a014d4fe89c3bb7",
+        "size_in_bytes": 931
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "83c506a5f96794c59c0322ed8a17a3ceb8003f5528ddbf468707c8f109d98edc",
+        "sha256_in_prefix": "83c506a5f96794c59c0322ed8a17a3ceb8003f5528ddbf468707c8f109d98edc",
+        "size_in_bytes": 1125
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/BufferedTokenStream.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "bb6f1c2fcf8e72ced83425a4c28ee7ee5d1268026db4c4ade430278499782cf5",
+        "sha256_in_prefix": "bb6f1c2fcf8e72ced83425a4c28ee7ee5d1268026db4c4ade430278499782cf5",
+        "size_in_bytes": 6934
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/CommonTokenFactory.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "1c6be954977ad1dcceb34e30fb647ed848a4248c09cf0fc7beebc1e3ea67b3e7",
+        "sha256_in_prefix": "1c6be954977ad1dcceb34e30fb647ed848a4248c09cf0fc7beebc1e3ea67b3e7",
+        "size_in_bytes": 1264
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/CommonTokenStream.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "7fee9e194aa1ef0d3d14580f63cfa5922e277eb50d122ba828db393a3b7973bb",
+        "sha256_in_prefix": "7fee9e194aa1ef0d3d14580f63cfa5922e277eb50d122ba828db393a3b7973bb",
+        "size_in_bytes": 1837
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/FileStream.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "3f38ab441f7739b1c42dd086c80da8364a43ceb7256caa252b6e748ff40bb448",
+        "sha256_in_prefix": "3f38ab441f7739b1c42dd086c80da8364a43ceb7256caa252b6e748ff40bb448",
+        "size_in_bytes": 1248
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/InputStream.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "536387cf4419cbf15d500ed689282fd4b217d15585514b8f72e063d42cdd3ad8",
+        "sha256_in_prefix": "536387cf4419cbf15d500ed689282fd4b217d15585514b8f72e063d42cdd3ad8",
+        "size_in_bytes": 3233
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/IntervalSet.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "9d52d079dd6f243248d6a5dec97446f58ff9790d80d8c6d5fa5fd8094369829b",
+        "sha256_in_prefix": "9d52d079dd6f243248d6a5dec97446f58ff9790d80d8c6d5fa5fd8094369829b",
+        "size_in_bytes": 8160
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/LL1Analyzer.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "9a1bf616513c91be50c0fcbbf03a63496a0a5d9e935eea983a7478bfa07dd3e9",
+        "sha256_in_prefix": "9a1bf616513c91be50c0fcbbf03a63496a0a5d9e935eea983a7478bfa07dd3e9",
+        "size_in_bytes": 3185
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/Lexer.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "555ce74ec274aea6e6bafa6f60e812e422ce8a99e8b4019dc46ed806c1c0dca3",
+        "sha256_in_prefix": "555ce74ec274aea6e6bafa6f60e812e422ce8a99e8b4019dc46ed806c1c0dca3",
+        "size_in_bytes": 7521
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/ListTokenSource.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "1f4eec0b39fc978eab9c553794fbb02c33fb4911856c3f6e6be34a7e0bf63b60",
+        "sha256_in_prefix": "1f4eec0b39fc978eab9c553794fbb02c33fb4911856c3f6e6be34a7e0bf63b60",
+        "size_in_bytes": 2507
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/Parser.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "32e139c00c2a670c57cffc724e83c7c759a00a7e237d4fb29722d01c7987722b",
+        "sha256_in_prefix": "32e139c00c2a670c57cffc724e83c7c759a00a7e237d4fb29722d01c7987722b",
+        "size_in_bytes": 13161
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/ParserInterpreter.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "b22540791b60d55a374984314ad09a39c521b90087a808ef5255d9ea31216409",
+        "sha256_in_prefix": "b22540791b60d55a374984314ad09a39c521b90087a808ef5255d9ea31216409",
+        "size_in_bytes": 4934
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/ParserRuleContext.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "56927c7f5ab0046580f90e2d596ac5cad5322a64064338ef46c15faef33b5d80",
+        "sha256_in_prefix": "56927c7f5ab0046580f90e2d596ac5cad5322a64064338ef46c15faef33b5d80",
+        "size_in_bytes": 4582
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/PredictionContext.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "2a8ce20f3cc1b7c704f56e74a655652035563fbc808e3fcee55da8af8235fe8f",
+        "sha256_in_prefix": "2a8ce20f3cc1b7c704f56e74a655652035563fbc808e3fcee55da8af8235fe8f",
+        "size_in_bytes": 11684
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/Recognizer.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "cf8ff6c410ce33cf89e10b68da9a68a58e049fb44fbf88d701ddf266bd975b81",
+        "sha256_in_prefix": "cf8ff6c410ce33cf89e10b68da9a68a58e049fb44fbf88d701ddf266bd975b81",
+        "size_in_bytes": 4814
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/RuleContext.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "67396f43f3b639ad427b3659ed23c2bc0cafa8dd2c1efdc6cb848797aa8c71fa",
+        "sha256_in_prefix": "67396f43f3b639ad427b3659ed23c2bc0cafa8dd2c1efdc6cb848797aa8c71fa",
+        "size_in_bytes": 3537
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/StdinStream.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "814c8b40cb4420aa9915bf2d6507fdef7ffd6c96217f0312ec6a75597ea1e0f0",
+        "sha256_in_prefix": "814c8b40cb4420aa9915bf2d6507fdef7ffd6c96217f0312ec6a75597ea1e0f0",
+        "size_in_bytes": 710
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/Token.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "451a43a2783138d10ccb04108e432c528f0248f606fc0162d38feda03b8d50aa",
+        "sha256_in_prefix": "451a43a2783138d10ccb04108e432c528f0248f606fc0162d38feda03b8d50aa",
+        "size_in_bytes": 3098
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/TokenStreamRewriter.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "8a0e41f368f12ccff48f20beb1dd65794f99382278812aa02f6082e68fb41c38",
+        "sha256_in_prefix": "8a0e41f368f12ccff48f20beb1dd65794f99382278812aa02f6082e68fb41c38",
+        "size_in_bytes": 10218
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/Utils.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "952e587f4374b945741cae3b75be30f7ebd59ce5fcf6f4c94a6544b8ae80d529",
+        "sha256_in_prefix": "952e587f4374b945741cae3b75be30f7ebd59ce5fcf6f4c94a6544b8ae80d529",
+        "size_in_bytes": 781
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "aafc49e2e8d7eff3c285c622231eb64838dd40ea547aa4bb558d40c035885217",
+        "sha256_in_prefix": "aafc49e2e8d7eff3c285c622231eb64838dd40ea547aa4bb558d40c035885217",
+        "size_in_bytes": 1557
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/ATN.py",
+        "path_type": "hardlink",
+        "sha256": "af6d5f5dabff04bd468afd5dba6e674a4e602ef9d8d62d812eb6f38bde1ea65f",
+        "sha256_in_prefix": "af6d5f5dabff04bd468afd5dba6e674a4e602ef9d8d62d812eb6f38bde1ea65f",
+        "size_in_bytes": 5563
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/ATNConfig.py",
+        "path_type": "hardlink",
+        "sha256": "c836f0b387b582118d0f9edd8d98c52086bd344f7bac3a2b5cb6aab79345f9f8",
+        "sha256_in_prefix": "c836f0b387b582118d0f9edd8d98c52086bd344f7bac3a2b5cb6aab79345f9f8",
+        "size_in_bytes": 6349
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/ATNConfigSet.py",
+        "path_type": "hardlink",
+        "sha256": "e89ff2958709afc399264dc096e1601676756f81c72bdceb96e459daf2975d7a",
+        "sha256_in_prefix": "e89ff2958709afc399264dc096e1601676756f81c72bdceb96e459daf2975d7a",
+        "size_in_bytes": 8121
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/ATNDeserializationOptions.py",
+        "path_type": "hardlink",
+        "sha256": "778bda33debc4d56da2f1ddfc710ba94640e6a6f381e74780c664647e16ae22e",
+        "sha256_in_prefix": "778bda33debc4d56da2f1ddfc710ba94640e6a6f381e74780c664647e16ae22e",
+        "size_in_bytes": 936
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/ATNDeserializer.py",
+        "path_type": "hardlink",
+        "sha256": "9d879c008b5d9ee1f25d42e741c9c409dc1d152f66f151f89fef7ffbe9173960",
+        "sha256_in_prefix": "9d879c008b5d9ee1f25d42e741c9c409dc1d152f66f151f89fef7ffbe9173960",
+        "size_in_bytes": 22186
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/ATNSimulator.py",
+        "path_type": "hardlink",
+        "sha256": "385bd594d7c7081e63c96f478115c10b3682e1a05a096c67e1124ff72165a07f",
+        "sha256_in_prefix": "385bd594d7c7081e63c96f478115c10b3682e1a05a096c67e1124ff72165a07f",
+        "size_in_bytes": 2241
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/ATNState.py",
+        "path_type": "hardlink",
+        "sha256": "460df268f066711aa3827830ddfddb29193101341dd5b49f0d58a05f4141f92b",
+        "sha256_in_prefix": "460df268f066711aa3827830ddfddb29193101341dd5b49f0d58a05f4141f92b",
+        "size_in_bytes": 7242
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/ATNType.py",
+        "path_type": "hardlink",
+        "sha256": "c60bfc00c554eed734ed4ef7fe14539b502267b32f1a1a1a3f97d388eaeb0868",
+        "sha256_in_prefix": "c60bfc00c554eed734ed4ef7fe14539b502267b32f1a1a1a3f97d388eaeb0868",
+        "size_in_bytes": 422
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/LexerATNSimulator.py",
+        "path_type": "hardlink",
+        "sha256": "858ef86ad8d68d2d80425bbed23ff263fbd993bc96fd6526cff08c9bf662d4b7",
+        "sha256_in_prefix": "858ef86ad8d68d2d80425bbed23ff263fbd993bc96fd6526cff08c9bf662d4b7",
+        "size_in_bytes": 25278
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/LexerAction.py",
+        "path_type": "hardlink",
+        "sha256": "643df5991e2da3159d1549fc45b449ae999998a94563da29682066b6baf69a13",
+        "sha256_in_prefix": "643df5991e2da3159d1549fc45b449ae999998a94563da29682066b6baf69a13",
+        "size_in_bytes": 9784
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/LexerActionExecutor.py",
+        "path_type": "hardlink",
+        "sha256": "57728b6df55008a356fc8c2c3d162530b6c73b1b03a35990f9df4c8508664a37",
+        "sha256_in_prefix": "57728b6df55008a356fc8c2c3d162530b6c73b1b03a35990f9df4c8508664a37",
+        "size_in_bytes": 6374
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/ParserATNSimulator.py",
+        "path_type": "hardlink",
+        "sha256": "6111fff381f7401eaef192de6af2e170751ef7abea2a711df1b9b2b00c5ffb73",
+        "sha256_in_prefix": "6111fff381f7401eaef192de6af2e170751ef7abea2a711df1b9b2b00c5ffb73",
+        "size_in_bytes": 80218
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/PredictionMode.py",
+        "path_type": "hardlink",
+        "sha256": "8bc07b3142c0eeffaa6d778263fc69eac822db590733a9326ea22b1baad2aeba",
+        "sha256_in_prefix": "8bc07b3142c0eeffaa6d778263fc69eac822db590733a9326ea22b1baad2aeba",
+        "size_in_bytes": 22486
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/SemanticContext.py",
+        "path_type": "hardlink",
+        "sha256": "82ff7ea57ee2a7b047627b176d55fd26dd2177a4f76001d7dd73f981f32cbe5d",
+        "sha256_in_prefix": "82ff7ea57ee2a7b047627b176d55fd26dd2177a4f76001d7dd73f981f32cbe5d",
+        "size_in_bytes": 10385
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/Transition.py",
+        "path_type": "hardlink",
+        "sha256": "39bcdea338cafa144779a87d8a2094ad61ba5f383620ac7308fd5d3176314b16",
+        "sha256_in_prefix": "39bcdea338cafa144779a87d8a2094ad61ba5f383620ac7308fd5d3176314b16",
+        "size_in_bytes": 8173
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "82c9d076d4c7f085200a2554a507f3871c76a4546f92c5bbe928f0224ddf6129",
+        "sha256_in_prefix": "82c9d076d4c7f085200a2554a507f3871c76a4546f92c5bbe928f0224ddf6129",
+        "size_in_bytes": 28
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/__pycache__/ATN.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "741592d5bc4f82a737c4854dd5febe5d420164a28dfcc9cd7339e390f9db8494",
+        "sha256_in_prefix": "741592d5bc4f82a737c4854dd5febe5d420164a28dfcc9cd7339e390f9db8494",
+        "size_in_bytes": 3004
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/__pycache__/ATNConfig.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "be149caca7c12a404aff3882205c97bab900b7236091a1134a642ed89ad8934d",
+        "sha256_in_prefix": "be149caca7c12a404aff3882205c97bab900b7236091a1134a642ed89ad8934d",
+        "size_in_bytes": 3982
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/__pycache__/ATNConfigSet.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "9ed1d45ef57da4d0a341a463c15a163bf263cb121fccd34e8f2fc83c626096da",
+        "sha256_in_prefix": "9ed1d45ef57da4d0a341a463c15a163bf263cb121fccd34e8f2fc83c626096da",
+        "size_in_bytes": 6074
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/__pycache__/ATNDeserializationOptions.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "97b2a113fa786e47e33d24ebbc5d9540f65bb4033f1aa91370903acd99b2cced",
+        "sha256_in_prefix": "97b2a113fa786e47e33d24ebbc5d9540f65bb4033f1aa91370903acd99b2cced",
+        "size_in_bytes": 940
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/__pycache__/ATNDeserializer.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "747075bbe085f128fa98de2620e2a829d0ae36142573a549e1d99ad9cb30010b",
+        "sha256_in_prefix": "747075bbe085f128fa98de2620e2a829d0ae36142573a549e1d99ad9cb30010b",
+        "size_in_bytes": 15971
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/__pycache__/ATNSimulator.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "0a1e3c14e876872894e69c96546898b9f5e665760fc03e352564e75d28fb3d9c",
+        "sha256_in_prefix": "0a1e3c14e876872894e69c96546898b9f5e665760fc03e352564e75d28fb3d9c",
+        "size_in_bytes": 1074
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/__pycache__/ATNState.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "c842b90bf5bfe77db4198f499468f3b7d51548f218b7ec348cf5188072e59825",
+        "sha256_in_prefix": "c842b90bf5bfe77db4198f499468f3b7d51548f218b7ec348cf5188072e59825",
+        "size_in_bytes": 6684
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/__pycache__/ATNType.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "c5ec4f574edb33eb629781709141171a8a492de5e735b3078927f72ab194aee1",
+        "sha256_in_prefix": "c5ec4f574edb33eb629781709141171a8a492de5e735b3078927f72ab194aee1",
+        "size_in_bytes": 538
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/__pycache__/LexerATNSimulator.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "e91ee0811ea819fe7c5d89d9571127820d4c81459425a85a596e7edd44062a65",
+        "sha256_in_prefix": "e91ee0811ea819fe7c5d89d9571127820d4c81459425a85a596e7edd44062a65",
+        "size_in_bytes": 11673
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/__pycache__/LexerAction.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "002897432d20afad46131789f4d5f60f203d49c1b31d7479118e21bee92bc233",
+        "sha256_in_prefix": "002897432d20afad46131789f4d5f60f203d49c1b31d7479118e21bee92bc233",
+        "size_in_bytes": 8673
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/__pycache__/LexerActionExecutor.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "dc3ae571ce7828774986f34772d078fca8554548ad9afae18128f14a9f6fc093",
+        "sha256_in_prefix": "dc3ae571ce7828774986f34772d078fca8554548ad9afae18128f14a9f6fc093",
+        "size_in_bytes": 2443
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/__pycache__/ParserATNSimulator.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "7c2b09a9774b011906079fb79fb9da179ab9b9cc3cd7b06c7191f3db4259e15b",
+        "sha256_in_prefix": "7c2b09a9774b011906079fb79fb9da179ab9b9cc3cd7b06c7191f3db4259e15b",
+        "size_in_bytes": 24662
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/__pycache__/PredictionMode.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "3185376e29436059bd9bd954c9b8f5734796810797940aabc256491a1b0fd4b2",
+        "sha256_in_prefix": "3185376e29436059bd9bd954c9b8f5734796810797940aabc256491a1b0fd4b2",
+        "size_in_bytes": 5050
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/__pycache__/SemanticContext.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "8ffc61c2f6c5d3133b4b7f4975f3e2da5eeec2b174b36cef9fb4a5c750644a0e",
+        "sha256_in_prefix": "8ffc61c2f6c5d3133b4b7f4975f3e2da5eeec2b174b36cef9fb4a5c750644a0e",
+        "size_in_bytes": 7490
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/__pycache__/Transition.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "39aa06745deeafc4191374859f95b988b710f4032224da6443dc450b297dcebf",
+        "sha256_in_prefix": "39aa06745deeafc4191374859f95b988b710f4032224da6443dc450b297dcebf",
+        "size_in_bytes": 9512
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/atn/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "1f972356d1eb5e65a09e72941747eac2bc324b86635e7112ce67f2d9e6953a86",
+        "sha256_in_prefix": "1f972356d1eb5e65a09e72941747eac2bc324b86635e7112ce67f2d9e6953a86",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/dfa/DFA.py",
+        "path_type": "hardlink",
+        "sha256": "5d4a649ede96ee28edee6461404cf5d79040c4854f10747e171fa6c34907c572",
+        "sha256_in_prefix": "5d4a649ede96ee28edee6461404cf5d79040c4854f10747e171fa6c34907c572",
+        "size_in_bytes": 5309
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/dfa/DFASerializer.py",
+        "path_type": "hardlink",
+        "sha256": "b7789483ac9005100c19c98ee456c20317b60054ac5324bc7ce4f7041e12cffb",
+        "sha256_in_prefix": "b7789483ac9005100c19c98ee456c20317b60054ac5324bc7ce4f7041e12cffb",
+        "size_in_bytes": 2461
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/dfa/DFAState.py",
+        "path_type": "hardlink",
+        "sha256": "f14d79f78224e7df4fc26ed506eada87781eb6ded7feefbb9a3bd6bdf40f891a",
+        "sha256_in_prefix": "f14d79f78224e7df4fc26ed506eada87781eb6ded7feefbb9a3bd6bdf40f891a",
+        "size_in_bytes": 5385
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/dfa/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "82c9d076d4c7f085200a2554a507f3871c76a4546f92c5bbe928f0224ddf6129",
+        "sha256_in_prefix": "82c9d076d4c7f085200a2554a507f3871c76a4546f92c5bbe928f0224ddf6129",
+        "size_in_bytes": 28
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/dfa/__pycache__/DFA.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "d4cca18ff272de4b6963430c6b28df73f09f337158566bd3ca6e9bb3809f98a9",
+        "sha256_in_prefix": "d4cca18ff272de4b6963430c6b28df73f09f337158566bd3ca6e9bb3809f98a9",
+        "size_in_bytes": 3067
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/dfa/__pycache__/DFASerializer.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "6d10122fa26c68e5bb688c474e0d0eb02283d44bd3dc2d78b87e877526236bb3",
+        "sha256_in_prefix": "6d10122fa26c68e5bb688c474e0d0eb02283d44bd3dc2d78b87e877526236bb3",
+        "size_in_bytes": 2407
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/dfa/__pycache__/DFAState.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "356a58100e189a484f1cc4c7730c4d1115b0f1caa30f643db43eba6e7f934119",
+        "sha256_in_prefix": "356a58100e189a484f1cc4c7730c4d1115b0f1caa30f643db43eba6e7f934119",
+        "size_in_bytes": 2216
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/dfa/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "e8eac95baeb2beb5030383460ea49b9270cd542d887b1b8f394b94f19a2545df",
+        "sha256_in_prefix": "e8eac95baeb2beb5030383460ea49b9270cd542d887b1b8f394b94f19a2545df",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/error/DiagnosticErrorListener.py",
+        "path_type": "hardlink",
+        "sha256": "1304b60ff3b1e829af09ad7a34f27db9de1060f1e694f5edebe59d9f58792a0f",
+        "sha256_in_prefix": "1304b60ff3b1e829af09ad7a34f27db9de1060f1e694f5edebe59d9f58792a0f",
+        "size_in_bytes": 4430
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/error/ErrorListener.py",
+        "path_type": "hardlink",
+        "sha256": "c8ffcc0e0ba89780a3d3fa443f2373787defe19bd48d6e62c038e16135401db1",
+        "sha256_in_prefix": "c8ffcc0e0ba89780a3d3fa443f2373787defe19bd48d6e62c038e16135401db1",
+        "size_in_bytes": 2722
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/error/ErrorStrategy.py",
+        "path_type": "hardlink",
+        "sha256": "a65cfb24b877ab2ba095cf8d750f014e9be78d56b555b785dafa229004aa8833",
+        "sha256_in_prefix": "a65cfb24b877ab2ba095cf8d750f014e9be78d56b555b785dafa229004aa8833",
+        "size_in_bytes": 29882
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/error/Errors.py",
+        "path_type": "hardlink",
+        "sha256": "8652a781c9417d77640e20329a162cbe1d8e09796f98733691397f035be0a7ec",
+        "sha256_in_prefix": "8652a781c9417d77640e20329a162cbe1d8e09796f98733691397f035be0a7ec",
+        "size_in_bytes": 6759
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/error/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "82c9d076d4c7f085200a2554a507f3871c76a4546f92c5bbe928f0224ddf6129",
+        "sha256_in_prefix": "82c9d076d4c7f085200a2554a507f3871c76a4546f92c5bbe928f0224ddf6129",
+        "size_in_bytes": 28
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/error/__pycache__/DiagnosticErrorListener.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "9fec6c62292bd6d6b960bde25c7f8b8696a1e340fd34f72f8d29549e5075406a",
+        "sha256_in_prefix": "9fec6c62292bd6d6b960bde25c7f8b8696a1e340fd34f72f8d29549e5075406a",
+        "size_in_bytes": 2873
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/error/__pycache__/ErrorListener.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "4d6858354fb89fd1351809703f63c53e8b2774f27fcea75abf53c6ec892040bf",
+        "sha256_in_prefix": "4d6858354fb89fd1351809703f63c53e8b2774f27fcea75abf53c6ec892040bf",
+        "size_in_bytes": 2731
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/error/__pycache__/ErrorStrategy.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "c2ec898f43e9a448e59f909fe9d9b2e113197afd69dd5d48bf8dab5800009d2e",
+        "sha256_in_prefix": "c2ec898f43e9a448e59f909fe9d9b2e113197afd69dd5d48bf8dab5800009d2e",
+        "size_in_bytes": 9648
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/error/__pycache__/Errors.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "b370c12662752b58626531abbaaca4d16cc3477a39f48dbe544954a649166bb8",
+        "sha256_in_prefix": "b370c12662752b58626531abbaaca4d16cc3477a39f48dbe544954a649166bb8",
+        "size_in_bytes": 5063
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/error/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "52693415c01c8bd10ccb6890e8558b013001c4000585705e165468b866790281",
+        "sha256_in_prefix": "52693415c01c8bd10ccb6890e8558b013001c4000585705e165468b866790281",
+        "size_in_bytes": 162
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/Chunk.py",
+        "path_type": "hardlink",
+        "sha256": "61ed40d571b88cbedbf340c5d7d046b6210ca5302dabf55ecda809a98dcd2f3c",
+        "sha256_in_prefix": "61ed40d571b88cbedbf340c5d7d046b6210ca5302dabf55ecda809a98dcd2f3c",
+        "size_in_bytes": 640
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/ParseTreeMatch.py",
+        "path_type": "hardlink",
+        "sha256": "44e49530f02a4f992e1044765a808ee541af3f98ac6a7b8ebdd9fdb3020b20d2",
+        "sha256_in_prefix": "44e49530f02a4f992e1044765a808ee541af3f98ac6a7b8ebdd9fdb3020b20d2",
+        "size_in_bytes": 4422
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/ParseTreePattern.py",
+        "path_type": "hardlink",
+        "sha256": "36b9b646e13fc5259e42a58372a638cfcdb1f80c652ec707ea51a1be2feff60b",
+        "sha256_in_prefix": "36b9b646e13fc5259e42a58372a638cfcdb1f80c652ec707ea51a1be2feff60b",
+        "size_in_bytes": 2751
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/ParseTreePatternMatcher.py",
+        "path_type": "hardlink",
+        "sha256": "5debde9b9d1b817249ea57c3fa4ea41c8bd1819047dcf22382619fcf0b0674f8",
+        "sha256_in_prefix": "5debde9b9d1b817249ea57c3fa4ea41c8bd1819047dcf22382619fcf0b0674f8",
+        "size_in_bytes": 16325
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/RuleTagToken.py",
+        "path_type": "hardlink",
+        "sha256": "7bf3596b545c629d19990c9c03d30613547bb50a752dd2b9187e843f0184dfc6",
+        "sha256_in_prefix": "7bf3596b545c629d19990c9c03d30613547bb50a752dd2b9187e843f0184dfc6",
+        "size_in_bytes": 1983
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/TokenTagToken.py",
+        "path_type": "hardlink",
+        "sha256": "05c40fecc808abbbdd304dd1a044953cc56ae54f257ad391b8d698a39b3c41c9",
+        "sha256_in_prefix": "05c40fecc808abbbdd304dd1a044953cc56ae54f257ad391b8d698a39b3c41c9",
+        "size_in_bytes": 1538
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/Tree.py",
+        "path_type": "hardlink",
+        "sha256": "690972286b98b88526818373fbb2931fe2526b5c965e728933cfd9d0db0bdd51",
+        "sha256_in_prefix": "690972286b98b88526818373fbb2931fe2526b5c965e728933cfd9d0db0bdd51",
+        "size_in_bytes": 4404
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/Trees.py",
+        "path_type": "hardlink",
+        "sha256": "26d43b7185a62b023d4c804feb2f572208e5352e26623bf7011c0e7f059ce558",
+        "sha256_in_prefix": "26d43b7185a62b023d4c804feb2f572208e5352e26623bf7011c0e7f059ce558",
+        "size_in_bytes": 3968
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/__pycache__/Chunk.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "a97f1e556ff90fb49c30a055a729928dd34ac8013f052b3361856eb05c26f723",
+        "sha256_in_prefix": "a97f1e556ff90fb49c30a055a729928dd34ac8013f052b3361856eb05c26f723",
+        "size_in_bytes": 1151
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/__pycache__/ParseTreeMatch.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "aa3594bc3d9aeb7bad51dc57e844238cebf0111bc40544dc1dfef4165b258c7c",
+        "sha256_in_prefix": "aa3594bc3d9aeb7bad51dc57e844238cebf0111bc40544dc1dfef4165b258c7c",
+        "size_in_bytes": 1712
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/__pycache__/ParseTreePattern.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "67747719fc32ac30b460007802175c7dce955055d28b68fe5a9f2ab868bd9961",
+        "sha256_in_prefix": "67747719fc32ac30b460007802175c7dce955055d28b68fe5a9f2ab868bd9961",
+        "size_in_bytes": 1379
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/__pycache__/ParseTreePatternMatcher.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "94adc8f3087e8ad5fccf8526368260592eed206adc7285ce47123e0fe5e3d834",
+        "sha256_in_prefix": "94adc8f3087e8ad5fccf8526368260592eed206adc7285ce47123e0fe5e3d834",
+        "size_in_bytes": 7680
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/__pycache__/RuleTagToken.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "d4e51e41e93ad27f3e44550ab1be139aa39e74a82b08d71489e70bf87c93cbbf",
+        "sha256_in_prefix": "d4e51e41e93ad27f3e44550ab1be139aa39e74a82b08d71489e70bf87c93cbbf",
+        "size_in_bytes": 1024
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/__pycache__/TokenTagToken.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "b84714e4098051e5640814ded2bcad77da25e7f395f784bdae08b16b66aa7a14",
+        "sha256_in_prefix": "b84714e4098051e5640814ded2bcad77da25e7f395f784bdae08b16b66aa7a14",
+        "size_in_bytes": 980
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/__pycache__/Tree.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "b8b75ebc86b3026dc003a35b0a33992f5e1531b273cd045eaa4805930fe154e6",
+        "sha256_in_prefix": "b8b75ebc86b3026dc003a35b0a33992f5e1531b273cd045eaa4805930fe154e6",
+        "size_in_bytes": 6353
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/__pycache__/Trees.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "4849c41b586600b5332f7ed6dac0060a4a4f4f65e66393e840a64069fcf9c78d",
+        "sha256_in_prefix": "4849c41b586600b5332f7ed6dac0060a4a4f4f65e66393e840a64069fcf9c78d",
+        "size_in_bytes": 3351
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/tree/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "ce3fc4cae9d983a8ab44b993523975a1c4c105062677db3262a23f4b975c3dd6",
+        "sha256_in_prefix": "ce3fc4cae9d983a8ab44b993523975a1c4c105062677db3262a23f4b975c3dd6",
+        "size_in_bytes": 134
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/xpath/XPath.py",
+        "path_type": "hardlink",
+        "sha256": "f6b17c3d237acadb7716fc7e26c8cfd665d8d904a6dad96a53bf35cc14b25795",
+        "sha256_in_prefix": "f6b17c3d237acadb7716fc7e26c8cfd665d8d904a6dad96a53bf35cc14b25795",
+        "size_in_bytes": 13013
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/xpath/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "82c9d076d4c7f085200a2554a507f3871c76a4546f92c5bbe928f0224ddf6129",
+        "sha256_in_prefix": "82c9d076d4c7f085200a2554a507f3871c76a4546f92c5bbe928f0224ddf6129",
+        "size_in_bytes": 28
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/xpath/__pycache__/XPath.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "7d2d8817bff25f471679aff70cce0db7278e61e1ef7ddd9e0e600287c6cf0024",
+        "sha256_in_prefix": "7d2d8817bff25f471679aff70cce0db7278e61e1ef7ddd9e0e600287c6cf0024",
+        "size_in_bytes": 10949
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4/xpath/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "beb55321b14e6885bcaf128d4457fdafaa8d7cf6ab0faae308fd76369ed963f4",
+        "sha256_in_prefix": "beb55321b14e6885bcaf128d4457fdafaa8d7cf6ab0faae308fd76369ed963f4",
+        "size_in_bytes": 162
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4_python3_runtime-4.8.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4_python3_runtime-4.8.dist-info/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "b1b379fcaf3219593a4c433feb1b35c780bed23fafaae440b1ae2771a9521e3a",
+        "sha256_in_prefix": "b1b379fcaf3219593a4c433feb1b35c780bed23fafaae440b1ae2771a9521e3a",
+        "size_in_bytes": 2699
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4_python3_runtime-4.8.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "5eff5bc0e835cb6b61e6635220db2aeea18d11b6805d4fe2fa83f66112565e8f",
+        "sha256_in_prefix": "5eff5bc0e835cb6b61e6635220db2aeea18d11b6805d4fe2fa83f66112565e8f",
+        "size_in_bytes": 315
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4_python3_runtime-4.8.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "520de38a462e6fedf4037f376f079bed8c9021f5ab7423a80d44e766e7f97d51",
+        "sha256_in_prefix": "520de38a462e6fedf4037f376f079bed8c9021f5ab7423a80d44e766e7f97d51",
+        "size_in_bytes": 8344
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4_python3_runtime-4.8.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4_python3_runtime-4.8.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "11546323af45e6a5639bf620a9c4d73e74c0bf705f494af4595007b923f75e8a",
+        "sha256_in_prefix": "11546323af45e6a5639bf620a9c4d73e74c0bf705f494af4595007b923f75e8a",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4_python3_runtime-4.8.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "ce878f02adaee4752c6cbb78c087c0a80d89248ea18d5d7dd2283879722fa25f",
+        "sha256_in_prefix": "ce878f02adaee4752c6cbb78c087c0a80d89248ea18d5d7dd2283879722fa25f",
+        "size_in_bytes": 116
+      },
+      {
+        "_path": "lib/python3.6/site-packages/antlr4_python3_runtime-4.8.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "3aca19b21f5b6f7d308176f6cc1523743c18838e8c7d5f9155903a3e4f29701d",
+        "sha256_in_prefix": "3aca19b21f5b6f7d308176f6cc1523743c18838e8c7d5f9155903a3e4f29701d",
+        "size_in_bytes": 7
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "antlr-python-runtime==4.8=py36h9f0ad1d_2",
+  "sha256": "3b8ccb822dc19803c5a187562b32b9d256b1459e9a923d2eaed368ecf010b871",
+  "size": 169514,
+  "subdir": "linux-64",
+  "timestamp": 1602352247816,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/antlr-python-runtime-4.8-py36h9f0ad1d_2.tar.bz2",
+  "version": "4.8"
+}

@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /home/george/PycharmProjects/Deep_Learning_Course/lama/lama/bin/python -m PyQt5.pylupdate_main ${1+"$@"}

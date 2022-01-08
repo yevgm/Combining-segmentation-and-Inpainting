@@ -1,0 +1,116 @@
+{
+  "build": "pyh4f3eec9_6",
+  "build_number": 6,
+  "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+  "constrains": [],
+  "depends": [
+    "python >=3.6,<3.7"
+  ],
+  "extracted_package_dir": "/home/george/anaconda3/pkgs/dataclasses-0.8-pyh4f3eec9_6",
+  "features": "",
+  "files": [
+    "lib/python3.6/site-packages/dataclasses-0.8.dist-info/INSTALLER",
+    "lib/python3.6/site-packages/dataclasses-0.8.dist-info/LICENSE.txt",
+    "lib/python3.6/site-packages/dataclasses-0.8.dist-info/METADATA",
+    "lib/python3.6/site-packages/dataclasses-0.8.dist-info/RECORD",
+    "lib/python3.6/site-packages/dataclasses-0.8.dist-info/REQUESTED",
+    "lib/python3.6/site-packages/dataclasses-0.8.dist-info/WHEEL",
+    "lib/python3.6/site-packages/dataclasses-0.8.dist-info/direct_url.json",
+    "lib/python3.6/site-packages/dataclasses-0.8.dist-info/top_level.txt",
+    "lib/python3.6/site-packages/dataclasses.py",
+    "lib/python3.6/site-packages/__pycache__/dataclasses.cpython-36.pyc"
+  ],
+  "fn": "dataclasses-0.8-pyh4f3eec9_6.conda",
+  "legacy_bz2_md5": "0095452e3b1bd609141eebdd4d516936",
+  "legacy_bz2_size": 22312,
+  "license": "Apache-2.0",
+  "link": {
+    "source": "/home/george/anaconda3/pkgs/dataclasses-0.8-pyh4f3eec9_6",
+    "type": 1
+  },
+  "md5": "b698526fe4ffe6f8f4cb1c5c8aa8cfad",
+  "name": "dataclasses",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/george/anaconda3/pkgs/dataclasses-0.8-pyh4f3eec9_6.conda",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/dataclasses-0.8.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/dataclasses-0.8.dist-info/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "sha256_in_prefix": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "size_in_bytes": 11358
+      },
+      {
+        "_path": "site-packages/dataclasses-0.8.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "ea41b2d4dc87869fc47fdb5aa672dbdeb4087dfa312c8e5a0a54f87d6954bc81",
+        "sha256_in_prefix": "ea41b2d4dc87869fc47fdb5aa672dbdeb4087dfa312c8e5a0a54f87d6954bc81",
+        "size_in_bytes": 3328
+      },
+      {
+        "_path": "site-packages/dataclasses-0.8.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "d611675f4e735e583d0a023884808b02009a525f7ebc0e2a2742a1e4ef00e52e",
+        "sha256_in_prefix": "d611675f4e735e583d0a023884808b02009a525f7ebc0e2a2742a1e4ef00e52e",
+        "size_in_bytes": 798
+      },
+      {
+        "_path": "site-packages/dataclasses-0.8.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/dataclasses-0.8.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "3aa464174798e461ecb0ca2b16395b4c8ab4ef6be91e917ad1f21003a952f710",
+        "sha256_in_prefix": "3aa464174798e461ecb0ca2b16395b4c8ab4ef6be91e917ad1f21003a952f710",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/dataclasses-0.8.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "07cdf12c18966121aa3c72d95fa76b9824512277fd2894a0236c8040bbe027c9",
+        "sha256_in_prefix": "07cdf12c18966121aa3c72d95fa76b9824512277fd2894a0236c8040bbe027c9",
+        "size_in_bytes": 84
+      },
+      {
+        "_path": "site-packages/dataclasses-0.8.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "83587f94b7727ccf9a2f7f8cfab5a7346c56bf766650ba761d5bc097266ae6cd",
+        "sha256_in_prefix": "83587f94b7727ccf9a2f7f8cfab5a7346c56bf766650ba761d5bc097266ae6cd",
+        "size_in_bytes": 12
+      },
+      {
+        "_path": "site-packages/dataclasses.py",
+        "path_type": "hardlink",
+        "sha256": "4c1b7676ee2a931c57759e68956173c07a629b6721e23ee42898b6552feaa19c",
+        "sha256_in_prefix": "4c1b7676ee2a931c57759e68956173c07a629b6721e23ee42898b6552feaa19c",
+        "size_in_bytes": 45499
+      },
+      {
+        "_path": "lib/python3.6/site-packages/__pycache__/dataclasses.cpython-36.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "dataclasses==0.8=pyh4f3eec9_6",
+  "sha256": "d195034bac2c820e34865afa471cfb1007ecd549933cd0b0c98f87fd9e3b376c",
+  "size": 22076,
+  "subdir": "noarch",
+  "timestamp": 1614363775996,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/noarch/dataclasses-0.8-pyh4f3eec9_6.conda",
+  "version": "0.8"
+}

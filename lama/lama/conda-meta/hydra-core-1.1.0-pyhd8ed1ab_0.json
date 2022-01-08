@@ -1,0 +1,1534 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "antlr-python-runtime 4.8",
+    "importlib_resources",
+    "omegaconf 2.1.*",
+    "python >=3.6"
+  ],
+  "extracted_package_dir": "/home/george/anaconda3/pkgs/hydra-core-1.1.0-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "lib/python3.6/site-packages/hydra/__init__.py",
+    "lib/python3.6/site-packages/hydra/_internal/__init__.py",
+    "lib/python3.6/site-packages/hydra/_internal/callbacks.py",
+    "lib/python3.6/site-packages/hydra/_internal/config_loader_impl.py",
+    "lib/python3.6/site-packages/hydra/_internal/config_repository.py",
+    "lib/python3.6/site-packages/hydra/_internal/config_search_path_impl.py",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/__init__.py",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/bash_completion.py",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/basic_launcher.py",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/basic_sweeper.py",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/file_config_source.py",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/fish_completion.py",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/importlib_resources_config_source.py",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/structured_config_source.py",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/zsh_completion.py",
+    "lib/python3.6/site-packages/hydra/_internal/defaults_list.py",
+    "lib/python3.6/site-packages/hydra/_internal/grammar/__init__.py",
+    "lib/python3.6/site-packages/hydra/_internal/grammar/functions.py",
+    "lib/python3.6/site-packages/hydra/_internal/grammar/grammar_functions.py",
+    "lib/python3.6/site-packages/hydra/_internal/grammar/utils.py",
+    "lib/python3.6/site-packages/hydra/_internal/hydra.py",
+    "lib/python3.6/site-packages/hydra/_internal/instantiate/__init__.py",
+    "lib/python3.6/site-packages/hydra/_internal/instantiate/_instantiate2.py",
+    "lib/python3.6/site-packages/hydra/_internal/sources_registry.py",
+    "lib/python3.6/site-packages/hydra/_internal/utils.py",
+    "lib/python3.6/site-packages/hydra/compose.py",
+    "lib/python3.6/site-packages/hydra/conf/__init__.py",
+    "lib/python3.6/site-packages/hydra/conf/hydra/env/default.yaml",
+    "lib/python3.6/site-packages/hydra/conf/hydra/help/default.yaml",
+    "lib/python3.6/site-packages/hydra/conf/hydra/hydra_help/default.yaml",
+    "lib/python3.6/site-packages/hydra/conf/hydra/hydra_logging/default.yaml",
+    "lib/python3.6/site-packages/hydra/conf/hydra/hydra_logging/disabled.yaml",
+    "lib/python3.6/site-packages/hydra/conf/hydra/hydra_logging/hydra_debug.yaml",
+    "lib/python3.6/site-packages/hydra/conf/hydra/hydra_logging/none.yaml",
+    "lib/python3.6/site-packages/hydra/conf/hydra/job_logging/default.yaml",
+    "lib/python3.6/site-packages/hydra/conf/hydra/job_logging/disabled.yaml",
+    "lib/python3.6/site-packages/hydra/conf/hydra/job_logging/none.yaml",
+    "lib/python3.6/site-packages/hydra/conf/hydra/job_logging/stdout.yaml",
+    "lib/python3.6/site-packages/hydra/conf/hydra/output/default.yaml",
+    "lib/python3.6/site-packages/hydra/core/__init__.py",
+    "lib/python3.6/site-packages/hydra/core/config_loader.py",
+    "lib/python3.6/site-packages/hydra/core/config_search_path.py",
+    "lib/python3.6/site-packages/hydra/core/config_store.py",
+    "lib/python3.6/site-packages/hydra/core/default_element.py",
+    "lib/python3.6/site-packages/hydra/core/global_hydra.py",
+    "lib/python3.6/site-packages/hydra/core/hydra_config.py",
+    "lib/python3.6/site-packages/hydra/core/object_type.py",
+    "lib/python3.6/site-packages/hydra/core/override_parser/__init__.py",
+    "lib/python3.6/site-packages/hydra/core/override_parser/overrides_parser.py",
+    "lib/python3.6/site-packages/hydra/core/override_parser/overrides_visitor.py",
+    "lib/python3.6/site-packages/hydra/core/override_parser/types.py",
+    "lib/python3.6/site-packages/hydra/core/plugins.py",
+    "lib/python3.6/site-packages/hydra/core/singleton.py",
+    "lib/python3.6/site-packages/hydra/core/utils.py",
+    "lib/python3.6/site-packages/hydra/errors.py",
+    "lib/python3.6/site-packages/hydra/experimental/__init__.py",
+    "lib/python3.6/site-packages/hydra/experimental/callback.py",
+    "lib/python3.6/site-packages/hydra/experimental/compose.py",
+    "lib/python3.6/site-packages/hydra/experimental/initialize.py",
+    "lib/python3.6/site-packages/hydra/extra/pytest_plugin.py",
+    "lib/python3.6/site-packages/hydra/grammar/.gitignore",
+    "lib/python3.6/site-packages/hydra/grammar/OverrideLexer.g4",
+    "lib/python3.6/site-packages/hydra/grammar/OverrideParser.g4",
+    "lib/python3.6/site-packages/hydra/grammar/__init__.py",
+    "lib/python3.6/site-packages/hydra/grammar/gen/.gitignore",
+    "lib/python3.6/site-packages/hydra/grammar/gen/OverrideLexer.interp",
+    "lib/python3.6/site-packages/hydra/grammar/gen/OverrideLexer.py",
+    "lib/python3.6/site-packages/hydra/grammar/gen/OverrideLexer.tokens",
+    "lib/python3.6/site-packages/hydra/grammar/gen/OverrideParser.interp",
+    "lib/python3.6/site-packages/hydra/grammar/gen/OverrideParser.py",
+    "lib/python3.6/site-packages/hydra/grammar/gen/OverrideParser.tokens",
+    "lib/python3.6/site-packages/hydra/grammar/gen/OverrideParserListener.py",
+    "lib/python3.6/site-packages/hydra/grammar/gen/OverrideParserVisitor.py",
+    "lib/python3.6/site-packages/hydra/initialize.py",
+    "lib/python3.6/site-packages/hydra/main.py",
+    "lib/python3.6/site-packages/hydra/plugins/__init__.py",
+    "lib/python3.6/site-packages/hydra/plugins/completion_plugin.py",
+    "lib/python3.6/site-packages/hydra/plugins/config_source.py",
+    "lib/python3.6/site-packages/hydra/plugins/launcher.py",
+    "lib/python3.6/site-packages/hydra/plugins/plugin.py",
+    "lib/python3.6/site-packages/hydra/plugins/search_path_plugin.py",
+    "lib/python3.6/site-packages/hydra/plugins/sweeper.py",
+    "lib/python3.6/site-packages/hydra/py.typed",
+    "lib/python3.6/site-packages/hydra/test_utils/__init__.py",
+    "lib/python3.6/site-packages/hydra/test_utils/a_module.py",
+    "lib/python3.6/site-packages/hydra/test_utils/completion.py",
+    "lib/python3.6/site-packages/hydra/test_utils/config_source_common_tests.py",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/__init__.py",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/accessing_hydra_config.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/completion_test/config.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/completion_test/group/dict.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/completion_test/group/list.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/completion_test/hydra/launcher/fairtask.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/completion_test/missing_default.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/completion_test/test_hydra/launcher/fairtask.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/compose.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/conf.zip",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/config.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/config.yml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/custom_resolver.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/db/mysql.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/db/postgresql.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/db/validated_mysql.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/db/validated_postgresql.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/db_conf.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/defaults_not_list.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/group1/abc.cde.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/group1/file1.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/group1/file2.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/group2/file1.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/group2/file2.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/missing-default.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/missing-optional-default.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/missing_init_py/.gitignore",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/missing_init_py/test.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/optional-default.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/overriding_output_dir.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/overriding_run_dir.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/package_tests/__init__.py",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/package_tests/group1/option1.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/package_tests/group1/option2.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/package_tests/group2/option1.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/package_tests/group2/option2.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/package_tests/pkg_override.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/package_tests/two_packages_one_group.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/some_config.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/unspecified_mandatory_default.yaml",
+    "lib/python3.6/site-packages/hydra/test_utils/example_app.py",
+    "lib/python3.6/site-packages/hydra/test_utils/launcher_common_tests.py",
+    "lib/python3.6/site-packages/hydra/test_utils/test_utils.py",
+    "lib/python3.6/site-packages/hydra/types.py",
+    "lib/python3.6/site-packages/hydra/utils.py",
+    "lib/python3.6/site-packages/hydra_core-1.1.0.dist-info/INSTALLER",
+    "lib/python3.6/site-packages/hydra_core-1.1.0.dist-info/LICENSE",
+    "lib/python3.6/site-packages/hydra_core-1.1.0.dist-info/METADATA",
+    "lib/python3.6/site-packages/hydra_core-1.1.0.dist-info/RECORD",
+    "lib/python3.6/site-packages/hydra_core-1.1.0.dist-info/REQUESTED",
+    "lib/python3.6/site-packages/hydra_core-1.1.0.dist-info/WHEEL",
+    "lib/python3.6/site-packages/hydra_core-1.1.0.dist-info/direct_url.json",
+    "lib/python3.6/site-packages/hydra_core-1.1.0.dist-info/entry_points.txt",
+    "lib/python3.6/site-packages/hydra_core-1.1.0.dist-info/top_level.txt",
+    "lib/python3.6/site-packages/hydra/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/__pycache__/callbacks.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/__pycache__/config_loader_impl.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/__pycache__/config_repository.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/__pycache__/config_search_path_impl.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/bash_completion.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/basic_launcher.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/basic_sweeper.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/file_config_source.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/fish_completion.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/importlib_resources_config_source.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/structured_config_source.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/zsh_completion.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/__pycache__/defaults_list.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/grammar/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/grammar/__pycache__/functions.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/grammar/__pycache__/grammar_functions.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/grammar/__pycache__/utils.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/__pycache__/hydra.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/instantiate/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/instantiate/__pycache__/_instantiate2.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/__pycache__/sources_registry.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/_internal/__pycache__/utils.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/__pycache__/compose.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/conf/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/core/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/core/__pycache__/config_loader.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/core/__pycache__/config_search_path.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/core/__pycache__/config_store.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/core/__pycache__/default_element.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/core/__pycache__/global_hydra.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/core/__pycache__/hydra_config.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/core/__pycache__/object_type.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/core/override_parser/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/core/override_parser/__pycache__/overrides_parser.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/core/override_parser/__pycache__/overrides_visitor.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/core/override_parser/__pycache__/types.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/core/__pycache__/plugins.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/core/__pycache__/singleton.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/core/__pycache__/utils.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/__pycache__/errors.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/experimental/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/experimental/__pycache__/callback.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/experimental/__pycache__/compose.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/experimental/__pycache__/initialize.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/extra/__pycache__/pytest_plugin.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/grammar/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/grammar/gen/__pycache__/OverrideLexer.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/grammar/gen/__pycache__/OverrideParser.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/grammar/gen/__pycache__/OverrideParserListener.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/grammar/gen/__pycache__/OverrideParserVisitor.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/__pycache__/initialize.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/__pycache__/main.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/plugins/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/plugins/__pycache__/completion_plugin.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/plugins/__pycache__/config_source.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/plugins/__pycache__/launcher.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/plugins/__pycache__/plugin.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/plugins/__pycache__/search_path_plugin.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/plugins/__pycache__/sweeper.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/test_utils/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/test_utils/__pycache__/a_module.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/test_utils/__pycache__/completion.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/test_utils/__pycache__/config_source_common_tests.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/test_utils/configs/package_tests/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/test_utils/__pycache__/example_app.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/test_utils/__pycache__/launcher_common_tests.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/test_utils/__pycache__/test_utils.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/__pycache__/types.cpython-36.pyc",
+    "lib/python3.6/site-packages/hydra/__pycache__/utils.cpython-36.pyc"
+  ],
+  "fn": "hydra-core-1.1.0-pyhd8ed1ab_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/george/anaconda3/pkgs/hydra-core-1.1.0-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "15a44b0139ff75aaa518c6350e87cbcd",
+  "name": "hydra-core",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/george/anaconda3/pkgs/hydra-core-1.1.0-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/hydra/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f2a1139dead0bbeae48b4c95fe72a5e5f4cd9a6ecb77b2637a22e2f08ae212da",
+        "sha256_in_prefix": "f2a1139dead0bbeae48b4c95fe72a5e5f4cd9a6ecb77b2637a22e2f08ae212da",
+        "size_in_bytes": 586
+      },
+      {
+        "_path": "site-packages/hydra/_internal/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "sha256_in_prefix": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "size_in_bytes": 71
+      },
+      {
+        "_path": "site-packages/hydra/_internal/callbacks.py",
+        "path_type": "hardlink",
+        "sha256": "3e0e6467587869b1a09e6db8c23510195d9a6e1c1d5fa1bdad6f7cdf48335d81",
+        "sha256_in_prefix": "3e0e6467587869b1a09e6db8c23510195d9a6e1c1d5fa1bdad6f7cdf48335d81",
+        "size_in_bytes": 2138
+      },
+      {
+        "_path": "site-packages/hydra/_internal/config_loader_impl.py",
+        "path_type": "hardlink",
+        "sha256": "b65f67f7988882b12ec34e52038e67741a5474d5f01a43765f894b6d6511bd75",
+        "sha256_in_prefix": "b65f67f7988882b12ec34e52038e67741a5474d5f01a43765f894b6d6511bd75",
+        "size_in_bytes": 22153
+      },
+      {
+        "_path": "site-packages/hydra/_internal/config_repository.py",
+        "path_type": "hardlink",
+        "sha256": "855ca53f135d07a887cc7fe253ee81b0ad1393da99b50ba452fea1f172ea36bb",
+        "sha256_in_prefix": "855ca53f135d07a887cc7fe253ee81b0ad1393da99b50ba452fea1f172ea36bb",
+        "size_in_bytes": 12666
+      },
+      {
+        "_path": "site-packages/hydra/_internal/config_search_path_impl.py",
+        "path_type": "hardlink",
+        "sha256": "63fddf9057a8d79e316bec49ab56615ff3340ea607046f18730dcd412b728ffc",
+        "sha256_in_prefix": "63fddf9057a8d79e316bec49ab56615ff3340ea607046f18730dcd412b728ffc",
+        "size_in_bytes": 3521
+      },
+      {
+        "_path": "site-packages/hydra/_internal/core_plugins/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "sha256_in_prefix": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "size_in_bytes": 71
+      },
+      {
+        "_path": "site-packages/hydra/_internal/core_plugins/bash_completion.py",
+        "path_type": "hardlink",
+        "sha256": "09ab75b5680dc8ed970b1da1989f5c713ee28260179d9779b52d0a8ddfb206e2",
+        "sha256_in_prefix": "09ab75b5680dc8ed970b1da1989f5c713ee28260179d9779b52d0a8ddfb206e2",
+        "size_in_bytes": 2957
+      },
+      {
+        "_path": "site-packages/hydra/_internal/core_plugins/basic_launcher.py",
+        "path_type": "hardlink",
+        "sha256": "a706be164ca0ba88ebec484bf6b4ccf892922c0489fd50f0a2ce3f5be395bb1f",
+        "sha256_in_prefix": "a706be164ca0ba88ebec484bf6b4ccf892922c0489fd50f0a2ce3f5be395bb1f",
+        "size_in_bytes": 2755
+      },
+      {
+        "_path": "site-packages/hydra/_internal/core_plugins/basic_sweeper.py",
+        "path_type": "hardlink",
+        "sha256": "9c0104f50793cb15a049a6d53ff906704611ce34af665dc4bdd65b1c2b5fe998",
+        "sha256_in_prefix": "9c0104f50793cb15a049a6d53ff906704611ce34af665dc4bdd65b1c2b5fe998",
+        "size_in_bytes": 5964
+      },
+      {
+        "_path": "site-packages/hydra/_internal/core_plugins/file_config_source.py",
+        "path_type": "hardlink",
+        "sha256": "0d71662e4b22b32fa550ad4557cae4930c3b0bc0a4498de0ca623a0d546d5f7c",
+        "sha256_in_prefix": "0d71662e4b22b32fa550ad4557cae4930c3b0bc0a4498de0ca623a0d546d5f7c",
+        "size_in_bytes": 2317
+      },
+      {
+        "_path": "site-packages/hydra/_internal/core_plugins/fish_completion.py",
+        "path_type": "hardlink",
+        "sha256": "fa4a0504244366e51da9aff8b17eab35c1c0a3c7b85432cec90981b4c1d8a483",
+        "sha256_in_prefix": "fa4a0504244366e51da9aff8b17eab35c1c0a3c7b85432cec90981b4c1d8a483",
+        "size_in_bytes": 2395
+      },
+      {
+        "_path": "site-packages/hydra/_internal/core_plugins/importlib_resources_config_source.py",
+        "path_type": "hardlink",
+        "sha256": "84288015463186097a1244c6bec1f1449506207c3bbff462aaaaf2f52cc6481d",
+        "sha256_in_prefix": "84288015463186097a1244c6bec1f1449506207c3bbff462aaaaf2f52cc6481d",
+        "size_in_bytes": 3794
+      },
+      {
+        "_path": "site-packages/hydra/_internal/core_plugins/structured_config_source.py",
+        "path_type": "hardlink",
+        "sha256": "45f9e7d8940422b039256913d96b6930b025f315d529577fa1a51dba89a2a69c",
+        "sha256_in_prefix": "45f9e7d8940422b039256913d96b6930b025f315d529577fa1a51dba89a2a69c",
+        "size_in_bytes": 2348
+      },
+      {
+        "_path": "site-packages/hydra/_internal/core_plugins/zsh_completion.py",
+        "path_type": "hardlink",
+        "sha256": "c04cf92c3f39047f2b7a7eb47adf19f6c7fbb733f22c2aafbb3b95f3cd7d5f82",
+        "sha256_in_prefix": "c04cf92c3f39047f2b7a7eb47adf19f6c7fbb733f22c2aafbb3b95f3cd7d5f82",
+        "size_in_bytes": 1565
+      },
+      {
+        "_path": "site-packages/hydra/_internal/defaults_list.py",
+        "path_type": "hardlink",
+        "sha256": "c7692ae9761ac42c2eb8fe462df91ba52958d6e07157d4a3b8028c8f20c80608",
+        "sha256_in_prefix": "c7692ae9761ac42c2eb8fe462df91ba52958d6e07157d4a3b8028c8f20c80608",
+        "size_in_bytes": 26475
+      },
+      {
+        "_path": "site-packages/hydra/_internal/grammar/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "sha256_in_prefix": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "size_in_bytes": 71
+      },
+      {
+        "_path": "site-packages/hydra/_internal/grammar/functions.py",
+        "path_type": "hardlink",
+        "sha256": "aaa1f43d480a0ac4dbb9c541f87689bab9bb9287e1a8a857498c0c703eb9858d",
+        "sha256_in_prefix": "aaa1f43d480a0ac4dbb9c541f87689bab9bb9287e1a8a857498c0c703eb9858d",
+        "size_in_bytes": 2657
+      },
+      {
+        "_path": "site-packages/hydra/_internal/grammar/grammar_functions.py",
+        "path_type": "hardlink",
+        "sha256": "15c95940dc0ecf8d1a11709d321267c222787e0e73146bddd52336dada109b75",
+        "sha256_in_prefix": "15c95940dc0ecf8d1a11709d321267c222787e0e73146bddd52336dada109b75",
+        "size_in_bytes": 11624
+      },
+      {
+        "_path": "site-packages/hydra/_internal/grammar/utils.py",
+        "path_type": "hardlink",
+        "sha256": "c808ea9915e1b9bfd3c9414bc113d674832acef101220897ee633e32729a4650",
+        "sha256_in_prefix": "c808ea9915e1b9bfd3c9414bc113d674832acef101220897ee633e32729a4650",
+        "size_in_bytes": 2133
+      },
+      {
+        "_path": "site-packages/hydra/_internal/hydra.py",
+        "path_type": "hardlink",
+        "sha256": "ba8e48a8d5cecfa5886544aa21f6bd89378c3fb53e7d4ea617ac66dccc0ec8ae",
+        "sha256_in_prefix": "ba8e48a8d5cecfa5886544aa21f6bd89378c3fb53e7d4ea617ac66dccc0ec8ae",
+        "size_in_bytes": 22753
+      },
+      {
+        "_path": "site-packages/hydra/_internal/instantiate/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "sha256_in_prefix": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "size_in_bytes": 71
+      },
+      {
+        "_path": "site-packages/hydra/_internal/instantiate/_instantiate2.py",
+        "path_type": "hardlink",
+        "sha256": "316bd566224a6d6cd30402057142be8ac0386c4ae77a0439c9aa11c5e0d97e5f",
+        "sha256_in_prefix": "316bd566224a6d6cd30402057142be8ac0386c4ae77a0439c9aa11c5e0d97e5f",
+        "size_in_bytes": 10378
+      },
+      {
+        "_path": "site-packages/hydra/_internal/sources_registry.py",
+        "path_type": "hardlink",
+        "sha256": "6b8adb1457498d458d25ea8ca92abb5c3238800e1fe2a72f678d27b1ebf7ceba",
+        "sha256_in_prefix": "6b8adb1457498d458d25ea8ca92abb5c3238800e1fe2a72f678d27b1ebf7ceba",
+        "size_in_bytes": 1298
+      },
+      {
+        "_path": "site-packages/hydra/_internal/utils.py",
+        "path_type": "hardlink",
+        "sha256": "b1d977c7406b4d585ef1111f93158301bf598e74a8766cdca4f7a576e966d5d8",
+        "sha256_in_prefix": "b1d977c7406b4d585ef1111f93158301bf598e74a8766cdca4f7a576e966d5d8",
+        "size_in_bytes": 19313
+      },
+      {
+        "_path": "site-packages/hydra/compose.py",
+        "path_type": "hardlink",
+        "sha256": "28daf6a19dc0878674072bec5606f258eff6190dc20eb8308bc4e3b8f181ffac",
+        "sha256_in_prefix": "28daf6a19dc0878674072bec5606f258eff6190dc20eb8308bc4e3b8f181ffac",
+        "size_in_bytes": 1277
+      },
+      {
+        "_path": "site-packages/hydra/conf/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "87877eb2cd6b527231c45bd6772befd08b3eefba28d400ac45054c226e18f5fc",
+        "sha256_in_prefix": "87877eb2cd6b527231c45bd6772befd08b3eefba28d400ac45054c226e18f5fc",
+        "size_in_bytes": 4902
+      },
+      {
+        "_path": "site-packages/hydra/conf/hydra/env/default.yaml",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/hydra/conf/hydra/help/default.yaml",
+        "path_type": "hardlink",
+        "sha256": "0140f594fa8b7ddcb6af9dcf093147354ba8c31f6324c2116c2e2582f1c26c7f",
+        "sha256_in_prefix": "0140f594fa8b7ddcb6af9dcf093147354ba8c31f6324c2116c2e2582f1c26c7f",
+        "size_in_bytes": 849
+      },
+      {
+        "_path": "site-packages/hydra/conf/hydra/hydra_help/default.yaml",
+        "path_type": "hardlink",
+        "sha256": "cdefe766d4589cbf4d6cab3256e64f3253a8a41080fca840e047f4cb3ce1fd6a",
+        "sha256_in_prefix": "cdefe766d4589cbf4d6cab3256e64f3253a8a41080fca840e047f4cb3ce1fd6a",
+        "size_in_bytes": 642
+      },
+      {
+        "_path": "site-packages/hydra/conf/hydra/hydra_logging/default.yaml",
+        "path_type": "hardlink",
+        "sha256": "31e3809547979b0beefc2ba18d0f55c4014c8dea290e6f3ff6b6b6be9f81dc10",
+        "sha256_in_prefix": "31e3809547979b0beefc2ba18d0f55c4014c8dea290e6f3ff6b6b6be9f81dc10",
+        "size_in_bytes": 306
+      },
+      {
+        "_path": "site-packages/hydra/conf/hydra/hydra_logging/disabled.yaml",
+        "path_type": "hardlink",
+        "sha256": "9917f423bd3da7b3829a6d32e504f130ac10ba62b5dcc6be3785664d77bfcaee",
+        "sha256_in_prefix": "9917f423bd3da7b3829a6d32e504f130ac10ba62b5dcc6be3785664d77bfcaee",
+        "size_in_bytes": 63
+      },
+      {
+        "_path": "site-packages/hydra/conf/hydra/hydra_logging/hydra_debug.yaml",
+        "path_type": "hardlink",
+        "sha256": "c40da81d968ab2b86378cabbc352963a719d41e221031ca1fea14efec3d9f014",
+        "sha256_in_prefix": "c40da81d968ab2b86378cabbc352963a719d41e221031ca1fea14efec3d9f014",
+        "size_in_bytes": 453
+      },
+      {
+        "_path": "site-packages/hydra/conf/hydra/hydra_logging/none.yaml",
+        "path_type": "hardlink",
+        "sha256": "812091b71176f03077fa079d9b5cde93b92237c93268d603fe6ead44951aa25e",
+        "sha256_in_prefix": "812091b71176f03077fa079d9b5cde93b92237c93268d603fe6ead44951aa25e",
+        "size_in_bytes": 54
+      },
+      {
+        "_path": "site-packages/hydra/conf/hydra/job_logging/default.yaml",
+        "path_type": "hardlink",
+        "sha256": "1f3806527acc37b117f69c80d4d4d13d91d84fd88809a9c468c5626c14ee5c3e",
+        "sha256_in_prefix": "1f3806527acc37b117f69c80d4d4d13d91d84fd88809a9c468c5626c14ee5c3e",
+        "size_in_bytes": 464
+      },
+      {
+        "_path": "site-packages/hydra/conf/hydra/job_logging/disabled.yaml",
+        "path_type": "hardlink",
+        "sha256": "9917f423bd3da7b3829a6d32e504f130ac10ba62b5dcc6be3785664d77bfcaee",
+        "sha256_in_prefix": "9917f423bd3da7b3829a6d32e504f130ac10ba62b5dcc6be3785664d77bfcaee",
+        "size_in_bytes": 63
+      },
+      {
+        "_path": "site-packages/hydra/conf/hydra/job_logging/none.yaml",
+        "path_type": "hardlink",
+        "sha256": "812091b71176f03077fa079d9b5cde93b92237c93268d603fe6ead44951aa25e",
+        "sha256_in_prefix": "812091b71176f03077fa079d9b5cde93b92237c93268d603fe6ead44951aa25e",
+        "size_in_bytes": 54
+      },
+      {
+        "_path": "site-packages/hydra/conf/hydra/job_logging/stdout.yaml",
+        "path_type": "hardlink",
+        "sha256": "ee11c5a7fa0c1f1acc2882c16dcd9f2724a5ffbcb6bbff516c47a7b53b36cd16",
+        "sha256_in_prefix": "ee11c5a7fa0c1f1acc2882c16dcd9f2724a5ffbcb6bbff516c47a7b53b36cd16",
+        "size_in_bytes": 280
+      },
+      {
+        "_path": "site-packages/hydra/conf/hydra/output/default.yaml",
+        "path_type": "hardlink",
+        "sha256": "ade7ae498c41cb4fe8aa7cd433db1250b540ce36fca7b22cc4904751c731b43f",
+        "sha256_in_prefix": "ade7ae498c41cb4fe8aa7cd433db1250b540ce36fca7b22cc4904751c731b43f",
+        "size_in_bytes": 152
+      },
+      {
+        "_path": "site-packages/hydra/core/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "sha256_in_prefix": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "size_in_bytes": 71
+      },
+      {
+        "_path": "site-packages/hydra/core/config_loader.py",
+        "path_type": "hardlink",
+        "sha256": "11886a2634f1a821e2e034a1615dd2ab932239e7d7cd32f3f9dede6997d7a3be",
+        "sha256_in_prefix": "11886a2634f1a821e2e034a1615dd2ab932239e7d7cd32f3f9dede6997d7a3be",
+        "size_in_bytes": 1423
+      },
+      {
+        "_path": "site-packages/hydra/core/config_search_path.py",
+        "path_type": "hardlink",
+        "sha256": "de9a21ed9b38fe096697baca13fb533eaef21f5ea9fe9466fefdc0c89dfb64af",
+        "sha256_in_prefix": "de9a21ed9b38fe096697baca13fb533eaef21f5ea9fe9466fefdc0c89dfb64af",
+        "size_in_bytes": 2026
+      },
+      {
+        "_path": "site-packages/hydra/core/config_store.py",
+        "path_type": "hardlink",
+        "sha256": "8eb89c132eac06ff887cec41aefe286311d1d407e5f5a01f8a2a9db5ca0568dd",
+        "sha256_in_prefix": "8eb89c132eac06ff887cec41aefe286311d1d407e5f5a01f8a2a9db5ca0568dd",
+        "size_in_bytes": 4609
+      },
+      {
+        "_path": "site-packages/hydra/core/default_element.py",
+        "path_type": "hardlink",
+        "sha256": "c78a4c9c0916087dee6db4bca72892ea405a8931f3a2f6da6b2e3c1674517d13",
+        "sha256_in_prefix": "c78a4c9c0916087dee6db4bca72892ea405a8931f3a2f6da6b2e3c1674517d13",
+        "size_in_bytes": 17442
+      },
+      {
+        "_path": "site-packages/hydra/core/global_hydra.py",
+        "path_type": "hardlink",
+        "sha256": "8846a9f98164c4d8646e3baee6f1259bbfa75a9026c81f71f18938db4605b0e7",
+        "sha256_in_prefix": "8846a9f98164c4d8646e3baee6f1259bbfa75a9026c81f71f18938db4605b0e7",
+        "size_in_bytes": 1324
+      },
+      {
+        "_path": "site-packages/hydra/core/hydra_config.py",
+        "path_type": "hardlink",
+        "sha256": "1fa9073ebb06f02bb277c7f8befad686a4b84535b545c2bea5d494a1d3c99cf2",
+        "sha256_in_prefix": "1fa9073ebb06f02bb277c7f8befad686a4b84535b545c2bea5d494a1d3c99cf2",
+        "size_in_bytes": 1561
+      },
+      {
+        "_path": "site-packages/hydra/core/object_type.py",
+        "path_type": "hardlink",
+        "sha256": "bac370ddb0bd76163470d09182377457caca91ad8ab30043ba449618cf6e5609",
+        "sha256_in_prefix": "bac370ddb0bd76163470d09182377457caca91ad8ab30043ba449618cf6e5609",
+        "size_in_bytes": 166
+      },
+      {
+        "_path": "site-packages/hydra/core/override_parser/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "sha256_in_prefix": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "size_in_bytes": 71
+      },
+      {
+        "_path": "site-packages/hydra/core/override_parser/overrides_parser.py",
+        "path_type": "hardlink",
+        "sha256": "ca6344a3ba9f38062dbaeca7de93a628905bacc5767182e63b1aa1636126eeb8",
+        "sha256_in_prefix": "ca6344a3ba9f38062dbaeca7de93a628905bacc5767182e63b1aa1636126eeb8",
+        "size_in_bytes": 4691
+      },
+      {
+        "_path": "site-packages/hydra/core/override_parser/overrides_visitor.py",
+        "path_type": "hardlink",
+        "sha256": "23276b1a198668a1d51e43703ab776fb3c925c9863f2dd61dd3cf3b66e982bdf",
+        "sha256_in_prefix": "23276b1a198668a1d51e43703ab776fb3c925c9863f2dd61dd3cf3b66e982bdf",
+        "size_in_bytes": 15092
+      },
+      {
+        "_path": "site-packages/hydra/core/override_parser/types.py",
+        "path_type": "hardlink",
+        "sha256": "5bcf2125500b3692f4cf5791c27faa7c926bbf38415b9a5c0a01a4704e670ca4",
+        "sha256_in_prefix": "5bcf2125500b3692f4cf5791c27faa7c926bbf38415b9a5c0a01a4704e670ca4",
+        "size_in_bytes": 15884
+      },
+      {
+        "_path": "site-packages/hydra/core/plugins.py",
+        "path_type": "hardlink",
+        "sha256": "4901a20fecb8b6ee1f28000d2e163ebbaf1c5e6c1e2d99d7a2d3eb17366dd291",
+        "sha256_in_prefix": "4901a20fecb8b6ee1f28000d2e163ebbaf1c5e6c1e2d99d7a2d3eb17366dd291",
+        "size_in_bytes": 12032
+      },
+      {
+        "_path": "site-packages/hydra/core/singleton.py",
+        "path_type": "hardlink",
+        "sha256": "24555d927919e7b43dd5c95f9ef3548ce2f493ce64b0e5df4e0168cc18dbc139",
+        "sha256_in_prefix": "24555d927919e7b43dd5c95f9ef3548ce2f493ce64b0e5df4e0168cc18dbc139",
+        "size_in_bytes": 1338
+      },
+      {
+        "_path": "site-packages/hydra/core/utils.py",
+        "path_type": "hardlink",
+        "sha256": "ca0e825a7cc08129da48291ca1c46dad34c884142d1481c252bbdee581389f0d",
+        "sha256_in_prefix": "ca0e825a7cc08129da48291ca1c46dad34c884142d1481c252bbdee581389f0d",
+        "size_in_bytes": 9629
+      },
+      {
+        "_path": "site-packages/hydra/errors.py",
+        "path_type": "hardlink",
+        "sha256": "6b5f871d10d3384c43cd2048c4cfaeb8d1d735062a3796c1377879cebdd6be0e",
+        "sha256_in_prefix": "6b5f871d10d3384c43cd2048c4cfaeb8d1d735062a3796c1377879cebdd6be0e",
+        "size_in_bytes": 1009
+      },
+      {
+        "_path": "site-packages/hydra/experimental/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "2d7b229d67d287a356720e72918961dfdc3a60fe0ad1e4cbeba7a7c9be66b31e",
+        "sha256_in_prefix": "2d7b229d67d287a356720e72918961dfdc3a60fe0ad1e4cbeba7a7c9be66b31e",
+        "size_in_bytes": 293
+      },
+      {
+        "_path": "site-packages/hydra/experimental/callback.py",
+        "path_type": "hardlink",
+        "sha256": "25dc1a70eed5e0987bb00f6d6b536ad106596533b52b8f9f3e8064e49a7123ab",
+        "sha256_in_prefix": "25dc1a70eed5e0987bb00f6d6b536ad106596533b52b8f9f3e8064e49a7123ab",
+        "size_in_bytes": 1350
+      },
+      {
+        "_path": "site-packages/hydra/experimental/compose.py",
+        "path_type": "hardlink",
+        "sha256": "f404aded831ac51197216467da22cb986d13c2852cffe95ca017bd637f0926ba",
+        "sha256_in_prefix": "f404aded831ac51197216467da22cb986d13c2852cffe95ca017bd637f0926ba",
+        "size_in_bytes": 674
+      },
+      {
+        "_path": "site-packages/hydra/experimental/initialize.py",
+        "path_type": "hardlink",
+        "sha256": "b8a626aeb3b75d72c43909cc6901189b4a0fce8d2d0a1998d4c6c53a7580a366",
+        "sha256_in_prefix": "b8a626aeb3b75d72c43909cc6901189b4a0fce8d2d0a1998d4c6c53a7580a366",
+        "size_in_bytes": 3987
+      },
+      {
+        "_path": "site-packages/hydra/extra/pytest_plugin.py",
+        "path_type": "hardlink",
+        "sha256": "a8b4f624e19fbbeb205f45cb8e6cc3aed67a6ebe868e3c371759860c71f78a2d",
+        "sha256_in_prefix": "a8b4f624e19fbbeb205f45cb8e6cc3aed67a6ebe868e3c371759860c71f78a2d",
+        "size_in_bytes": 2707
+      },
+      {
+        "_path": "site-packages/hydra/grammar/.gitignore",
+        "path_type": "hardlink",
+        "sha256": "26f6d14043cba2d6a5cfd8eaf5e721e4e0b37a13ea3753be84aa61eebe57d17f",
+        "sha256_in_prefix": "26f6d14043cba2d6a5cfd8eaf5e721e4e0b37a13ea3753be84aa61eebe57d17f",
+        "size_in_bytes": 21
+      },
+      {
+        "_path": "site-packages/hydra/grammar/OverrideLexer.g4",
+        "path_type": "hardlink",
+        "sha256": "8aa79ed109d2ce815944ecdbd5200f62d67304c16781302d909489807573b4ef",
+        "sha256_in_prefix": "8aa79ed109d2ce815944ecdbd5200f62d67304c16781302d909489807573b4ef",
+        "size_in_bytes": 2816
+      },
+      {
+        "_path": "site-packages/hydra/grammar/OverrideParser.g4",
+        "path_type": "hardlink",
+        "sha256": "38cf18a707636c2f966b48e87eece6ff171e204295a3d633cba09a781cc89462",
+        "sha256_in_prefix": "38cf18a707636c2f966b48e87eece6ff171e204295a3d633cba09a781cc89462",
+        "size_in_bytes": 3101
+      },
+      {
+        "_path": "site-packages/hydra/grammar/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "sha256_in_prefix": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "size_in_bytes": 71
+      },
+      {
+        "_path": "site-packages/hydra/grammar/gen/.gitignore",
+        "path_type": "hardlink",
+        "sha256": "bdd48ccea6b18f8688edc1f9395de3bcd655df3a0e4827c7a25a0ec359a37358",
+        "sha256_in_prefix": "bdd48ccea6b18f8688edc1f9395de3bcd655df3a0e4827c7a25a0ec359a37358",
+        "size_in_bytes": 15
+      },
+      {
+        "_path": "site-packages/hydra/grammar/gen/OverrideLexer.interp",
+        "path_type": "hardlink",
+        "sha256": "1acee926328bb932f59fc36650ffb47402df8128c98f88e27caded78e5c7babd",
+        "sha256_in_prefix": "1acee926328bb932f59fc36650ffb47402df8128c98f88e27caded78e5c7babd",
+        "size_in_bytes": 14072
+      },
+      {
+        "_path": "site-packages/hydra/grammar/gen/OverrideLexer.py",
+        "path_type": "hardlink",
+        "sha256": "9ef49479ac7a0d2fdb5855ba1cff270d81c1b6302befaf1ed0e599bba02fe7fd",
+        "sha256_in_prefix": "9ef49479ac7a0d2fdb5855ba1cff270d81c1b6302befaf1ed0e599bba02fe7fd",
+        "size_in_bytes": 16382
+      },
+      {
+        "_path": "site-packages/hydra/grammar/gen/OverrideLexer.tokens",
+        "path_type": "hardlink",
+        "sha256": "0026608370a4270910c65fe7d2ce9dff7ad153391b1c472145fec51dadb16684",
+        "sha256_in_prefix": "0026608370a4270910c65fe7d2ce9dff7ad153391b1c472145fec51dadb16684",
+        "size_in_bytes": 289
+      },
+      {
+        "_path": "site-packages/hydra/grammar/gen/OverrideParser.interp",
+        "path_type": "hardlink",
+        "sha256": "5f0dcee0f56c0441bbdb50b97d91db45a3435d862736e70c7d8067961ea78a92",
+        "sha256_in_prefix": "5f0dcee0f56c0441bbdb50b97d91db45a3435d862736e70c7d8067961ea78a92",
+        "size_in_bytes": 5685
+      },
+      {
+        "_path": "site-packages/hydra/grammar/gen/OverrideParser.py",
+        "path_type": "hardlink",
+        "sha256": "f6f9ac23cdd96b22869172519959246afc3c3a3efd015ff6af29814d338edb3a",
+        "sha256_in_prefix": "f6f9ac23cdd96b22869172519959246afc3c3a3efd015ff6af29814d338edb3a",
+        "size_in_bytes": 50109
+      },
+      {
+        "_path": "site-packages/hydra/grammar/gen/OverrideParser.tokens",
+        "path_type": "hardlink",
+        "sha256": "0026608370a4270910c65fe7d2ce9dff7ad153391b1c472145fec51dadb16684",
+        "sha256_in_prefix": "0026608370a4270910c65fe7d2ce9dff7ad153391b1c472145fec51dadb16684",
+        "size_in_bytes": 289
+      },
+      {
+        "_path": "site-packages/hydra/grammar/gen/OverrideParserListener.py",
+        "path_type": "hardlink",
+        "sha256": "e5c5005914914cc2abd5f5a69be88d108a81a92cd6373a19f9d6f76b9b832975",
+        "sha256_in_prefix": "e5c5005914914cc2abd5f5a69be88d108a81a92cd6373a19f9d6f76b9b832975",
+        "size_in_bytes": 4477
+      },
+      {
+        "_path": "site-packages/hydra/grammar/gen/OverrideParserVisitor.py",
+        "path_type": "hardlink",
+        "sha256": "7775b42fe71d4f27ac4be4c3960bf588c932247f0d37138e8657f44e97787980",
+        "sha256_in_prefix": "7775b42fe71d4f27ac4be4c3960bf588c932247f0d37138e8657f44e97787980",
+        "size_in_bytes": 2835
+      },
+      {
+        "_path": "site-packages/hydra/initialize.py",
+        "path_type": "hardlink",
+        "sha256": "bcb0104ea26c5ce7deef26bfc28e5d6f420b54ce63ecdd8825b987e99dad4b1d",
+        "sha256_in_prefix": "bcb0104ea26c5ce7deef26bfc28e5d6f420b54ce63ecdd8825b987e99dad4b1d",
+        "size_in_bytes": 5536
+      },
+      {
+        "_path": "site-packages/hydra/main.py",
+        "path_type": "hardlink",
+        "sha256": "f1d181b54681927e7b65b705b02b75918ce8c577b03b7a7b63cad392e6ffe3b7",
+        "sha256_in_prefix": "f1d181b54681927e7b65b705b02b75918ce8c577b03b7a7b63cad392e6ffe3b7",
+        "size_in_bytes": 2071
+      },
+      {
+        "_path": "site-packages/hydra/plugins/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "sha256_in_prefix": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "size_in_bytes": 71
+      },
+      {
+        "_path": "site-packages/hydra/plugins/completion_plugin.py",
+        "path_type": "hardlink",
+        "sha256": "2522ebeb7b12099ae1f461450ac2de33e16a338049969cca0416561ab0a378e9",
+        "sha256_in_prefix": "2522ebeb7b12099ae1f461450ac2de33e16a338049969cca0416561ab0a378e9",
+        "size_in_bytes": 10427
+      },
+      {
+        "_path": "site-packages/hydra/plugins/config_source.py",
+        "path_type": "hardlink",
+        "sha256": "191a9bb6ca9eafabb44aa6158d7653121072f1843222d7bbaae6ccfd58758ffa",
+        "sha256_in_prefix": "191a9bb6ca9eafabb44aa6158d7653121072f1843222d7bbaae6ccfd58758ffa",
+        "size_in_bytes": 4893
+      },
+      {
+        "_path": "site-packages/hydra/plugins/launcher.py",
+        "path_type": "hardlink",
+        "sha256": "bf5a23ad798a986ebd95bb9b0a9a5ea49b7a5110c9c059e13b88134d9ba8e813",
+        "sha256_in_prefix": "bf5a23ad798a986ebd95bb9b0a9a5ea49b7a5110c9c059e13b88134d9ba8e813",
+        "size_in_bytes": 974
+      },
+      {
+        "_path": "site-packages/hydra/plugins/plugin.py",
+        "path_type": "hardlink",
+        "sha256": "793bf368bc6524299b31bae83fd675bbcc313566b8474a8f006a8bce1e9633b3",
+        "sha256_in_prefix": "793bf368bc6524299b31bae83fd675bbcc313566b8474a8f006a8bce1e9633b3",
+        "size_in_bytes": 120
+      },
+      {
+        "_path": "site-packages/hydra/plugins/search_path_plugin.py",
+        "path_type": "hardlink",
+        "sha256": "6e7efc534731a8fd90654902876dcb6ed474ac3b617b09bc88e0867efe60705f",
+        "sha256_in_prefix": "6e7efc534731a8fd90654902876dcb6ed474ac3b617b09bc88e0867efe60705f",
+        "size_in_bytes": 333
+      },
+      {
+        "_path": "site-packages/hydra/plugins/sweeper.py",
+        "path_type": "hardlink",
+        "sha256": "27a7d51296e2883c4708b69d2d7d700d7df8f38a316280efd2ad09bfd4cd7da6",
+        "sha256_in_prefix": "27a7d51296e2883c4708b69d2d7d700d7df8f38a316280efd2ad09bfd4cd7da6",
+        "size_in_bytes": 2108
+      },
+      {
+        "_path": "site-packages/hydra/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "sha256_in_prefix": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "size_in_bytes": 71
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/a_module.py",
+        "path_type": "hardlink",
+        "sha256": "4074908e3e7904fde0d2ecfb1124c6367fe9e93262ad87457abf176e1e4ce968",
+        "sha256_in_prefix": "4074908e3e7904fde0d2ecfb1124c6367fe9e93262ad87457abf176e1e4ce968",
+        "size_in_bytes": 228
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/completion.py",
+        "path_type": "hardlink",
+        "sha256": "878556e6cac2fba688fea8f991565f2bba77d1fc1913fb79c3514dd13d73f9c8",
+        "sha256_in_prefix": "878556e6cac2fba688fea8f991565f2bba77d1fc1913fb79c3514dd13d73f9c8",
+        "size_in_bytes": 319
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/config_source_common_tests.py",
+        "path_type": "hardlink",
+        "sha256": "cd68b729a5a1109efa12737ee50eaa8aea0dbea5293392e56f3be038923560b9",
+        "sha256_in_prefix": "cd68b729a5a1109efa12737ee50eaa8aea0dbea5293392e56f3be038923560b9",
+        "size_in_bytes": 10900
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "sha256_in_prefix": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "size_in_bytes": 71
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/accessing_hydra_config.yaml",
+        "path_type": "hardlink",
+        "sha256": "7fcc853818552772348606b6b83c62fb11e4ed052a22e628ceb38892bbe1e06f",
+        "sha256_in_prefix": "7fcc853818552772348606b6b83c62fb11e4ed052a22e628ceb38892bbe1e06f",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/completion_test/config.yaml",
+        "path_type": "hardlink",
+        "sha256": "a3384feaac0bc50f0da84e75fdf139d5c26e163ae4d722819031e52f925650f1",
+        "sha256_in_prefix": "a3384feaac0bc50f0da84e75fdf139d5c26e163ae4d722819031e52f925650f1",
+        "size_in_bytes": 265
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/completion_test/group/dict.yaml",
+        "path_type": "hardlink",
+        "sha256": "a161889c315257698d1ecbb2e566a5b5647ed23cc9af93ac815bddc7a031812f",
+        "sha256_in_prefix": "a161889c315257698d1ecbb2e566a5b5647ed23cc9af93ac815bddc7a031812f",
+        "size_in_bytes": 117
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/completion_test/group/list.yaml",
+        "path_type": "hardlink",
+        "sha256": "dbe3d7ebaed6d59b68df322b12f603e144c7f6312d591e85108b61ba4ca2891b",
+        "sha256_in_prefix": "dbe3d7ebaed6d59b68df322b12f603e144c7f6312d591e85108b61ba4ca2891b",
+        "size_in_bytes": 106
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/completion_test/hydra/launcher/fairtask.yaml",
+        "path_type": "hardlink",
+        "sha256": "e5dedf96694a6ae796acbc31251ae5cbc87c62ed78cfece6107ea855c50007ac",
+        "sha256_in_prefix": "e5dedf96694a6ae796acbc31251ae5cbc87c62ed78cfece6107ea855c50007ac",
+        "size_in_bytes": 44
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/completion_test/missing_default.yaml",
+        "path_type": "hardlink",
+        "sha256": "057347b150afcfdf7b05dd49578de587097360e1839c603b85c039006717324b",
+        "sha256_in_prefix": "057347b150afcfdf7b05dd49578de587097360e1839c603b85c039006717324b",
+        "size_in_bytes": 25
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/completion_test/test_hydra/launcher/fairtask.yaml",
+        "path_type": "hardlink",
+        "sha256": "e5dedf96694a6ae796acbc31251ae5cbc87c62ed78cfece6107ea855c50007ac",
+        "sha256_in_prefix": "e5dedf96694a6ae796acbc31251ae5cbc87c62ed78cfece6107ea855c50007ac",
+        "size_in_bytes": 44
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/compose.yaml",
+        "path_type": "hardlink",
+        "sha256": "3dbbda80a34905d0fc2bd895e641ddd64d3049850fc5f0a34efe6b964a620306",
+        "sha256_in_prefix": "3dbbda80a34905d0fc2bd895e641ddd64d3049850fc5f0a34efe6b964a620306",
+        "size_in_bytes": 66
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/conf.zip",
+        "path_type": "hardlink",
+        "sha256": "5c471e8fa9f01a1fc65507499622da66dff2be96f1bf8d00947f14332270a4bb",
+        "sha256_in_prefix": "5c471e8fa9f01a1fc65507499622da66dff2be96f1bf8d00947f14332270a4bb",
+        "size_in_bytes": 210
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/config.yaml",
+        "path_type": "hardlink",
+        "sha256": "8ef48a243e7b5bd7eeb2e0dd796cc6326124b9ed9e07863ccfaed82b84757e8d",
+        "sha256_in_prefix": "8ef48a243e7b5bd7eeb2e0dd796cc6326124b9ed9e07863ccfaed82b84757e8d",
+        "size_in_bytes": 45
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/config.yml",
+        "path_type": "hardlink",
+        "sha256": "3973b853a9a8ad59959973883f5ff4f5aed56962962caffc8ad045a5d0485cb6",
+        "sha256_in_prefix": "3973b853a9a8ad59959973883f5ff4f5aed56962962caffc8ad045a5d0485cb6",
+        "size_in_bytes": 55
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/custom_resolver.yaml",
+        "path_type": "hardlink",
+        "sha256": "d6f549a988ee86b2d996359a65289195d50d21c957d3576ea740bec1fc178679",
+        "sha256_in_prefix": "d6f549a988ee86b2d996359a65289195d50d21c957d3576ea740bec1fc178679",
+        "size_in_bytes": 26
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/db/mysql.yaml",
+        "path_type": "hardlink",
+        "sha256": "3a1bce2c6175d4bad8a83ec5e211257c90c65ab44088dd8fe45cf379b62f8163",
+        "sha256_in_prefix": "3a1bce2c6175d4bad8a83ec5e211257c90c65ab44088dd8fe45cf379b62f8163",
+        "size_in_bytes": 42
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/db/postgresql.yaml",
+        "path_type": "hardlink",
+        "sha256": "60bc6b17be820a5e1ecdd0a4c675401f6c474bac3fd7e476a64a3be3c9fb07f7",
+        "sha256_in_prefix": "60bc6b17be820a5e1ecdd0a4c675401f6c474bac3fd7e476a64a3be3c9fb07f7",
+        "size_in_bytes": 70
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/db/validated_mysql.yaml",
+        "path_type": "hardlink",
+        "sha256": "e2ddf9ec50e2383903ede63562f78db1bba22e997ab4b9e1df3407f6f8870989",
+        "sha256_in_prefix": "e2ddf9ec50e2383903ede63562f78db1bba22e997ab4b9e1df3407f6f8870989",
+        "size_in_bytes": 68
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/db/validated_postgresql.yaml",
+        "path_type": "hardlink",
+        "sha256": "35a3168e9e020bf33611fe678cfd20fb917b76870448d0d127dabae918a0d06f",
+        "sha256_in_prefix": "35a3168e9e020bf33611fe678cfd20fb917b76870448d0d127dabae918a0d06f",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/db_conf.yaml",
+        "path_type": "hardlink",
+        "sha256": "13025b9b7a3dc1f61f3dce56754e9a9e8adc6ad8a410da4c48eacb60c48f7b97",
+        "sha256_in_prefix": "13025b9b7a3dc1f61f3dce56754e9a9e8adc6ad8a410da4c48eacb60c48f7b97",
+        "size_in_bytes": 24
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/defaults_not_list.yaml",
+        "path_type": "hardlink",
+        "sha256": "4c68a39c62b5906a2c7e22f5d6ae9008168e77587902862a4705b8ae6e2cad8e",
+        "sha256_in_prefix": "4c68a39c62b5906a2c7e22f5d6ae9008168e77587902862a4705b8ae6e2cad8e",
+        "size_in_bytes": 41
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/group1/abc.cde.yaml",
+        "path_type": "hardlink",
+        "sha256": "dfc3ae3121f434faff18764bc91663fcc290dc487a0e49a2985487ebaff763c1",
+        "sha256_in_prefix": "dfc3ae3121f434faff18764bc91663fcc290dc487a0e49a2985487ebaff763c1",
+        "size_in_bytes": 28
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/group1/file1.yaml",
+        "path_type": "hardlink",
+        "sha256": "610b7b788f4284d053c215b3e9368c6a5e7011bac4c18207c7ae55cb5789a0f5",
+        "sha256_in_prefix": "610b7b788f4284d053c215b3e9368c6a5e7011bac4c18207c7ae55cb5789a0f5",
+        "size_in_bytes": 28
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/group1/file2.yaml",
+        "path_type": "hardlink",
+        "sha256": "c008eed0c1d8bfb47d22b17832e90c138a6a1aad13b0475d19fbb59a0844384f",
+        "sha256_in_prefix": "c008eed0c1d8bfb47d22b17832e90c138a6a1aad13b0475d19fbb59a0844384f",
+        "size_in_bytes": 28
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/group2/file1.yaml",
+        "path_type": "hardlink",
+        "sha256": "d67190a6fd9864f6410118be3c1b01c4cf544838ac1c2f604b789d9b5c715387",
+        "sha256_in_prefix": "d67190a6fd9864f6410118be3c1b01c4cf544838ac1c2f604b789d9b5c715387",
+        "size_in_bytes": 29
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/group2/file2.yaml",
+        "path_type": "hardlink",
+        "sha256": "0b12540b27d482fbf5dbd27e0ae110a1ba2dd07d18d16f72abf85fedf8dd7129",
+        "sha256_in_prefix": "0b12540b27d482fbf5dbd27e0ae110a1ba2dd07d18d16f72abf85fedf8dd7129",
+        "size_in_bytes": 29
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/missing-default.yaml",
+        "path_type": "hardlink",
+        "sha256": "87fb585b67fd147535f78e7be32e275b579370ea9127634d15d5960fbe19b5bf",
+        "sha256_in_prefix": "87fb585b67fd147535f78e7be32e275b579370ea9127634d15d5960fbe19b5bf",
+        "size_in_bytes": 25
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/missing-optional-default.yaml",
+        "path_type": "hardlink",
+        "sha256": "4a71d325e87da29d757334c5088a0c17009c8bd1b75adafa4bed434001eac5bb",
+        "sha256_in_prefix": "4a71d325e87da29d757334c5088a0c17009c8bd1b75adafa4bed434001eac5bb",
+        "size_in_bytes": 36
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/missing_init_py/.gitignore",
+        "path_type": "hardlink",
+        "sha256": "902a513dd9774bf8ea61865a3ab734fb16bafa5dcaa958cd45773a8c291dffe4",
+        "sha256_in_prefix": "902a513dd9774bf8ea61865a3ab734fb16bafa5dcaa958cd45773a8c291dffe4",
+        "size_in_bytes": 12
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/missing_init_py/test.yaml",
+        "path_type": "hardlink",
+        "sha256": "44fc56826a344eff101605b900c5c1c81f7587bdb9f4c943a1364aaab5aca3e2",
+        "sha256_in_prefix": "44fc56826a344eff101605b900c5c1c81f7587bdb9f4c943a1364aaab5aca3e2",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/optional-default.yaml",
+        "path_type": "hardlink",
+        "sha256": "8f01f73bb5a7e5f4dd0d8a57cc2305c5263c284914d9b24f499dddff02da1776",
+        "sha256_in_prefix": "8f01f73bb5a7e5f4dd0d8a57cc2305c5263c284914d9b24f499dddff02da1776",
+        "size_in_bytes": 37
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/overriding_output_dir.yaml",
+        "path_type": "hardlink",
+        "sha256": "df496e08e4aeb4aa029d228e7f48b1a149116a0a547a36ec7abcf8547e661209",
+        "sha256_in_prefix": "df496e08e4aeb4aa029d228e7f48b1a149116a0a547a36ec7abcf8547e661209",
+        "size_in_bytes": 27
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/overriding_run_dir.yaml",
+        "path_type": "hardlink",
+        "sha256": "aa4b2d433201564a8e24597389076eaca78d52c871dd6a09646d775ac560d63b",
+        "sha256_in_prefix": "aa4b2d433201564a8e24597389076eaca78d52c871dd6a09646d775ac560d63b",
+        "size_in_bytes": 27
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/package_tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "sha256_in_prefix": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35",
+        "size_in_bytes": 71
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/package_tests/group1/option1.yaml",
+        "path_type": "hardlink",
+        "sha256": "22fa8b999117ae592e8f46531a8e4dccf19f8b65315ca50098ac7fc559691ede",
+        "sha256_in_prefix": "22fa8b999117ae592e8f46531a8e4dccf19f8b65315ca50098ac7fc559691ede",
+        "size_in_bytes": 41
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/package_tests/group1/option2.yaml",
+        "path_type": "hardlink",
+        "sha256": "658fb012f66067d9d0c01f28cad35dff4bb3828c6a524eeccdae5fd4f0b844b2",
+        "sha256_in_prefix": "658fb012f66067d9d0c01f28cad35dff4bb3828c6a524eeccdae5fd4f0b844b2",
+        "size_in_bytes": 41
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/package_tests/group2/option1.yaml",
+        "path_type": "hardlink",
+        "sha256": "98f52187022702c289100d59f656865dc6e2f32dfabcf964a8ff4b4dec50c307",
+        "sha256_in_prefix": "98f52187022702c289100d59f656865dc6e2f32dfabcf964a8ff4b4dec50c307",
+        "size_in_bytes": 41
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/package_tests/group2/option2.yaml",
+        "path_type": "hardlink",
+        "sha256": "2cb04266b3139dfb0014d686dae38e45a1e6f2599b3162ad4f30e94050e435dc",
+        "sha256_in_prefix": "2cb04266b3139dfb0014d686dae38e45a1e6f2599b3162ad4f30e94050e435dc",
+        "size_in_bytes": 41
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/package_tests/pkg_override.yaml",
+        "path_type": "hardlink",
+        "sha256": "2bb51962fad8b8f267bd56c2eae9212435afa107d257ce25de2505597b353ecc",
+        "sha256_in_prefix": "2bb51962fad8b8f267bd56c2eae9212435afa107d257ce25de2505597b353ecc",
+        "size_in_bytes": 55
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/package_tests/two_packages_one_group.yaml",
+        "path_type": "hardlink",
+        "sha256": "0fcab2336d0f5d8bd80b8de5a2461eb7c59d927246fa2b549d87c30fda245912",
+        "sha256_in_prefix": "0fcab2336d0f5d8bd80b8de5a2461eb7c59d927246fa2b549d87c30fda245912",
+        "size_in_bytes": 60
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/some_config.yaml",
+        "path_type": "hardlink",
+        "sha256": "59fc41113a2cbdb49ba43606bac4f6290936c201ce682a3459a5c1194cd4de82",
+        "sha256_in_prefix": "59fc41113a2cbdb49ba43606bac4f6290936c201ce682a3459a5c1194cd4de82",
+        "size_in_bytes": 38
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/configs/unspecified_mandatory_default.yaml",
+        "path_type": "hardlink",
+        "sha256": "50e167edbf8c052bf2bae028728deddee1070cc5a24f180ce7e88e1a17157a34",
+        "sha256_in_prefix": "50e167edbf8c052bf2bae028728deddee1070cc5a24f180ce7e88e1a17157a34",
+        "size_in_bytes": 26
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/example_app.py",
+        "path_type": "hardlink",
+        "sha256": "a1dd847f034594e6a001066a7b2534a25fe2800d5af81fcbb1f3670ad6c9fb57",
+        "sha256_in_prefix": "a1dd847f034594e6a001066a7b2534a25fe2800d5af81fcbb1f3670ad6c9fb57",
+        "size_in_bytes": 304
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/launcher_common_tests.py",
+        "path_type": "hardlink",
+        "sha256": "e2042f703ac3bf7276e9497fa23c62a15f5e2ae13725e0a5dc5629d07cb00757",
+        "sha256_in_prefix": "e2042f703ac3bf7276e9497fa23c62a15f5e2ae13725e0a5dc5629d07cb00757",
+        "size_in_bytes": 23490
+      },
+      {
+        "_path": "site-packages/hydra/test_utils/test_utils.py",
+        "path_type": "hardlink",
+        "sha256": "5e2ff6b5b20dab82add49f411df4c630a3f3fea56117dba5ecd839817348b36e",
+        "sha256_in_prefix": "5e2ff6b5b20dab82add49f411df4c630a3f3fea56117dba5ecd839817348b36e",
+        "size_in_bytes": 14648
+      },
+      {
+        "_path": "site-packages/hydra/types.py",
+        "path_type": "hardlink",
+        "sha256": "ca7391892ee86ed23c88a2d0356b5add3c52ea7a31028c4282a8fe9b18ee320b",
+        "sha256_in_prefix": "ca7391892ee86ed23c88a2d0356b5add3c52ea7a31028c4282a8fe9b18ee320b",
+        "size_in_bytes": 2254
+      },
+      {
+        "_path": "site-packages/hydra/utils.py",
+        "path_type": "hardlink",
+        "sha256": "b92261e44dd2dcd4db8d92aec40a9c7b95ea34ff60b8338f2b192374825906d8",
+        "sha256_in_prefix": "b92261e44dd2dcd4db8d92aec40a9c7b95ea34ff60b8338f2b192374825906d8",
+        "size_in_bytes": 2139
+      },
+      {
+        "_path": "site-packages/hydra_core-1.1.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/hydra_core-1.1.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85",
+        "sha256_in_prefix": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85",
+        "size_in_bytes": 1086
+      },
+      {
+        "_path": "site-packages/hydra_core-1.1.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "65f33a0700c93230d8ed7fcab17a150d3e8b25cb1725f7acfdf44a995582e35a",
+        "sha256_in_prefix": "65f33a0700c93230d8ed7fcab17a150d3e8b25cb1725f7acfdf44a995582e35a",
+        "size_in_bytes": 4063
+      },
+      {
+        "_path": "site-packages/hydra_core-1.1.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "346143455f5fdd5d7f99fb1748480275ae3a350e8ed310a61be1beb04f734778",
+        "sha256_in_prefix": "346143455f5fdd5d7f99fb1748480275ae3a350e8ed310a61be1beb04f734778",
+        "size_in_bytes": 17760
+      },
+      {
+        "_path": "site-packages/hydra_core-1.1.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/hydra_core-1.1.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "3aa464174798e461ecb0ca2b16395b4c8ab4ef6be91e917ad1f21003a952f710",
+        "sha256_in_prefix": "3aa464174798e461ecb0ca2b16395b4c8ab4ef6be91e917ad1f21003a952f710",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/hydra_core-1.1.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "f1e663d0f9df628fc19ea2026f304c79839bb46fd030512646548a232938f5db",
+        "sha256_in_prefix": "f1e663d0f9df628fc19ea2026f304c79839bb46fd030512646548a232938f5db",
+        "size_in_bytes": 106
+      },
+      {
+        "_path": "site-packages/hydra_core-1.1.0.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "185b291d65bfa9e9ec5d87de3a10e1e7f7d57522b052c24ee71150d5c9112ef3",
+        "sha256_in_prefix": "185b291d65bfa9e9ec5d87de3a10e1e7f7d57522b052c24ee71150d5c9112ef3",
+        "size_in_bytes": 53
+      },
+      {
+        "_path": "site-packages/hydra_core-1.1.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "8b3833c8432244bdf18b00e74ca60963b50bd2659c19b23bb6a27da3714c6d02",
+        "sha256_in_prefix": "8b3833c8432244bdf18b00e74ca60963b50bd2659c19b23bb6a27da3714c6d02",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/__pycache__/callbacks.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/__pycache__/config_loader_impl.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/__pycache__/config_repository.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/__pycache__/config_search_path_impl.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/bash_completion.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/basic_launcher.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/basic_sweeper.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/file_config_source.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/fish_completion.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/importlib_resources_config_source.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/structured_config_source.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/core_plugins/__pycache__/zsh_completion.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/__pycache__/defaults_list.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/grammar/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/grammar/__pycache__/functions.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/grammar/__pycache__/grammar_functions.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/grammar/__pycache__/utils.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/__pycache__/hydra.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/instantiate/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/instantiate/__pycache__/_instantiate2.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/__pycache__/sources_registry.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/_internal/__pycache__/utils.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/__pycache__/compose.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/conf/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/core/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/core/__pycache__/config_loader.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/core/__pycache__/config_search_path.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/core/__pycache__/config_store.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/core/__pycache__/default_element.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/core/__pycache__/global_hydra.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/core/__pycache__/hydra_config.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/core/__pycache__/object_type.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/core/override_parser/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/core/override_parser/__pycache__/overrides_parser.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/core/override_parser/__pycache__/overrides_visitor.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/core/override_parser/__pycache__/types.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/core/__pycache__/plugins.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/core/__pycache__/singleton.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/core/__pycache__/utils.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/__pycache__/errors.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/experimental/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/experimental/__pycache__/callback.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/experimental/__pycache__/compose.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/experimental/__pycache__/initialize.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/extra/__pycache__/pytest_plugin.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/grammar/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/grammar/gen/__pycache__/OverrideLexer.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/grammar/gen/__pycache__/OverrideParser.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/grammar/gen/__pycache__/OverrideParserListener.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/grammar/gen/__pycache__/OverrideParserVisitor.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/__pycache__/initialize.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/__pycache__/main.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/plugins/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/plugins/__pycache__/completion_plugin.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/plugins/__pycache__/config_source.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/plugins/__pycache__/launcher.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/plugins/__pycache__/plugin.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/plugins/__pycache__/search_path_plugin.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/plugins/__pycache__/sweeper.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/test_utils/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/test_utils/__pycache__/a_module.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/test_utils/__pycache__/completion.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/test_utils/__pycache__/config_source_common_tests.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/test_utils/configs/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/test_utils/configs/package_tests/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/test_utils/__pycache__/example_app.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/test_utils/__pycache__/launcher_common_tests.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/test_utils/__pycache__/test_utils.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/__pycache__/types.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/hydra/__pycache__/utils.cpython-36.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "hydra-core==1.1.0=pyhd8ed1ab_0",
+  "sha256": "7f0388c6a5f66dec3ac4f3bdfe1b0b0452acb984428224935670ed2f9d25b217",
+  "size": 201744,
+  "subdir": "noarch",
+  "timestamp": 1627473017974,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/hydra-core-1.1.0-pyhd8ed1ab_0.tar.bz2",
+  "version": "1.1.0"
+}

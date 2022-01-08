@@ -1,0 +1,188 @@
+{
+  "build": "py36hdd07704_2",
+  "build_number": 2,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "numpy >=1.11.3,<2.0a0",
+    "python >=3.6,<3.7.0a0"
+  ],
+  "extracted_package_dir": "/home/george/anaconda3/pkgs/tifffile-2020.10.1-py36hdd07704_2",
+  "features": "",
+  "files": [
+    "bin/lsm2bin",
+    "bin/tifffile",
+    "lib/python3.6/site-packages/tifffile-2020.10.1-py3.6.egg-info/PKG-INFO",
+    "lib/python3.6/site-packages/tifffile-2020.10.1-py3.6.egg-info/SOURCES.txt",
+    "lib/python3.6/site-packages/tifffile-2020.10.1-py3.6.egg-info/dependency_links.txt",
+    "lib/python3.6/site-packages/tifffile-2020.10.1-py3.6.egg-info/entry_points.txt",
+    "lib/python3.6/site-packages/tifffile-2020.10.1-py3.6.egg-info/requires.txt",
+    "lib/python3.6/site-packages/tifffile-2020.10.1-py3.6.egg-info/top_level.txt",
+    "lib/python3.6/site-packages/tifffile/__init__.py",
+    "lib/python3.6/site-packages/tifffile/__main__.py",
+    "lib/python3.6/site-packages/tifffile/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/tifffile/__pycache__/__main__.cpython-36.pyc",
+    "lib/python3.6/site-packages/tifffile/__pycache__/lsm2bin.cpython-36.pyc",
+    "lib/python3.6/site-packages/tifffile/__pycache__/tifffile.cpython-36.pyc",
+    "lib/python3.6/site-packages/tifffile/__pycache__/tifffile_geodb.cpython-36.pyc",
+    "lib/python3.6/site-packages/tifffile/lsm2bin.py",
+    "lib/python3.6/site-packages/tifffile/tifffile.py",
+    "lib/python3.6/site-packages/tifffile/tifffile_geodb.py"
+  ],
+  "fn": "tifffile-2020.10.1-py36hdd07704_2.conda",
+  "legacy_bz2_md5": "e7d8deff80548405eb0b1c7b6fee8187",
+  "legacy_bz2_size": 278866,
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/home/george/anaconda3/pkgs/tifffile-2020.10.1-py36hdd07704_2",
+    "type": 1
+  },
+  "md5": "29527e80aac6d47abbb98aa27fb54f31",
+  "name": "tifffile",
+  "package_tarball_full_path": "/home/george/anaconda3/pkgs/tifffile-2020.10.1-py36hdd07704_2.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/lsm2bin",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/tmp/build/80754af9/tifffile_1602000631882/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "95d16c7370a28262036c422bcb8a0846a20b768b31f5d48e8d1ec4f8939cc5ce",
+        "sha256_in_prefix": "13febc1e7fdb15037221f82cdccffd1067a70a3324add011294aa0a1c85c0736",
+        "size_in_bytes": 1223
+      },
+      {
+        "_path": "bin/tifffile",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/tmp/build/80754af9/tifffile_1602000631882/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "0fb454d8ac5028dff94bb399be9282feb673bf442f8c75606cdda93b126d2470",
+        "sha256_in_prefix": "4c130e3d609bfc4090efeac42393f46d1d16bfe3889d7194e97e0562ed35f143",
+        "size_in_bytes": 1225
+      },
+      {
+        "_path": "lib/python3.6/site-packages/tifffile-2020.10.1-py3.6.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "21faa86490ef2ada07fd1c0d7b03de60a44adc0cf44bd06eabb20c425348ae8b",
+        "sha256_in_prefix": "21faa86490ef2ada07fd1c0d7b03de60a44adc0cf44bd06eabb20c425348ae8b",
+        "size_in_bytes": 26535
+      },
+      {
+        "_path": "lib/python3.6/site-packages/tifffile-2020.10.1-py3.6.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "1e234ce6893e1b755115bad9661c7f6044949b66ebce941fb4a16ae4025f8579",
+        "sha256_in_prefix": "1e234ce6893e1b755115bad9661c7f6044949b66ebce941fb4a16ae4025f8579",
+        "size_in_bytes": 427
+      },
+      {
+        "_path": "lib/python3.6/site-packages/tifffile-2020.10.1-py3.6.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.6/site-packages/tifffile-2020.10.1-py3.6.egg-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "be775b59fe95897d98d2cfb4d37c80ad39533c0a87a90b9028ec76f9513a9970",
+        "sha256_in_prefix": "be775b59fe95897d98d2cfb4d37c80ad39533c0a87a90b9028ec76f9513a9970",
+        "size_in_bytes": 76
+      },
+      {
+        "_path": "lib/python3.6/site-packages/tifffile-2020.10.1-py3.6.egg-info/requires.txt",
+        "path_type": "hardlink",
+        "sha256": "12d6ca9fdc015f87c7852c57bd8b1b7aa4787080305d19687c3a66e6e9a3737c",
+        "sha256_in_prefix": "12d6ca9fdc015f87c7852c57bd8b1b7aa4787080305d19687c3a66e6e9a3737c",
+        "size_in_bytes": 65
+      },
+      {
+        "_path": "lib/python3.6/site-packages/tifffile-2020.10.1-py3.6.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "87a7aa68736a6a426ad2d54dd37ed742246e5a1d7fdc903c4892e19336d37cb8",
+        "sha256_in_prefix": "87a7aa68736a6a426ad2d54dd37ed742246e5a1d7fdc903c4892e19336d37cb8",
+        "size_in_bytes": 9
+      },
+      {
+        "_path": "lib/python3.6/site-packages/tifffile/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "82a60fc5e03f64d89ec1d57ffa40ca59a1695d83f259e89efb64538f90952dfc",
+        "sha256_in_prefix": "82a60fc5e03f64d89ec1d57ffa40ca59a1695d83f259e89efb64538f90952dfc",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "lib/python3.6/site-packages/tifffile/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "4966ca62acae468bd0c09aa4267cd8b5bc0065850b1d691e839dc56390d7a553",
+        "sha256_in_prefix": "4966ca62acae468bd0c09aa4267cd8b5bc0065850b1d691e839dc56390d7a553",
+        "size_in_bytes": 135
+      },
+      {
+        "_path": "lib/python3.6/site-packages/tifffile/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "f5df54b4ff9640c4922d0515c47d254a5c1abef3f8f2b88193346f1ca30b9807",
+        "sha256_in_prefix": "f5df54b4ff9640c4922d0515c47d254a5c1abef3f8f2b88193346f1ca30b9807",
+        "size_in_bytes": 241
+      },
+      {
+        "_path": "lib/python3.6/site-packages/tifffile/__pycache__/__main__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "6ac5f09a507c5720d814a889474132a26f613bf9b617b1ae82c3d01b793d44b8",
+        "sha256_in_prefix": "6ac5f09a507c5720d814a889474132a26f613bf9b617b1ae82c3d01b793d44b8",
+        "size_in_bytes": 262
+      },
+      {
+        "_path": "lib/python3.6/site-packages/tifffile/__pycache__/lsm2bin.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "7712c6b018a79d83e4fd1227d191d70d2c3d7d0315a212285891ce5e8ace310e",
+        "sha256_in_prefix": "7712c6b018a79d83e4fd1227d191d70d2c3d7d0315a212285891ce5e8ace310e",
+        "size_in_bytes": 751
+      },
+      {
+        "_path": "lib/python3.6/site-packages/tifffile/__pycache__/tifffile.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "4a8a8f23ffe3a8fbacc2e417c9c1434da17422660459c8655e988d7f9ae8bf9b",
+        "sha256_in_prefix": "4a8a8f23ffe3a8fbacc2e417c9c1434da17422660459c8655e988d7f9ae8bf9b",
+        "size_in_bytes": 391700
+      },
+      {
+        "_path": "lib/python3.6/site-packages/tifffile/__pycache__/tifffile_geodb.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "a5157798b2e65d4246b07f24b556b25f97dddce4e23a138cb4115e10b16ff8f3",
+        "sha256_in_prefix": "a5157798b2e65d4246b07f24b556b25f97dddce4e23a138cb4115e10b16ff8f3",
+        "size_in_bytes": 63644
+      },
+      {
+        "_path": "lib/python3.6/site-packages/tifffile/lsm2bin.py",
+        "path_type": "hardlink",
+        "sha256": "361b2a6f52ac4487074bf8f05927db53674365071eba9d0e6ee0d94b04157eab",
+        "sha256_in_prefix": "361b2a6f52ac4487074bf8f05927db53674365071eba9d0e6ee0d94b04157eab",
+        "size_in_bytes": 667
+      },
+      {
+        "_path": "lib/python3.6/site-packages/tifffile/tifffile.py",
+        "path_type": "hardlink",
+        "sha256": "d7221ae69044963b65125bf2c130c7ea63a707f9620333edf31d54c35073a4ff",
+        "sha256_in_prefix": "d7221ae69044963b65125bf2c130c7ea63a707f9620333edf31d54c35073a4ff",
+        "size_in_bytes": 561974
+      },
+      {
+        "_path": "lib/python3.6/site-packages/tifffile/tifffile_geodb.py",
+        "path_type": "hardlink",
+        "sha256": "e81c01ea9536e8af4ccb9476f5b48c8bf16c5ad5d50b05db0d5f5c23a06f0e2c",
+        "sha256_in_prefix": "e81c01ea9536e8af4ccb9476f5b48c8bf16c5ad5d50b05db0d5f5c23a06f0e2c",
+        "size_in_bytes": 61615
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "tifffile==2020.10.1=py36hdd07704_2",
+  "sha256": "77ebabe738039474c6ddf351791b491b468ee88980ce3223320f90b4cea84b94",
+  "size": 259351,
+  "subdir": "linux-64",
+  "timestamp": 1602000690830,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/tifffile-2020.10.1-py36hdd07704_2.conda",
+  "version": "2020.10.1"
+}

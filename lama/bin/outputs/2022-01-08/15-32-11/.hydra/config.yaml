@@ -1,0 +1,11 @@
+indir: /home/george/PycharmProjects/Deep_Learning_Course/lama/LaMa_test_images
+outdir: /home/george/PycharmProjects/Deep_Learning_Course/lama/output
+model:
+  path: /home/george/PycharmProjects/Deep_Learning_Course/lama/big-lama
+  checkpoint: best.ckpt
+dataset:
+  kind: default
+  img_suffix: .png
+  pad_out_to_modulo: 8
+device: cuda
+out_key: inpainted

@@ -1,0 +1,36 @@
+{
+  "build": "2_cp36m",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [
+    "pypy <0a0"
+  ],
+  "depends": [
+    "python 3.6.*"
+  ],
+  "extracted_package_dir": "/home/george/anaconda3/pkgs/python_abi-3.6-2_cp36m",
+  "features": "",
+  "files": [],
+  "fn": "python_abi-3.6-2_cp36m.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/home/george/anaconda3/pkgs/python_abi-3.6-2_cp36m",
+    "type": 1
+  },
+  "md5": "6f5b92d833a339da29ad8578c2a648ad",
+  "name": "python_abi",
+  "package_tarball_full_path": "/home/george/anaconda3/pkgs/python_abi-3.6-2_cp36m.tar.bz2",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "python_abi==3.6=2_cp36m",
+  "sha256": "0572137e715cfc699fc5a771ae81ae797b271a3fc4ca02fdcaff634fe2a03789",
+  "size": 4011,
+  "subdir": "linux-64",
+  "timestamp": 1624472037720,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/python_abi-3.6-2_cp36m.tar.bz2",
+  "version": "3.6"
+}

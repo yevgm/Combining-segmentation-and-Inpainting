@@ -1,0 +1,36 @@
+{
+  "build": "ha5ec8a7_17",
+  "build_number": 17,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgfortran5 9.3.0.*",
+    "__glibc >=2.17"
+  ],
+  "extracted_package_dir": "/home/george/anaconda3/pkgs/libgfortran-ng-9.3.0-ha5ec8a7_17",
+  "features": "",
+  "files": [],
+  "fn": "libgfortran-ng-9.3.0-ha5ec8a7_17.conda",
+  "legacy_bz2_md5": "7cf9711f0474ff216fe8deb9ebe061e1",
+  "legacy_bz2_size": 22258,
+  "license": "GPL-3.0-only WITH GCC-exception-3.1",
+  "link": {
+    "source": "/home/george/anaconda3/pkgs/libgfortran-ng-9.3.0-ha5ec8a7_17",
+    "type": 1
+  },
+  "md5": "1e6b98f15e9ff3a0a54b8256500cc4e1",
+  "name": "libgfortran-ng",
+  "package_tarball_full_path": "/home/george/anaconda3/pkgs/libgfortran-ng-9.3.0-ha5ec8a7_17.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "libgfortran-ng==9.3.0=ha5ec8a7_17",
+  "sha256": "d3f33865f55a3adbf61b74f2e8b38e37fd4e03752ef831ab8ed822992149aebe",
+  "size": 22431,
+  "subdir": "linux-64",
+  "timestamp": 1622663339018,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/libgfortran-ng-9.3.0-ha5ec8a7_17.conda",
+  "version": "9.3.0"
+}

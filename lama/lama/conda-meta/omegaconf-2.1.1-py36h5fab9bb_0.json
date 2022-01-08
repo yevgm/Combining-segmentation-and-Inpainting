@@ -1,0 +1,513 @@
+{
+  "build": "py36h5fab9bb_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "antlr-python-runtime",
+    "dataclasses",
+    "python >=3.6,<3.7.0a0",
+    "python_abi 3.6.* *_cp36m",
+    "pyyaml",
+    "typing_extensions"
+  ],
+  "extracted_package_dir": "/home/george/anaconda3/pkgs/omegaconf-2.1.1-py36h5fab9bb_0",
+  "features": "",
+  "files": [
+    "lib/python3.6/site-packages/omegaconf-2.1.1.dist-info/INSTALLER",
+    "lib/python3.6/site-packages/omegaconf-2.1.1.dist-info/LICENSE",
+    "lib/python3.6/site-packages/omegaconf-2.1.1.dist-info/METADATA",
+    "lib/python3.6/site-packages/omegaconf-2.1.1.dist-info/RECORD",
+    "lib/python3.6/site-packages/omegaconf-2.1.1.dist-info/REQUESTED",
+    "lib/python3.6/site-packages/omegaconf-2.1.1.dist-info/WHEEL",
+    "lib/python3.6/site-packages/omegaconf-2.1.1.dist-info/direct_url.json",
+    "lib/python3.6/site-packages/omegaconf-2.1.1.dist-info/top_level.txt",
+    "lib/python3.6/site-packages/omegaconf/__init__.py",
+    "lib/python3.6/site-packages/omegaconf/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/__pycache__/_impl.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/__pycache__/_utils.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/__pycache__/base.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/__pycache__/basecontainer.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/__pycache__/dictconfig.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/__pycache__/errors.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/__pycache__/grammar_parser.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/__pycache__/grammar_visitor.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/__pycache__/listconfig.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/__pycache__/nodes.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/__pycache__/omegaconf.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/__pycache__/version.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/_impl.py",
+    "lib/python3.6/site-packages/omegaconf/_utils.py",
+    "lib/python3.6/site-packages/omegaconf/base.py",
+    "lib/python3.6/site-packages/omegaconf/basecontainer.py",
+    "lib/python3.6/site-packages/omegaconf/dictconfig.py",
+    "lib/python3.6/site-packages/omegaconf/errors.py",
+    "lib/python3.6/site-packages/omegaconf/grammar/__init__.py",
+    "lib/python3.6/site-packages/omegaconf/grammar/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/grammar/gen/OmegaConfGrammarLexer.py",
+    "lib/python3.6/site-packages/omegaconf/grammar/gen/OmegaConfGrammarParser.py",
+    "lib/python3.6/site-packages/omegaconf/grammar/gen/OmegaConfGrammarParserListener.py",
+    "lib/python3.6/site-packages/omegaconf/grammar/gen/OmegaConfGrammarParserVisitor.py",
+    "lib/python3.6/site-packages/omegaconf/grammar/gen/__init__.py",
+    "lib/python3.6/site-packages/omegaconf/grammar/gen/__pycache__/OmegaConfGrammarLexer.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/grammar/gen/__pycache__/OmegaConfGrammarParser.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/grammar/gen/__pycache__/OmegaConfGrammarParserListener.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/grammar/gen/__pycache__/OmegaConfGrammarParserVisitor.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/grammar/gen/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/grammar_parser.py",
+    "lib/python3.6/site-packages/omegaconf/grammar_visitor.py",
+    "lib/python3.6/site-packages/omegaconf/listconfig.py",
+    "lib/python3.6/site-packages/omegaconf/nodes.py",
+    "lib/python3.6/site-packages/omegaconf/omegaconf.py",
+    "lib/python3.6/site-packages/omegaconf/py.typed",
+    "lib/python3.6/site-packages/omegaconf/resolvers/__init__.py",
+    "lib/python3.6/site-packages/omegaconf/resolvers/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/resolvers/oc/__init__.py",
+    "lib/python3.6/site-packages/omegaconf/resolvers/oc/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/resolvers/oc/__pycache__/dict.cpython-36.pyc",
+    "lib/python3.6/site-packages/omegaconf/resolvers/oc/dict.py",
+    "lib/python3.6/site-packages/omegaconf/version.py",
+    "lib/python3.6/site-packages/pydevd_plugins/__init__.py",
+    "lib/python3.6/site-packages/pydevd_plugins/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/pydevd_plugins/extensions/__init__.py",
+    "lib/python3.6/site-packages/pydevd_plugins/extensions/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/pydevd_plugins/extensions/__pycache__/pydevd_plugin_omegaconf.cpython-36.pyc",
+    "lib/python3.6/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py"
+  ],
+  "fn": "omegaconf-2.1.1-py36h5fab9bb_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/home/george/anaconda3/pkgs/omegaconf-2.1.1-py36h5fab9bb_0",
+    "type": 1
+  },
+  "md5": "1716bd77c348647852ad91d14a8591ce",
+  "name": "omegaconf",
+  "package_tarball_full_path": "/home/george/anaconda3/pkgs/omegaconf-2.1.1-py36h5fab9bb_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf-2.1.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf-2.1.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "b31375ed5d5cbe7ec2d0c4c14df8afa7a8e5501bbe25f70b6cbc461685f4b91a",
+        "sha256_in_prefix": "b31375ed5d5cbe7ec2d0c4c14df8afa7a8e5501bbe25f70b6cbc461685f4b91a",
+        "size_in_bytes": 1518
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf-2.1.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "4f7a16df0577db4cb99c10eb8ad886a3d37ebe75c81075581cafb62bd664fdf5",
+        "sha256_in_prefix": "4f7a16df0577db4cb99c10eb8ad886a3d37ebe75c81075581cafb62bd664fdf5",
+        "size_in_bytes": 3584
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf-2.1.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "4206ae236d2665082f357e1dcaf68abede364bc2de3ebcbe2e4cda89d7b9caf6",
+        "sha256_in_prefix": "4206ae236d2665082f357e1dcaf68abede364bc2de3ebcbe2e4cda89d7b9caf6",
+        "size_in_bytes": 4412
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf-2.1.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf-2.1.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "sha256_in_prefix": "7b0c04b9e8a8d42d977874ef4f5ee7f1d6542603afc82582b7459534b0a53fda",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf-2.1.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "3e1d8e03b6c5a17988ace50dab6f5336cc3eed6b5fa4ce66727ac9976fdaea5d",
+        "sha256_in_prefix": "3e1d8e03b6c5a17988ace50dab6f5336cc3eed6b5fa4ce66727ac9976fdaea5d",
+        "size_in_bytes": 105
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf-2.1.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "80aa39b2394c9cc2f9afdfa5d5e2d80534b5c59fb102bebb9a505280bf72bd20",
+        "sha256_in_prefix": "80aa39b2394c9cc2f9afdfa5d5e2d80534b5c59fb102bebb9a505280bf72bd20",
+        "size_in_bytes": 25
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "743d4a5e2fbd5dabed43eebc51d5d1a97b7ff6ca458043bd5a7acdf73eb833fc",
+        "sha256_in_prefix": "743d4a5e2fbd5dabed43eebc51d5d1a97b7ff6ca458043bd5a7acdf73eb833fc",
+        "size_in_bytes": 1080
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "501073c0b205a21e2a2c904b1e5221397da5dc94051f0052be5a3f8fb11fdebc",
+        "sha256_in_prefix": "501073c0b205a21e2a2c904b1e5221397da5dc94051f0052be5a3f8fb11fdebc",
+        "size_in_bytes": 1113
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/__pycache__/_impl.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "24f829f3c14a9ac651261a62a3fd8740378b85c7aef4582c5f41fd2491f4fb40",
+        "sha256_in_prefix": "24f829f3c14a9ac651261a62a3fd8740378b85c7aef4582c5f41fd2491f4fb40",
+        "size_in_bytes": 2179
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/__pycache__/_utils.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "0dd548bf3699d63f1324759f60f604592f037ccd2124ab6faee53f19065b9046",
+        "sha256_in_prefix": "0dd548bf3699d63f1324759f60f604592f037ccd2124ab6faee53f19065b9046",
+        "size_in_bytes": 23011
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/__pycache__/base.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "6735e108e5c3eb6078d2dcb2b53b14315cc52c7bbfd4f4bebb22fcd92343a6c0",
+        "sha256_in_prefix": "6735e108e5c3eb6078d2dcb2b53b14315cc52c7bbfd4f4bebb22fcd92343a6c0",
+        "size_in_bytes": 19377
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/__pycache__/basecontainer.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "b7749f530ebcaad473224c572c5fad0b531081720223a35ea01d05ff6af58994",
+        "sha256_in_prefix": "b7749f530ebcaad473224c572c5fad0b531081720223a35ea01d05ff6af58994",
+        "size_in_bytes": 17105
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/__pycache__/dictconfig.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "19fa491ec0ebf4f7805e7505311927b7deaaf8794e18bad875d87efac65a69e7",
+        "sha256_in_prefix": "19fa491ec0ebf4f7805e7505311927b7deaaf8794e18bad875d87efac65a69e7",
+        "size_in_bytes": 19031
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/__pycache__/errors.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "138504ada927f123f09cd2cf0c15abbe415adbb668f84f38c30c56993373c508",
+        "sha256_in_prefix": "138504ada927f123f09cd2cf0c15abbe415adbb668f84f38c30c56993373c508",
+        "size_in_bytes": 5436
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/__pycache__/grammar_parser.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "1fa64ff4bed007b495e16d2420ecc779821c095791ba11ac0f326f7bc3a45464",
+        "sha256_in_prefix": "1fa64ff4bed007b495e16d2420ecc779821c095791ba11ac0f326f7bc3a45464",
+        "size_in_bytes": 3354
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/__pycache__/grammar_visitor.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "4108edb12533968a85098b4d80c5dd54d05badcd359b08ca5ca52753d8e99bc2",
+        "sha256_in_prefix": "4108edb12533968a85098b4d80c5dd54d05badcd359b08ca5ca52753d8e99bc2",
+        "size_in_bytes": 10974
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/__pycache__/listconfig.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "566abc08f09d7b2cc6962204695408942cd99a4a1b4b02844f098c578f538945",
+        "sha256_in_prefix": "566abc08f09d7b2cc6962204695408942cd99a4a1b4b02844f098c578f538945",
+        "size_in_bytes": 17074
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/__pycache__/nodes.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "4fd1008b2011864e45afe764c1a24e906f69b93ab32ec1de11b16c3d83d2226d",
+        "sha256_in_prefix": "4fd1008b2011864e45afe764c1a24e906f69b93ab32ec1de11b16c3d83d2226d",
+        "size_in_bytes": 13776
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/__pycache__/omegaconf.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "f39c941448d11b7304ce6f9c8fe7b70282b0b49bee8565e485eb27fc4476500a",
+        "sha256_in_prefix": "f39c941448d11b7304ce6f9c8fe7b70282b0b49bee8565e485eb27fc4476500a",
+        "size_in_bytes": 28860
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/__pycache__/version.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "5f09c4a1978dc8c8d74651963db61caa983fd98a010dc53041125464b20ebc12",
+        "sha256_in_prefix": "5f09c4a1978dc8c8d74651963db61caa983fd98a010dc53041125464b20ebc12",
+        "size_in_bytes": 556
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/_impl.py",
+        "path_type": "hardlink",
+        "sha256": "fdf9a1e557a7d7a97258071cc179f70e59c7cfedcb79d8c84105c9732be7c08b",
+        "sha256_in_prefix": "fdf9a1e557a7d7a97258071cc179f70e59c7cfedcb79d8c84105c9732be7c08b",
+        "size_in_bytes": 2873
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/_utils.py",
+        "path_type": "hardlink",
+        "sha256": "9fa3730a51ce8cc440b34bd1c6f36b2cc05f1c1ac8be072aca8369a61f6fef21",
+        "sha256_in_prefix": "9fa3730a51ce8cc440b34bd1c6f36b2cc05f1c1ac8be072aca8369a61f6fef21",
+        "size_in_bytes": 29514
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/base.py",
+        "path_type": "hardlink",
+        "sha256": "4b849cde2e4b35f3fa4477a2df1de92089329efed168d57d8ca4d6d7d169a0bc",
+        "sha256_in_prefix": "4b849cde2e4b35f3fa4477a2df1de92089329efed168d57d8ca4d6d7d169a0bc",
+        "size_in_bytes": 23861
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/basecontainer.py",
+        "path_type": "hardlink",
+        "sha256": "bbbc7ff185af7b4b508e976964c5929fb25cc84149daa5f214002d3ee07dd6ad",
+        "sha256_in_prefix": "bbbc7ff185af7b4b508e976964c5929fb25cc84149daa5f214002d3ee07dd6ad",
+        "size_in_bytes": 27816
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/dictconfig.py",
+        "path_type": "hardlink",
+        "sha256": "b263ff2a504644c2911c267973841149d64924a0492f279760815f438e59387b",
+        "sha256_in_prefix": "b263ff2a504644c2911c267973841149d64924a0492f279760815f438e59387b",
+        "size_in_bytes": 27388
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/errors.py",
+        "path_type": "hardlink",
+        "sha256": "79cb5b5fc29dfb914224c4c1221ea3b21aaf0a70a25cc1467c540960621eade4",
+        "sha256_in_prefix": "79cb5b5fc29dfb914224c4c1221ea3b21aaf0a70a25cc1467c540960621eade4",
+        "size_in_bytes": 3595
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/grammar/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/grammar/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "e057d050cbdf4cd7e7669855dce123d33ca609dac7f2c87ff0039d781b11ae7e",
+        "sha256_in_prefix": "e057d050cbdf4cd7e7669855dce123d33ca609dac7f2c87ff0039d781b11ae7e",
+        "size_in_bytes": 140
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/grammar/gen/OmegaConfGrammarLexer.py",
+        "path_type": "hardlink",
+        "sha256": "e7e87c83ec5da0db2df2c489b1e9f80a18eba45c98672eab30d9baebf2d74cf4",
+        "sha256_in_prefix": "e7e87c83ec5da0db2df2c489b1e9f80a18eba45c98672eab30d9baebf2d74cf4",
+        "size_in_bytes": 21565
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/grammar/gen/OmegaConfGrammarParser.py",
+        "path_type": "hardlink",
+        "sha256": "c7358f53a7f32c5e99acff331106fec127c26ce6270a1fc32a993c4f08cd7eee",
+        "sha256_in_prefix": "c7358f53a7f32c5e99acff331106fec127c26ce6270a1fc32a993c4f08cd7eee",
+        "size_in_bytes": 62943
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/grammar/gen/OmegaConfGrammarParserListener.py",
+        "path_type": "hardlink",
+        "sha256": "0f0bfdbd887236b88360054646fc0f761dab58bd9c4f16980e1292d96e2fa3e7",
+        "sha256_in_prefix": "0f0bfdbd887236b88360054646fc0f761dab58bd9c4f16980e1292d96e2fa3e7",
+        "size_in_bytes": 5823
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/grammar/gen/OmegaConfGrammarParserVisitor.py",
+        "path_type": "hardlink",
+        "sha256": "6f1249a36572caf148f0e99dfc0a426ab96e2bcdf789b082c016971fbc7eb312",
+        "sha256_in_prefix": "6f1249a36572caf148f0e99dfc0a426ab96e2bcdf789b082c016971fbc7eb312",
+        "size_in_bytes": 3597
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/grammar/gen/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/grammar/gen/__pycache__/OmegaConfGrammarLexer.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "7f7ad565ef3f09baf841783671d1ccce6d3bf6f2fe934f4b8600917434a65c9b",
+        "sha256_in_prefix": "7f7ad565ef3f09baf841783671d1ccce6d3bf6f2fe934f4b8600917434a65c9b",
+        "size_in_bytes": 12518
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/grammar/gen/__pycache__/OmegaConfGrammarParser.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "c98f6e8c8310891ecec12abaabf2c1ba5642ed2814dd896df5f10d958029ddd4",
+        "sha256_in_prefix": "c98f6e8c8310891ecec12abaabf2c1ba5642ed2814dd896df5f10d958029ddd4",
+        "size_in_bytes": 52288
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/grammar/gen/__pycache__/OmegaConfGrammarParserListener.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "8c99f42cac517b4ef29f43c10aaffd17ee464b6f99577c34da0403068c34910b",
+        "sha256_in_prefix": "8c99f42cac517b4ef29f43c10aaffd17ee464b6f99577c34da0403068c34910b",
+        "size_in_bytes": 6132
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/grammar/gen/__pycache__/OmegaConfGrammarParserVisitor.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "9f74387666880679b0b253482dc19ce2168b6a8ffba849b0d5f371c5f24bc418",
+        "sha256_in_prefix": "9f74387666880679b0b253482dc19ce2168b6a8ffba849b0d5f371c5f24bc418",
+        "size_in_bytes": 3609
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/grammar/gen/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "585dbb207ff90b736b3c9d100d874bd09fb0296c86d1040de4c57fd886df639b",
+        "sha256_in_prefix": "585dbb207ff90b736b3c9d100d874bd09fb0296c86d1040de4c57fd886df639b",
+        "size_in_bytes": 144
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/grammar_parser.py",
+        "path_type": "hardlink",
+        "sha256": "a2386f8d027adf2a9435a49fcc3d66a02d3354004b6878fa48a6e2fc0d56e4ea",
+        "sha256_in_prefix": "a2386f8d027adf2a9435a49fcc3d66a02d3354004b6878fa48a6e2fc0d56e4ea",
+        "size_in_bytes": 5283
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/grammar_visitor.py",
+        "path_type": "hardlink",
+        "sha256": "2fa2cea261b6e0670f035f9a63334e98a2eea799188ab1d3bb2a7ce7b57b4fb0",
+        "sha256_in_prefix": "2fa2cea261b6e0670f035f9a63334e98a2eea799188ab1d3bb2a7ce7b57b4fb0",
+        "size_in_bytes": 16055
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/listconfig.py",
+        "path_type": "hardlink",
+        "sha256": "acfa158b7045a67ec388014136486490ec3c2e303dc7a1afe5133f5eef5a6a16",
+        "sha256_in_prefix": "acfa158b7045a67ec388014136486490ec3c2e303dc7a1afe5133f5eef5a6a16",
+        "size_in_bytes": 22228
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/nodes.py",
+        "path_type": "hardlink",
+        "sha256": "008b591463c367da6bc8c3c56b37a33811dbe7c2b543adcb24636ebf29f33b6f",
+        "sha256_in_prefix": "008b591463c367da6bc8c3c56b37a33811dbe7c2b543adcb24636ebf29f33b6f",
+        "size_in_bytes": 14112
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/omegaconf.py",
+        "path_type": "hardlink",
+        "sha256": "982b702618eaa83afb5d2d5053e9c799aea5f62486b0d26461049b82ba0bf036",
+        "sha256_in_prefix": "982b702618eaa83afb5d2d5053e9c799aea5f62486b0d26461049b82ba0bf036",
+        "size_in_bytes": 36528
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/resolvers/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6d014aaa542d8aa329b9ee5ba7770cd83d3a7db8d9c55f8704f69828bd176973",
+        "sha256_in_prefix": "6d014aaa542d8aa329b9ee5ba7770cd83d3a7db8d9c55f8704f69828bd176973",
+        "size_in_bytes": 676
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/resolvers/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "951c2438cefc6431b037dda1d66f5862ebb59648f9018deca08ace6f87e685d1",
+        "sha256_in_prefix": "951c2438cefc6431b037dda1d66f5862ebb59648f9018deca08ace6f87e685d1",
+        "size_in_bytes": 818
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/resolvers/oc/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "80b9e229aa2e0a6926d594d03b34b51798c5942330ede2fe69ee8f85a3313638",
+        "sha256_in_prefix": "80b9e229aa2e0a6926d594d03b34b51798c5942330ede2fe69ee8f85a3313638",
+        "size_in_bytes": 3548
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/resolvers/oc/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "54664381edcb5ac4b72d1167f85655724fcad6bd68ed1084b3cfaf6638cd9fc8",
+        "sha256_in_prefix": "54664381edcb5ac4b72d1167f85655724fcad6bd68ed1084b3cfaf6638cd9fc8",
+        "size_in_bytes": 3563
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/resolvers/oc/__pycache__/dict.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "e2ff0864d39ca8bb553954aac1fa6249461901c7625f0c08a17f28321359a8a1",
+        "sha256_in_prefix": "e2ff0864d39ca8bb553954aac1fa6249461901c7625f0c08a17f28321359a8a1",
+        "size_in_bytes": 1985
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/resolvers/oc/dict.py",
+        "path_type": "hardlink",
+        "sha256": "0ee7e6b49134faa7cc7b124fe5b4ff94d2d2bd7ed42b43d2742fe30df1b99164",
+        "sha256_in_prefix": "0ee7e6b49134faa7cc7b124fe5b4ff94d2d2bd7ed42b43d2742fe30df1b99164",
+        "size_in_bytes": 2194
+      },
+      {
+        "_path": "lib/python3.6/site-packages/omegaconf/version.py",
+        "path_type": "hardlink",
+        "sha256": "559527a0a052d489f7e6cccfb9054354b24af68a1241b34af0a15469b6fe289b",
+        "sha256_in_prefix": "559527a0a052d489f7e6cccfb9054354b24af68a1241b34af0a15469b6fe289b",
+        "size_in_bytes": 442
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pydevd_plugins/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9dbdc047d165644086490150f196065d86beefece40569d22dfc0c886ea4803a",
+        "sha256_in_prefix": "9dbdc047d165644086490150f196065d86beefece40569d22dfc0c886ea4803a",
+        "size_in_bytes": 196
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pydevd_plugins/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "e036b5ff2cba02e80979a4deba4c149b1f97dad86ac1681d3cf408206b6cba94",
+        "sha256_in_prefix": "e036b5ff2cba02e80979a4deba4c149b1f97dad86ac1681d3cf408206b6cba94",
+        "size_in_bytes": 308
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pydevd_plugins/extensions/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9dbdc047d165644086490150f196065d86beefece40569d22dfc0c886ea4803a",
+        "sha256_in_prefix": "9dbdc047d165644086490150f196065d86beefece40569d22dfc0c886ea4803a",
+        "size_in_bytes": 196
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pydevd_plugins/extensions/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "bf81e23a9cb21f749e07f470a6119f30053ae5ebab577549f6638e880809df2e",
+        "sha256_in_prefix": "bf81e23a9cb21f749e07f470a6119f30053ae5ebab577549f6638e880809df2e",
+        "size_in_bytes": 319
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pydevd_plugins/extensions/__pycache__/pydevd_plugin_omegaconf.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "f48f44722fb7aaf6624dabb284cae5f7d5fd685745af3cf2df12864dc6b92492",
+        "sha256_in_prefix": "f48f44722fb7aaf6624dabb284cae5f7d5fd685745af3cf2df12864dc6b92492",
+        "size_in_bytes": 4252
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py",
+        "path_type": "hardlink",
+        "sha256": "01cd520a788efb6d82b11b0c017845cb2a1548dd91f8c516b0eba39beeb4d409",
+        "sha256_in_prefix": "01cd520a788efb6d82b11b0c017845cb2a1548dd91f8c516b0eba39beeb4d409",
+        "size_in_bytes": 4251
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "omegaconf==2.1.1=py36h5fab9bb_0",
+  "sha256": "e294159d8c3d7f08fbae3a043555dbde98402e91b896149db451a2bd91291583",
+  "size": 203678,
+  "subdir": "linux-64",
+  "timestamp": 1629433522653,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/omegaconf-2.1.1-py36h5fab9bb_0.tar.bz2",
+  "version": "2.1.1"
+}

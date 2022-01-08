@@ -1,0 +1,11 @@
+indir: ./LaMa_test_images
+outdir: ./output
+model:
+  path: ./big-lama
+  checkpoint: best.ckpt
+dataset:
+  kind: default
+  img_suffix: .png
+  pad_out_to_modulo: 8
+device: cuda
+out_key: inpainted

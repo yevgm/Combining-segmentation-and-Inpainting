@@ -1,0 +1,94 @@
+{
+  "build": "py36h06a4308_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "extracted_package_dir": "/home/george/anaconda3/pkgs/async-timeout-3.0.1-py36h06a4308_0",
+  "features": "",
+  "files": [
+    "lib/python3.6/site-packages/async_timeout-3.0.1-py3.6.egg-info/PKG-INFO",
+    "lib/python3.6/site-packages/async_timeout-3.0.1-py3.6.egg-info/SOURCES.txt",
+    "lib/python3.6/site-packages/async_timeout-3.0.1-py3.6.egg-info/dependency_links.txt",
+    "lib/python3.6/site-packages/async_timeout-3.0.1-py3.6.egg-info/top_level.txt",
+    "lib/python3.6/site-packages/async_timeout/__init__.py",
+    "lib/python3.6/site-packages/async_timeout/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/async_timeout/py.typed"
+  ],
+  "fn": "async-timeout-3.0.1-py36h06a4308_0.conda",
+  "legacy_bz2_md5": "74e064c2a4b64212e4e1dc6540bb0b63",
+  "legacy_bz2_size": 13212,
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "link": {
+    "source": "/home/george/anaconda3/pkgs/async-timeout-3.0.1-py36h06a4308_0",
+    "type": 1
+  },
+  "md5": "803fb4468a65ffb5b7726f78b7b698aa",
+  "name": "async-timeout",
+  "package_tarball_full_path": "/home/george/anaconda3/pkgs/async-timeout-3.0.1-py36h06a4308_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.6/site-packages/async_timeout-3.0.1-py3.6.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "0f0a53563e2eeccd0b86acb34027702388cdbf1d2e3b102a1b7819a6d0ed645c",
+        "sha256_in_prefix": "0f0a53563e2eeccd0b86acb34027702388cdbf1d2e3b102a1b7819a6d0ed645c",
+        "size_in_bytes": 5176
+      },
+      {
+        "_path": "lib/python3.6/site-packages/async_timeout-3.0.1-py3.6.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "e188e9ef50261f3b79839e6cad886741e6f5c0be5890b9c309d10c8d272f881e",
+        "sha256_in_prefix": "e188e9ef50261f3b79839e6cad886741e6f5c0be5890b9c309d10c8d272f881e",
+        "size_in_bytes": 317
+      },
+      {
+        "_path": "lib/python3.6/site-packages/async_timeout-3.0.1-py3.6.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.6/site-packages/async_timeout-3.0.1-py3.6.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "f683387bb4f0abc883ffbfd0dcccf413a18f201eaf26f445a3e501c1442d0435",
+        "sha256_in_prefix": "f683387bb4f0abc883ffbfd0dcccf413a18f201eaf26f445a3e501c1442d0435",
+        "size_in_bytes": 14
+      },
+      {
+        "_path": "lib/python3.6/site-packages/async_timeout/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "986bd63a846a2ed49c114de49b3aad4d21fb110b07beef338601f13935c29fb7",
+        "sha256_in_prefix": "986bd63a846a2ed49c114de49b3aad4d21fb110b07beef338601f13935c29fb7",
+        "size_in_bytes": 3654
+      },
+      {
+        "_path": "lib/python3.6/site-packages/async_timeout/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "e97dda691451d586a74b722d94d3ae66b777ff4a54dbf5777a75d152044a9c08",
+        "sha256_in_prefix": "e97dda691451d586a74b722d94d3ae66b777ff4a54dbf5777a75d152044a9c08",
+        "size_in_bytes": 3415
+      },
+      {
+        "_path": "lib/python3.6/site-packages/async_timeout/py.typed",
+        "path_type": "hardlink",
+        "sha256": "f4b24fed0274a31618ac1b665ee162af331b4b70fdff74f3f9ddedc94b4da745",
+        "sha256_in_prefix": "f4b24fed0274a31618ac1b665ee162af331b4b70fdff74f3f9ddedc94b4da745",
+        "size_in_bytes": 11
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "async-timeout==3.0.1=py36h06a4308_0",
+  "sha256": "a5c2ef513159674c8039d49c3b3468b78c2c77ac18633e4432a5d46e3ff18b4f",
+  "size": 13684,
+  "subdir": "linux-64",
+  "timestamp": 1611675370971,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/async-timeout-3.0.1-py36h06a4308_0.conda",
+  "version": "3.0.1"
+}
