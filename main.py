@@ -118,7 +118,7 @@ if __name__ == '__main__':
         im, mask = segment(os.path.join(test_image_path,f'{image_name}'))
 
         # save
-        for i in [3, 7, 15, 17]:
+        for i in [15]:
             im.save(f'inputs/{image_name.split(".")[0]}_{i:03d}.png')
             # segment returns 21 masks, currently saving only [0] we can/need to save all 21
             cur_mask = np.asarray(np.asarray(mask) == i, dtype=np.uint8) * 255
