@@ -137,3 +137,4 @@ lama/big-lama/
 lama/big-lama.zip
 lama/lama-models.zip
 lama/lama-LaMa_test_images.zip
+!/lama/LaMa_test_images.zip
