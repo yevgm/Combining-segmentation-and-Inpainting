@@ -3,7 +3,7 @@
 # Environment setup
 
 Clone the repo:
-`git clone https://github.com/saic-mdal/lama.git`
+`git clone https://github.com/yevgm/Combining-segmentation-and-Inpainting`
 
 Conda
     
@@ -20,4 +20,13 @@ Conda
   pip install pytorch-lightning==1.2.9
   ```
   
-  # Train and Eval
+  # Usage
+  
+  ```
+  % Print avaliable classes to remove from an image
+  python ./main.py -a print_cls
+  
+  % Run the pipeline
+  -c to choose the class integer
+  python ./main.py -a inpaint -c 15 -i $(pwd)/test_images
+  ```
