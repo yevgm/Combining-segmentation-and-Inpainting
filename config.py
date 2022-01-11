@@ -15,8 +15,8 @@ def parse_global_args(parent, add_help=False):
 
     parser.add_argument('--repo-root', default=repo_root, type=str,
                         help='repository main dir')
-    parser.add_argument('--output-dir', default=output_folder, type=str,
-                        help='output dir')
+    parser.add_argument('-o', '--output-dir', default=output_folder, type=str,
+                        help='provide full dir for the output images')
 
     parser.add_argument('--seed', default=42, type=int,
                         help='random seed for everything')
@@ -40,14 +40,19 @@ def parse_args_lama(parent, add_help=False):
 
     parser.add_argument('--skip-seg', default=False, type=bool,
                         help='skip segmentation or not')
-    parser.add_argument('--test-image-path', default=test_images_folder, type=str,
-                        help='test images directory')
+    parser.add_argument('-i', '--image-input', default=test_images_folder, type=str,
+                        help='provide full dir location for images to process')
+    parser.add_argument('-c', '--remove-class', default=0, type=int,
+                        help="class to remove from images. '-a print_cls' to print all classes")
+    parser.add_argument('-a', "--action",
+                        help="choose which action to take: 'inpaint' to process images\n 'print_cls' to print classes",
+                        type=str)
     parser.add_argument('--input-dir', default=inputs_folder, type=str,
-                        help='input images directory')
+                        help='provide full dir location for segmentation output and Lama input')
     parser.add_argument('--lama-model-path', default=lama_model_path, type=str,
-                        help='lama model path')
+                        help='provide lama model path')
     parser.add_argument('--lama-model-name', default='best.ckpt', type=str,
-                        help='lama specific model name')
+                        help='provide lama specific model name')
     parser.add_argument('--dataset-kind', default='default', type=str,
                         help='')
     parser.add_argument('--dataset-img_suffix', default='.png', type=str,
@@ -58,3 +63,31 @@ def parse_args_lama(parent, add_help=False):
                         help='')
 
     return parser
+
+
+def print_cls():
+    print('''
+Classes available for segmentation task:
+    0: background
+    1: aeroplane
+    2: bicycle
+    3: bird
+    4: boat
+    5: bottle
+    6: bus
+    7: car
+    8: cat
+    9: chair
+    10: cow
+    11: dining table
+    12: dog
+    13: horse
+    14: motorbike
+    15: person
+    16: potted plant
+    17: sheep
+    18: sofa
+    19: train
+    20: tv monitor 
+    
+    Please choose an integer.''')

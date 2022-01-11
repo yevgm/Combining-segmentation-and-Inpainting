@@ -1,3 +1,6 @@
+import yaml
+yaml.warnings({'YAMLLoadWarning': False})  # disable yaml warnings
+
 import os
 import numpy as np
 import torch
@@ -6,19 +9,13 @@ from PIL import Image, ImageFilter
 from omegaconf import OmegaConf
 from lama.bin import predict
 from src.mask_generator.mask_generator import segment
-from config import parse_args_lama
-
-# import segmentation network
-model = torch.hub.load('pytorch/vision:v0.10.0', 'deeplabv3_resnet50', pretrained=True)
-# or any of these variants
-# model = torch.hub.load('pytorch/vision:v0.10.0', 'deeplabv3_resnet101', pretrained=True)
-# model = torch.hub.load('pytorch/vision:v0.10.0', 'deeplabv3_mobilenet_v3_large', pretrained=True, force_reload=True)
+from config import parse_args_lama, print_cls
 
 
-def main(args):
+def main(args, model):
     # define the dir with test images
-    test_image_path = args.test_image_path
-
+    test_image_path = args.image_input
+    class_to_inpaint = args.remove_class
     # load a list of image names
     image_names = [f for f in os.listdir(test_image_path) if f.endswith('.png') or f.endswith('.jpg') or f.endswith('.jpeg')]
 
@@ -34,8 +31,9 @@ def main(args):
             im, mask = segment(filename, model)
 
             # save
-            for i in [15, 3]:
+            for i in [class_to_inpaint]:
                 # segment returns 21 masks, currently saving only [0] we can/need to save all 21
+                # we can also combine the masks if user asks to remove a list of classes - like cars + people
                 cur_mask = np.asarray(np.asarray(mask) == i, dtype=np.uint8) * 255
 
                 # save mask and image to inputs only if the mask isn't empty
@@ -69,28 +67,14 @@ def lama_main(args):
     predict_config_om = OmegaConf.create(predict_config)
     predict.main(predict_config_om)
 
-# Segmentation labels:
-# 0: background
-# 1: aeroplane
-# 2: bicycle
-# 3: bird
-# 4: boat
-# 5: bottle
-# 6: bus
-# 7: car
-# 8: cat
-# 9: chair
-# 10: cow
-# 11: dining table
-# 12: dog
-# 13: horse
-# 14: motorbike
-# 15: person
-# 16: potted plant
-# 17: sheep
-# 18: sofa
-# 19: train
-# 20: tv monitor
+
+def choose_seg_model():
+    # import segmentation network
+    model = torch.hub.load('pytorch/vision:v0.10.0', 'deeplabv3_resnet50', pretrained=True)
+    # or any of these variants
+    # model = torch.hub.load('pytorch/vision:v0.10.0', 'deeplabv3_resnet101', pretrained=True)
+    # model = torch.hub.load('pytorch/vision:v0.10.0', 'deeplabv3_mobilenet_v3_large', pretrained=True, force_reload=True)
+    return model
 
 
 if __name__ == '__main__':
@@ -98,4 +82,8 @@ if __name__ == '__main__':
     parser = parse_args_lama(parser)
     args = parser.parse_args()
 
-    main(args)
+    if args.action == 'inpaint':
+        model = choose_seg_model()
+        main(args, model)
+    else:
+        print_cls()
