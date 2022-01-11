@@ -28,5 +28,6 @@ Conda
   
   % Run the pipeline
   -c to choose the class integer
+  -i to provide full path to the images
   python ./main.py -a inpaint -c 15 -i $(pwd)/test_images
   ```
