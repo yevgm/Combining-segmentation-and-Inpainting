@@ -5,6 +5,7 @@ import os
 import numpy as np
 import torch
 import argparse
+import tqdm
 from PIL import Image, ImageFilter
 from omegaconf import OmegaConf
 from lama.bin import predict
@@ -24,7 +25,7 @@ def main(args, model):
     # 2. Save image and mask in input folder
     # 3. Run inpainting (LAMA)
     if not args.skip_seg:
-        for image_name in image_names:
+        for image_name in tqdm.tqdm(image_names, desc="Semantic segmentation in progress"):
 
             # segment
             filename = os.path.join(test_image_path, f'{image_name}')
@@ -42,6 +43,7 @@ def main(args, model):
                     im.save(input_dir + f'/{image_name.split(".")[0]}_{i:03d}.png')
                     cur_mask = Image.fromarray(cur_mask).filter(ImageFilter.MaxFilter(31))
                     cur_mask.save(input_dir + f'/{image_name.split(".")[0]}_{i:03d}_mask.png')
+
 
     # run LAMA
     lama_main(args)
