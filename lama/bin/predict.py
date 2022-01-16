@@ -36,7 +36,6 @@ LOGGER = logging.getLogger(__name__)
 
 
 @hydra.main(config_path='../configs/prediction', config_name='default.yaml')
-
 def main(predict_config: OmegaConf):
     print(OmegaConf.to_yaml(predict_config))
     try:

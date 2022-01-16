@@ -143,3 +143,8 @@ inputs/**
 !/output/
 !/pingpong/
 output/**
+!/lama/lama-fourier/
+!/inputs_pingpong/
+!/vid.mp4
+!/src/video_seg/logs/
+!/src/video_seg/results/
