@@ -40,18 +40,22 @@ The following links will download the data folders:
 
 ## Running the Code
 1. To run the inpainting pipeline run command 2
- * -c to choose the class integer. CHOSEN_CLASS can be chosen via command 1
- * -i to provide full path to the images
- * ./test_images is the path of model input
+     * -c to choose the class integer. CHOSEN_CLASS can be chosen via command 1
+     * -i to provide full path to the images
+     * ./test_images is the path of model input
+     * --lama-model-path is the lama-fourier pretrained model path
+     * --lama-model-name is the filename of the model
 ### Code
   ```
   % 1. Print avaliable classes to remove from an image
   python ./main.py -a print_cls
-  
-  % 2. Run the inpainting pipeline
-
-  python ./main.py -a inpaint -c CHOSEN_CLASS -i $(pwd)/test_images
   ```
+### Code
+  ```
+  % 2. Run the inpainting pipeline
+  python ./main.py -a inpaint -c CHOSEN_CLASS -i $(pwd)/test_images --lama-model-path $(pwd)/lama-fourier --lama-model-name best.ckpt
+  ```
+  
 After running the inpainting command (2), two directories will be created:
 * input - which will include the original images alongside their semantic segmentation mask
 * output - which will include the inpainted images
