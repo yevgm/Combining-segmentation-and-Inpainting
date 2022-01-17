@@ -5,8 +5,10 @@ import os
 import numpy as np
 import torch
 import argparse
-import tqdm
-from PIL import Image, ImageFilter
+from tqdm import tqdm
+from PIL import ImageFilter
+import PIL.Image as Image
+
 from omegaconf import OmegaConf
 from lama.bin import predict
 from src.mask_generator.mask_generator import segment
@@ -28,7 +30,7 @@ def main(args, model):
     # 2. Save image and mask in input folder
     # 3. Run inpainting (LAMA)
     if not args.skip_seg:
-        for image_name in tqdm.tqdm(image_names, desc="Semantic segmentation in progress"):
+        for image_name in tqdm(image_names, desc="Semantic segmentation in progress"):
 
             # segment
             filename = os.path.join(test_image_path, f'{image_name}')
@@ -45,6 +47,7 @@ def main(args, model):
                     input_dir = args.input_dir
                     im.save(input_dir + f'/{image_name.split(".")[0]}_{i:03d}.png')
                     cur_mask = Image.fromarray(cur_mask).filter(ImageFilter.MaxFilter(31))
+                    # cur_mask = cur_mask.filter(ImageFilter.GaussianBlur(7))
                     cur_mask.save(input_dir + f'/{image_name.split(".")[0]}_{i:03d}_mask.png')
 
 
@@ -77,7 +80,7 @@ def choose_seg_model():
     # import segmentation network
     model = torch.hub.load('pytorch/vision:v0.10.0', 'deeplabv3_resnet50', pretrained=True)
     # or any of these variants
-    # model = torch.hub.load('pytorch/vision:v0.10.0', 'deeplabv3_resnet101', pretrained=True)
+    # model = torch.hub.load('pytorch/vision:v0.10.0', 'deeplabv3_resnet101', pretrained=True, force_reload=True)
     # model = torch.hub.load('pytorch/vision:v0.10.0', 'deeplabv3_mobilenet_v3_large', pretrained=True, force_reload=True)
     return model
 
