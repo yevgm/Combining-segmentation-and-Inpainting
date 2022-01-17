@@ -4,7 +4,7 @@ A project in Image Segmentation and Inpainting.
 Extension of [LaMa Paper](https://arxiv.org/pdf/2109.07161.pdf), [LaMa Github](https://github.com/saic-mdal/lama).
 
 
-In this project we aim to augment the paper [LaMa](https://arxiv.org/pdf/2109.07161.pdf). In the original paper the input consists of a pair of high resolution image and a binary mask. We propose to auto-generate the input masks using a segmentation neural network and thus making the task fully automated.
+In this project we aim to augment the [LaMa](https://arxiv.org/pdf/2109.07161.pdf) project. In the original paper the input consists of a pair of high resolution image and a binary mask. We propose to auto-generate the input masks using a segmentation neural network and thus making the task fully automated.
 
 Written by [George Pisha](https://github.com/geopi1) and [Men Yevgeniy](https://github.com/yevgm).
 
@@ -17,7 +17,6 @@ git clone https://github.com/yevgm/Combining-segmentation-and-Inpainting
 ```
 
 ### Test Dataset
-Download the Test Dataset
 
 The following links will download the data folders:
 * [Test Dataset](https://technionmail-my.sharepoint.com/:f:/g/personal/yevgenimen_campus_technion_ac_il/EgcLsH8iZFZMpYWK3NuHdboB0ozBGOxYRrjRbgaljAfeng?e=E9clb7) - Contains test dataset for three classes (dog, bus , person) and their manual segmentaton masks, automatic segmentation masks and the output
@@ -67,6 +66,7 @@ After running the inpainting command (2), two directories will be created:
 ### Numerical Evaluation
 To calculate the numerical results on the whole dataset run:
 1. Download the test images from the link above
+2. Run the following command
 ```bash
 python src/segmentation_comparison.py -t ../../test_data_comparison
 ```
@@ -94,5 +94,5 @@ Example 3:
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## References
-1. LaMa : "Resolution-robust Large Mask Inpainting with Fourier Convolutions" - [arxiv](https://arxiv.org/pdf/2109.07161.pdf) 
-2. LPIPS : "The Unreasonable Effectiveness of Deep Features as a Perceptual Metric" - [arxiv](https://arxiv.org/pdf/1801.03924.pdf)
+1. LaMa : [Resolution-robust Large Mask Inpainting with Fourier Convolutions](https://arxiv.org/pdf/2109.07161.pdf) 
+2. LPIPS : [The Unreasonable Effectiveness of Deep Features as a Perceptual Metric](https://arxiv.org/pdf/1801.03924.pdf)
