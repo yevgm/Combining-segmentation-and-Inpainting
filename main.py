@@ -20,6 +20,9 @@ def main(args, model):
     # load a list of image names
     image_names = [f for f in os.listdir(test_image_path) if f.endswith('.png') or f.endswith('.jpg') or f.endswith('.jpeg')]
 
+    # create inputs and output
+    make_dirs(args)
+
     # iterate over all the images:
     # 1. Segment
     # 2. Save image and mask in input folder
@@ -77,6 +80,19 @@ def choose_seg_model():
     # model = torch.hub.load('pytorch/vision:v0.10.0', 'deeplabv3_resnet101', pretrained=True)
     # model = torch.hub.load('pytorch/vision:v0.10.0', 'deeplabv3_mobilenet_v3_large', pretrained=True, force_reload=True)
     return model
+
+
+def make_dirs(args):
+    try:
+        if os.path.isdir(args.input_dir):
+            os.mkdir(args.input_dir)
+
+        if os.path.isdir(args.output_dir):
+            os.mkdir(args.output_dir)
+
+    except OSError:
+        print("Can't create directory")
+        exit(1)
 
 
 if __name__ == '__main__':

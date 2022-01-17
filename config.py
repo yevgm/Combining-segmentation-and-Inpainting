@@ -35,7 +35,7 @@ def parse_args_lama(parent, add_help=False):
 
     repo_root = os.path.dirname(os.path.realpath(__file__))
     lama_model_path = os.path.abspath(os.path.join(repo_root, '..', 'lama-fourier'))  # lama-fourier, big-lama
-    inputs_folder = os.path.join(repo_root, 'inputs')
+    input_folder = os.path.join(repo_root, 'input')
     test_images_folder = os.path.join(repo_root, 'test_images_comp')
 
     parser.add_argument('--skip-seg', default=False, type=bool,
@@ -47,7 +47,7 @@ def parse_args_lama(parent, add_help=False):
     parser.add_argument('-a', "--action", default='inpaint',
                         help="choose which action to take: 'inpaint' to process images\n 'print_cls' to print classes",
                         type=str)
-    parser.add_argument('--input-dir', default=inputs_folder, type=str,
+    parser.add_argument('--input-dir', default=input_folder, type=str,
                         help='provide full dir location for segmentation output and Lama input')
     parser.add_argument('--lama-model-path', default=lama_model_path, type=str,
                         help='provide lama model path')
