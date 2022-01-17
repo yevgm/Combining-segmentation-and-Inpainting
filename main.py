@@ -87,10 +87,10 @@ def choose_seg_model():
 
 def make_dirs(args):
     try:
-        if os.path.isdir(args.input_dir):
+        if not os.path.isdir(args.input_dir):
             os.mkdir(args.input_dir)
 
-        if os.path.isdir(args.output_dir):
+        if not os.path.isdir(args.output_dir):
             os.mkdir(args.output_dir)
 
     except OSError:
