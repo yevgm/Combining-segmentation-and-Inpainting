@@ -148,3 +148,5 @@ output/**
 !/vid.mp4
 !/src/video_seg/logs/
 !/src/video_seg/results/
+!/cows/
+!/mask/

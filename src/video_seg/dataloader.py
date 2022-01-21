@@ -21,6 +21,8 @@ class DataHandler(data.Dataset):
         self.crop_size = config['Model']['crop_size']
         self.num_frames = config['Model']['num_frames']
         self.work_with_crop = config['Model']['work_with_crop']
+        self.video_mean = 0
+        self.video_var = 1
 
         # check if data dir exists
         try:
@@ -65,7 +67,9 @@ class DataHandler(data.Dataset):
         for ind, im_path in enumerate(file_list):
             im_tensor[:, :, ind * 3:ind * 3 + 3] = plt.imread(os.path.join(self.data_path, im_path))
 
-        return np.asarray(im_tensor)
+        # self.video_mean = np.mean(im_tensor)
+        # self.video_var = np.var(im_tensor)
+        return np.asarray((im_tensor-self.video_mean)/self.video_var)
 
     def get_random_crop(self):
         """
@@ -77,5 +81,5 @@ class DataHandler(data.Dataset):
         h = np.random.randint(0, self.data.shape[1] - self.crop_size, 1)[0]
 
         crop = self.data[w:w + self.crop_size, h:h + self.crop_size, 3 * frame:3 * (frame + self.num_frames)]
-        noisy_crop = crop + np.random.normal(0, 1, crop.shape) / 1000
+        noisy_crop = crop + np.random.normal(0, 1, crop.shape) / 20
         return np.transpose(crop, [2, 0, 1]).astype(np.float32), np.transpose(noisy_crop, [2, 0, 1]).astype(np.float32)
