@@ -34,20 +34,20 @@ def parse_args_lama(parent, add_help=False):
     parser = parse_global_args(parser)
 
     repo_root = os.path.dirname(os.path.realpath(__file__))
-    lama_model_path = os.path.abspath(os.path.join(repo_root, 'lama', 'lama-fourier'))
-    inputs_folder = os.path.join(repo_root, 'inputs')
-    test_images_folder = os.path.join(repo_root, 'cows')
+    lama_model_path = os.path.abspath(os.path.join(repo_root, '..', 'lama-fourier'))  # lama-fourier, big-lama
+    input_folder = os.path.join(repo_root, 'input')
+    test_images_folder = os.path.join(repo_root, 'test_images_comp')
 
     parser.add_argument('--skip-seg', default=False, type=bool,
                         help='skip segmentation or not')
     parser.add_argument('-i', '--image-input', default=test_images_folder, type=str,
                         help='provide full dir location for images to process')
-    parser.add_argument('-c', '--remove-class', default=10, type=int,
+    parser.add_argument('-c', '--remove-class', default=15, type=int,
                         help="class to remove from images. '-a print_cls' to print all classes")
     parser.add_argument('-a', "--action", default='inpaint',
                         help="choose which action to take: 'inpaint' to process images\n 'print_cls' to print classes",
                         type=str)
-    parser.add_argument('--input-dir', default=inputs_folder, type=str,
+    parser.add_argument('--input-dir', default=input_folder, type=str,
                         help='provide full dir location for segmentation output and Lama input')
     parser.add_argument('--lama-model-path', default=lama_model_path, type=str,
                         help='provide lama model path')
