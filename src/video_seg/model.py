@@ -27,6 +27,7 @@ class VideoSeg:
         self.loss_fn = self.define_loss()
         self.writer = SummaryWriter(os.path.join(config['logs_dir'], 'logs_dir'))
         self.scheduler = self.define_lr_sched()
+        self.last_saved_model = []
         print('-net built-')
 
     def build_network(self):
@@ -158,7 +159,8 @@ class VideoSeg:
             result = self.forward(torch.from_numpy(np_tensor[np.newaxis, i:i + num_frames * 3, :, :]).to(self.device))
             result = np.transpose(np.squeeze(result.detach().cpu().numpy()), [1, 2, 0])
             for im in range(0, result.shape[-1], 3):
-                plt.imsave(os.path.join(self.config['working_dir'], 'test', f'{i//3+im//3:05d}.png'), np.clip(result[:, :, im:im + 3], 0, 1))
+                image = np.clip(result[:, :, im:im + 3], 0, 1)
+                plt.imsave(os.path.join(self.config['working_dir'], 'test', f'{i//3+im//3:05d}.png'), image)
         return
 
     def save_model(self, epoch=None, scale=None, overwrite=False):
@@ -177,6 +179,7 @@ class VideoSeg:
                     'opt': self.optimizer.state_dict()},
                    # 'lr_sched': self.scheduler.state_dict()},
                    os.path.join(self.config['working_dir'], filename))
+        self.last_saved_model = os.path.join(self.config['working_dir'], filename)
 
     def load_model(self, filename):
         checkpoint = torch.load(filename)

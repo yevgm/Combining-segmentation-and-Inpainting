@@ -36,7 +36,7 @@ def parse_args_lama(parent, add_help=False):
     repo_root = os.path.dirname(os.path.realpath(__file__))
     lama_model_path = os.path.abspath(os.path.join(repo_root, '..', 'lama-fourier'))  # lama-fourier, big-lama
     input_folder = os.path.join(repo_root, 'input')
-    test_images_folder = os.path.join(repo_root, 'test_images_comp')
+    test_images_folder = os.path.join(repo_root, 'pingpong')
 
     parser.add_argument('--skip-seg', default=False, type=bool,
                         help='skip segmentation or not')
@@ -61,6 +61,30 @@ def parse_args_lama(parent, add_help=False):
                         help='')
     parser.add_argument('--out-key', default='inpainted', type=str,
                         help='')
+
+    return parser
+
+
+def parse_args_video(parent, add_help=False):
+    """
+        Parse commandline arguments.
+        """
+    parser = argparse.ArgumentParser(parents=[parent], add_help=add_help)
+    parser = parse_global_args(parser)
+
+    repo_root = os.path.dirname(os.path.realpath(__file__))
+    video_config_path = os.path.join(repo_root, 'src', 'video_seg', 'video_config.yml')
+    logs_path = os.path.join(repo_root, 'src', 'video_seg', 'logs')
+    results_path = os.path.join(repo_root, 'src', 'video_seg', 'results')
+
+    parser.add_argument('--video-config', default=video_config_path, type=str,
+                        help='video config path')
+    parser.add_argument('--logs', default=logs_path, type=str,
+                        help='logs path')
+    parser.add_argument('--results', default=results_path, type=str,
+                        help='video segmentation cleanup results')
+    parser.add_argument('--model-path', default='', type=str,
+                        help='video segmentation cleanup pretrained model path')
 
     return parser
 

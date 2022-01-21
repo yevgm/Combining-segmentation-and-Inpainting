@@ -24,8 +24,8 @@ class DataHandler(data.Dataset):
 
         # check if data dir exists
         try:
-            assert os.path.isdir(config['data_path']['path'])
-            self.data_path = config['data_path']['path']
+            assert os.path.isdir(config['data_path'])
+            self.data_path = config['data_path']
         except AssertionError as error:
             print(error)
             print(bcolors.FAIL + 'ERROR:\nChosen Data folder does not exist. Please go to config file and update.')

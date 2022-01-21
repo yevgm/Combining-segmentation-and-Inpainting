@@ -14,7 +14,3 @@ Model:
         step_size: 1
         milestones: [150, 400, 450]
         gamma: 0.1
-data_path:
-  path: '/home/george/PycharmProjects/Combining-segmentation-and-Inpainting/output'
-logs_dir: './logs'
-working_dir: './results'
