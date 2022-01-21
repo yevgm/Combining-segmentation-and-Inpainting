@@ -4,7 +4,7 @@ Model:
   work_with_crop: True
   batch_size: 4
   epochs: 1000
-  save_every: 200
+  save_every: 100
   optimizer:
     name: Adam
     lr: 1e-3
@@ -15,6 +15,6 @@ Model:
         milestones: [150, 400, 450]
         gamma: 0.1
 data_path:
-  path: '/home/george/PycharmProjects/Combining-segmentation-and-Inpainting/output'
+  path: '/home/george/PycharmProjects/Combining-segmentation-and-Inpainting/results/processed_pingpong'
 logs_dir: './logs'
 working_dir: './results'

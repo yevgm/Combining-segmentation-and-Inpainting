@@ -121,19 +121,19 @@ class VideoSeg:
 
         net = nn.Sequential(
             # nn.BatchNorm2d(self.channels_in),
-            nn.Conv2d(in_channels=self.channels_in, out_channels=64, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
+            nn.Conv2d(in_channels=self.channels_in, out_channels=self.channels_in*2, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
             nn.ReLU(),
-            nn.Conv2d(in_channels=64, out_channels=128, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
+            nn.Conv2d(in_channels=self.channels_in*2, out_channels=self.channels_in*4, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
             nn.ReLU(),
-            nn.Conv2d(in_channels=128, out_channels=128, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
+            nn.Conv2d(in_channels=self.channels_in*4, out_channels=self.channels_in*4, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
             nn.ReLU(),
-            nn.Conv2d(in_channels=128, out_channels=64, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
+            nn.Conv2d(in_channels=self.channels_in*4, out_channels=self.channels_in*4, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
             nn.ReLU(),
-            nn.Conv2d(in_channels=64, out_channels=64, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
+            nn.Conv2d(in_channels=self.channels_in*4, out_channels=self.channels_in*2, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
             nn.ReLU(),
-            nn.Conv2d(in_channels=64, out_channels=32, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
+            nn.Conv2d(in_channels=self.channels_in*2, out_channels=self.channels_in, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
             nn.ReLU(),
-            nn.Conv2d(in_channels=32, out_channels=self.channels_in, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate')
+            nn.Conv2d(in_channels=self.channels_in, out_channels=self.channels_in, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate')
         ).to(self.device)
         net.apply(init_weights)
         return net
@@ -145,6 +145,12 @@ class VideoSeg:
         :return: loss function handle
         """
         return torch.nn.L1Loss(reduction='mean')
+
+    def my_loss(self, prediction, target):
+        loss = 0
+        for i in range(0,self.channels_in-6,3):
+            loss += torch.sum(torch.abs(torch.abs(prediction[:,3*i:3*(i+1),...] - prediction[:,3*(i+1):3*(i+2),...]) - torch.abs(target[:,3*i:3*(i+1),...] - target[:,3*(i+1):3*(i+2),...])))/torch.numel(target)
+        return loss
 
     def define_opt(self):
         """
@@ -209,7 +215,8 @@ class VideoSeg:
                 x_prediction = self.forward(noisy_crop.to(self.device))
                 loss1 = torch.nn.L1Loss(reduction='mean')
                 # loss2 = PerceptualLoss()
-                loss = loss1(x_prediction.to(self.device), crop.to(self.device)) #+ loss2(x_prediction.to(self.device), crop.to(self.device))
+                # loss2 = self.my_loss()
+                loss = loss1(x_prediction.to(self.device), crop.to(self.device)) + self.my_loss(x_prediction.to(self.device), crop.to(self.device))
                 loss.backward()
                 it += 1
             print(f'epoch:{e}, loss:{loss.item():.2f}, Time: {(time.time() - t):.2f}, lr={self.optimizer.param_groups[0]["lr"]}')

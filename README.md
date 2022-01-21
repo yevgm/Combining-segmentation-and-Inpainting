@@ -45,12 +45,12 @@ The following links will download the data folders:
      * ./test_images is the path of model input
      * --lama-model-path is the lama-fourier pretrained model path
      * --lama-model-name is the filename of the model
-### Code
+### Print Classes to Select
   ```
   % 1. Print avaliable classes to remove from an image
   python ./main.py -a print_cls
   ```
-### Code
+### Run Auto-Inpainting Code
   ```
   % 2. Run the inpainting pipeline
   python ./main.py -a inpaint -c CHOSEN_CLASS -i $(pwd)/test_images --lama-model-path $(pwd)/lama-fourier --lama-model-name best.ckpt
@@ -85,7 +85,26 @@ Example 1:
 Example 2:  
 ![Ours](./results/Picture2.png)  
 Example 3:  
-![Default](./results/Picture3.png)  
+![Default](./results/Picture3.png)
+
+## Extending to Video
+We also extend [LaMa](https://github.com/saic-mdal/lama) to video, by building a pipeline to feed videos.
+Additionally, to improve temporal consistency we also add an optional training step.
+This step is using internal learning and the Deep Image Prior concept to create video temporal consistency.
+```bash
+python ./main.py -a inpaint -c CHOSEN_CLASS -i $(pwd)/test_images --lama-model-path $(pwd)/lama-fourier --lama-model-name best.ckpt
+```
+
+Then run
+```bash
+python ./src/video_seg/train.py -i ./video_imgs 
+```
+
+### Video Results - Original
+![LaMa](./results/input_vid.mp4)
+### Video Results - Post Processed
+![Ours](./results/processed_vid.mp4)
+
 
 ## License
 
