@@ -101,9 +101,9 @@ python ./src/video_seg/train.py -i ./video_imgs
 ```
 
 ### Video Results - Original
-![LaMa](./results/input_vid.mp4)
+![LaMa](./results/input_vid.gif)
 ### Video Results - Post Processed
-![Ours](./results/processed_vid.mp4)
+![Ours](./results/processed_vid.git)
 
 
 ## License
