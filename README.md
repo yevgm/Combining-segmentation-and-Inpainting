@@ -101,11 +101,11 @@ python ./src/video_seg/train.py -i ./video_imgs
 ```
 
 ### Video Results - Original
-![LaMa](./results/input_vid.gif)
+![Original](./results/input_vid.gif)
+### Video Results - LaMa
+![LaMa](./results/processed_vid.gif)
 ### Video Results - Post Processed
-![Ours](./results/processed_vid.gif)
-
-
+![Ours](./results/EVAL.gif)
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
