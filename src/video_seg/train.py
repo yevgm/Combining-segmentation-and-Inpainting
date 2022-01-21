@@ -11,50 +11,87 @@
 5. Save model
 """
 
-import matplotlib.pyplot as plt
 import torch
 from torch.utils import data
-import model
+import src.video_seg.model as model
 import yaml
-import os
-import dataloader
+import argparse
+from config import parse_args_video
+import src.video_seg.dataloader as dataloader
 
-# ========================================================================= #
-"""
-Initialize base parameters
-"""
 
-with open(os.path.join(os.getcwd(),'config.yml'), "r") as stream:
-    try:
-        config = yaml.safe_load(stream)
-    except yaml.YAMLError as exc:
-        print(exc)
+def init_config(args):
+    """
+    Initialize base parameters
+    """
+    with open(args.video_config, "r") as stream:
+        try:
+            config = yaml.safe_load(stream)
+        except yaml.YAMLError as exc:
+            print(exc)
 
-# get available device - if GPU will auto detect and use, otherwise will use CPU
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-print('Your current Device is: ', torch.cuda.get_device_name(0))
+    # Add to config some additional args
+    config['logs_dir'] = args.logs
+    config['working_dir'] = args.results
+    config['data_path'] = args.output_dir
 
-# define the dataset parameters for the torch loader
-params = {'batch_size': config['Model']['batch_size'],
-          'shuffle': True,
-          'num_workers': 0}
-# ========================================================================= #
+    return config
 
-# build the network object
-net = model.VideoSeg(config, device)
 
-# load the data
-dataset = dataloader.DataHandler(config)
+def clean_video_train(args):
 
-# instantiate a Pytorch dataloader object
-data_generator = data.DataLoader(dataset, **params)
+    # get available device - if GPU will auto detect and use, otherwise will use CPU
+    device = torch.device(args.device)
+    config = init_config(args)
+    # define the dataset parameters for the torch loader
+    params = {'batch_size': config['Model']['batch_size'],
+              'shuffle': True,
+              'num_workers': 0}
 
-# call the training scheme
-net.train(data_generator)
+    # build the network object
+    net = model.VideoSeg(config, device)
 
-net.eval(dataset.data)
+    # load the data
+    dataset = dataloader.DataHandler(config)
 
-# empty GPU ram
-torch.cuda.empty_cache()
-# clean up
-torch.cuda.empty_cache()
+    # instantiate a Pytorch dataloader object
+    data_generator = data.DataLoader(dataset, **params)
+
+    # call the training scheme
+    net.train(data_generator)
+
+    return net.last_saved_model
+
+
+def clean_video_eval(args):
+    # get available device - if GPU will auto detect and use, otherwise will use CPU
+    device = torch.device(args.device)
+    config = init_config(args)
+
+    # build the network object
+    net = model.VideoSeg(config, device)
+
+    # load the data
+    dataset = dataloader.DataHandler(config)
+
+    net.load_model(filename=args.model_path)
+    net.eval(dataset.data)
+
+    # empty GPU ram
+    torch.cuda.empty_cache()
+    # clean up
+    torch.cuda.empty_cache()
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser = parse_args_video(parser)
+    args = parser.parse_args()
+
+    # Train the model on the frames (video) that has been processed by LaMa
+    last_saved_model = clean_video_train(args)
+    args.model_path = last_saved_model
+
+    # Evaluate the model
+    clean_video_eval(args)
+

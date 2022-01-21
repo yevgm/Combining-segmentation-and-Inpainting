@@ -20,7 +20,8 @@ def main(args, model):
     test_image_path = args.image_input
     class_to_inpaint = args.remove_class
     # load a list of image names
-    image_names = [f for f in os.listdir(test_image_path) if f.endswith('.png') or f.endswith('.jpg') or f.endswith('.jpeg')]
+    image_names = [f for f in sorted(os.listdir(test_image_path)) if f.endswith('.png')
+                   or f.endswith('.jpg') or f.endswith('.jpeg')]
 
     # create inputs and output
     make_dirs(args)

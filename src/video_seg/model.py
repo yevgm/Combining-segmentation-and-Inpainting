@@ -14,6 +14,7 @@ import torch.nn.functional as F
 IMAGENET_MEAN = torch.FloatTensor([0.485, 0.456, 0.406])[None, :, None, None]
 IMAGENET_STD = torch.FloatTensor([0.229, 0.224, 0.225])[None, :, None, None]
 
+
 class PerceptualLoss(nn.Module):
     def __init__(self, normalize_inputs=False):
         super(PerceptualLoss, self).__init__()
@@ -84,6 +85,7 @@ class PerceptualLoss(nn.Module):
         features_input = self.vgg(features_input)
         return features_input
 
+
 class VideoSeg:
     """
     Network class.
@@ -104,9 +106,9 @@ class VideoSeg:
         self.logs_dir = os.path.join(config['logs_dir'], f'logs_dir_{self.time_stamp}')
         self.writer = SummaryWriter(self.logs_dir)
         self.scheduler = self.define_lr_sched()
+        self.last_saved_model = []
         # self.vgg = VGGPerceptualLoss()
         print('-net built-')
-
 
 
     def build_network(self):
@@ -271,6 +273,8 @@ class VideoSeg:
                     'opt': self.optimizer.state_dict()},
                    # 'lr_sched': self.scheduler.state_dict()},
                    os.path.join(save_path, filename))
+        self.last_saved_model = os.path.join(save_path, filename)
+
 
     def load_model(self, filename):
         checkpoint = torch.load(filename)
