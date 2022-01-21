@@ -1,6 +1,6 @@
 import os
 import time
-
+from datetime import datetime
 import matplotlib.pyplot as plt
 import numpy as np
 import torch
@@ -8,9 +8,12 @@ import torch.nn as nn
 import torch.optim.optimizer
 from torch.optim import lr_scheduler
 from torch.utils.tensorboard import SummaryWriter
+import torchvision
+import torch.nn.functional as F
 
 IMAGENET_MEAN = torch.FloatTensor([0.485, 0.456, 0.406])[None, :, None, None]
 IMAGENET_STD = torch.FloatTensor([0.229, 0.224, 0.225])[None, :, None, None]
+
 
 class PerceptualLoss(nn.Module):
     def __init__(self, normalize_inputs=False):
@@ -98,10 +101,15 @@ class VideoSeg:
         self.net = self.build_network()
         self.optimizer = self.define_opt()
         self.loss_fn = self.define_loss()
-        self.writer = SummaryWriter(os.path.join(config['logs_dir'], 'logs_dir'))
+        self.time_stamp = datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
+        self.save_path = os.path.join(self.config['working_dir'], f'Res_{self.time_stamp}')
+        self.logs_dir = os.path.join(config['logs_dir'], f'logs_dir_{self.time_stamp}')
+        self.writer = SummaryWriter(self.logs_dir)
         self.scheduler = self.define_lr_sched()
         self.last_saved_model = []
+        # self.vgg = VGGPerceptualLoss()
         print('-net built-')
+
 
     def build_network(self):
         """
@@ -114,17 +122,18 @@ class VideoSeg:
                 m.bias.data.fill_(0.01)
 
         net = nn.Sequential(
-            nn.Conv2d(in_channels=self.channels_in, out_channels=32, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
+            # nn.BatchNorm2d(self.channels_in),
+            nn.Conv2d(in_channels=self.channels_in, out_channels=64, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
             nn.ReLU(),
-            nn.Conv2d(in_channels=32, out_channels=32, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
+            nn.Conv2d(in_channels=64, out_channels=128, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
             nn.ReLU(),
-            nn.Conv2d(in_channels=32, out_channels=32, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
+            nn.Conv2d(in_channels=128, out_channels=128, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
             nn.ReLU(),
-            nn.Conv2d(in_channels=32, out_channels=32, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
+            nn.Conv2d(in_channels=128, out_channels=64, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
             nn.ReLU(),
-            nn.Conv2d(in_channels=32, out_channels=32, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
+            nn.Conv2d(in_channels=64, out_channels=64, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
             nn.ReLU(),
-            nn.Conv2d(in_channels=32, out_channels=32, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
+            nn.Conv2d(in_channels=64, out_channels=32, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate'),
             nn.ReLU(),
             nn.Conv2d(in_channels=32, out_channels=self.channels_in, kernel_size=(3, 3), padding=[1, 1], padding_mode='replicate')
         ).to(self.device)
@@ -137,7 +146,7 @@ class VideoSeg:
         define the loss function for the network
         :return: loss function handle
         """
-        return torch.nn.L1Loss(reduction='sum')
+        return torch.nn.L1Loss(reduction='mean')
 
     def define_opt(self):
         """
@@ -175,19 +184,10 @@ class VideoSeg:
     def forward(self, input_tensor):
         """
         Apply a forward pass, used for evaluation
-        :param input_tensor: MR input tensor to feed to the network
+        :param input_tensor: input tensor to feed to the network
         :return:
         """
         return self.net(input_tensor)
-
-    def calc_loss(self, output, hr_gt_torch):
-        """
-        Calculate the loss (use cuda if available)
-        :param output: network prediction
-        :param hr_gt_torch: GT
-        :return: loss value
-        """
-        return self.loss_fn(output, hr_gt_torch).cuda()
 
     def train(self, data_loader_object):
         """
@@ -203,15 +203,15 @@ class VideoSeg:
             if e % self.config['Model']['save_every'] == self.config['Model']['save_every'] - 1:
                 print(f'saved model at epoch {e}')
                 self.save_model(epoch=e, overwrite=False)
+                self.eval(data_loader_object.dataset.data, e)
 
             # iterations per epochs
             it = 0
             for (crop, noisy_crop) in data_loader_object:
                 x_prediction = self.forward(noisy_crop.to(self.device))
-                # loss = self.calc_loss(hr_prediction.to(self.device), hr_gt.to(self.device))
-                loss1 = torch.nn.L1Loss(reduction='sum')
-                # loss2 = torch.nn.MSELoss(reduction='sum')
-                loss = loss1(x_prediction.to(self.device), crop.to(self.device))
+                loss1 = torch.nn.L1Loss(reduction='mean')
+                # loss2 = PerceptualLoss()
+                loss = loss1(x_prediction.to(self.device), crop.to(self.device)) #+ loss2(x_prediction.to(self.device), crop.to(self.device))
                 loss.backward()
                 it += 1
             print(f'epoch:{e}, loss:{loss.item():.2f}, Time: {(time.time() - t):.2f}, lr={self.optimizer.param_groups[0]["lr"]}')
@@ -224,35 +224,50 @@ class VideoSeg:
         self.writer.close()
         return
 
-    def eval(self, data):
+    def eval(self, data, num_epoch=None):
         num_frames = self.config['Model']['num_frames']
-        np_tensor = np.transpose(data, [2, 0, 1]).astype(np.float32)
-        os.makedirs(os.path.join(self.config['working_dir'], 'test'), exist_ok=True)
-        for i in range(0, np_tensor.shape[0], num_frames * 3):
-            result = self.forward(torch.from_numpy(np_tensor[np.newaxis, i:i + num_frames * 3, :, :]).to(self.device))
+        vid_tensor = np.transpose(data, [2, 0, 1]).astype(np.float32)
+        if num_epoch:
+            save_path = os.path.join(self.save_path, f'epoch_{num_epoch}')
+            os.makedirs(save_path, exist_ok=True)
+        else:
+            save_path = os.path.join(self.save_path, f'EVAL')
+            os.makedirs(save_path, exist_ok=True)
+
+        for i in range(0, vid_tensor.shape[0], num_frames * 3):
+            # print(f'saving frames {i//3} to {(i + num_frames * 3)//3}, channels {i} to {(i + num_frames * 3)}')
+            result = self.forward(torch.from_numpy(vid_tensor[np.newaxis, i:i + num_frames * 3, :, :]).to(self.device))
             result = np.transpose(np.squeeze(result.detach().cpu().numpy()), [1, 2, 0])
             for im in range(0, result.shape[-1], 3):
-                image = np.clip(result[:, :, im:im + 3], 0, 1)
-                plt.imsave(os.path.join(self.config['working_dir'], 'test', f'{i//3+im//3:05d}.png'), image)
+                plt.imsave(os.path.join(save_path, f'{i//3+im//3:05d}.png'), np.clip(result[:, :, im:im + 3], 0, 1))
+
         return
 
-    def save_model(self, epoch=None, scale=None, overwrite=False):
+    def save_model(self, epoch=None, overwrite=False):
         """
         Saves the model (state-dict, optimizer and lr_sched
         :return:
         """
+        if epoch:
+            save_path = os.path.join(self.save_path, f'epoch_{epoch}')
+            os.makedirs(save_path, exist_ok=True)
+        else:
+            save_path = os.path.join(self.save_path, f'EVAL')
+            os.makedirs(save_path, exist_ok=True)
+
         if overwrite:
-            checkpoint_list = [i for i in os.listdir(os.path.join(self.config['working_dir'])) if i.endswith('.pth.tar')]
+            checkpoint_list = [i for i in os.listdir(os.path.join(save_path,f'checkpoints_{self.time_stamp}')) if i.endswith('.pth.tar')]
             if len(checkpoint_list) != 0:
                 os.remove(os.path.join(self.config['working_dir'], checkpoint_list[-1]))
 
         filename = f'checkpoint{epoch}.pth.tar'
-        os.makedirs(os.path.join(self.config['working_dir']), exist_ok=True)
+        os.makedirs(save_path, exist_ok=True)
         torch.save({'sd': self.net.state_dict(),
                     'opt': self.optimizer.state_dict()},
                    # 'lr_sched': self.scheduler.state_dict()},
-                   os.path.join(self.config['working_dir'], filename))
-        self.last_saved_model = os.path.join(self.config['working_dir'], filename)
+                   os.path.join(save_path, filename))
+        self.last_saved_model = os.path.join(save_path, filename)
+
 
     def load_model(self, filename):
         checkpoint = torch.load(filename)
