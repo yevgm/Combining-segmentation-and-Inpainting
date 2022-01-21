@@ -31,6 +31,7 @@ The following links will download the data folders:
     ```bash
     conda env create -f env.yml
     conda activate seg_inpaint
+    pip install pyyaml==5.4.1
     ```
     This will create a working environment named 'seg_inpaint'
 
